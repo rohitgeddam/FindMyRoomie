@@ -1,0 +1,25 @@
+{% load static %}
+
+<html>
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'fa/css/all.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+<head>
+    <title>Find My Roomies</title>
+</head>
+
+<body>
+    <div class="container">
+        {% block content %}
+
+        {% endblock %}
+    </div>
+
+    {% block login %}
+    {% endblock %}
+
+</body>
+
+</html>
