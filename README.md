@@ -31,7 +31,7 @@
 
    Type into the terminal:
 
-   `cd src`
+   `cd Roomies`
 
    `python manage.py runserver`
    
