@@ -1,5 +1,8 @@
-How to create a new webpage. Read the instructions from "Here we create the varied pages and assign the respective HTML files (which we’ll create later)." on https://www.geeksforgeeks.org/django-creating-a-multi-page-website/
+### How to create a new webpage
 
-CSS in Roomies/static/style
+Read the instructions starting from "Here we create the varied pages and assign the respective HTML files" on this webpage: https://www.geeksforgeeks.org/django-creating-a-multi-page-website/
 
-Images in Roomies/static/images
+### Location of important files
+CSS is in `Roomies/static/style`
+
+Images are in `Roomies/static/images`
