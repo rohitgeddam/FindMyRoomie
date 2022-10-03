@@ -41,5 +41,17 @@
         <button class ="btn btn-primary" type="submit" id= "submit_button">Submit</button>
       </form>
       </div>
+<br><br>
+      <div class="container">
+        {% for player in players %}
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">{{ person.name }}</h5>
+            <p class="card-text">{{ person.age }}</p>
+            <p class="card-text">{{ person.hometown }}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
 </body>
 
