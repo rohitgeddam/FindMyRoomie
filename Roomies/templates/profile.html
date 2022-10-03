@@ -1,6 +1,18 @@
 {% include 'navbar.html' %}
 {% load static %}
 <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+
 <title>My Profile</title>
 <section class="home">
 		<center>
@@ -11,9 +23,23 @@
 			</font>
 			<img src="{% static 'images/profile_image.png' %}" width="200" height="200">
 			<font size="4">
-				
-<p>"Add edit button to this page. Show name, email, preferences for roommate, social media."</p>
 
 			</font>
 		</center>
 </section>
+
+<body>
+      {% load crispy_forms_tags %}
+
+      <br><br>
+
+      <div class="container">
+      <form method="post">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <br>
+        <button class ="btn btn-primary" type="submit" id= "submit_button">Submit</button>
+      </form>
+      </div>
+</body>
+

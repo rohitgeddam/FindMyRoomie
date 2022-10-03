@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from .forms import PersonForm
+
 
 # Create your views here.
 def home(request):
@@ -6,7 +8,8 @@ def home(request):
 
 
 def profile(request):
-    return render(request, "profile.html")
+    form = PersonForm()
+    return render(request, "profile.html", {"form": form})
 
 
 def matches(request):
