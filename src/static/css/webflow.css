@@ -7442,6 +7442,12 @@ html.w-mod-js *[data-ix="hide-lightbox"] {
   border-radius: 0;
 }
 
+.w-button:hover{
+  color: white;
+  transform: scale(1.2);
+  text-decoration: none;
+}
+
 @media screen and (max-width: 479px) {
   h1 {
     font-size: 31px;
