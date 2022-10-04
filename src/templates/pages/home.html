@@ -1,10 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% load static %}
 
-</body>
-</html>
+
+<img src="{% static "img/logo.png" %}" alt="My image"/>
+
+{% block title %}
+
+👨‍❤️‍👨 Find My Roomie 
+
+{% endblock %}
+
+{% block content %}
+
+<!-- <div data-autoplay="true" data-loop="true" data-wf-ignore="true" data-video-urls="videos/For_Wes-transcode.mp4,videos/For_Wes-transcode.webm" class="hero-video w-background-video w-background-video-atom"><video id="28ee08b8-0c5b-ee03-a57d-02f2b0d97bc3-video" autoplay="" loop="" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+    <source src="videos/For_Wes-transcode.mp4" data-wf-ignore="true">
+    <source src="videos/For_Wes-transcode.webm" data-wf-ignore="true">
+  </video> -->
+
+  <!-- <div class="d-flex flex-column align-content-center" id="homepage__container">
+    <h1 class="text-center" style="color: white;">Find My Rommies</h1>
+    <h2 class="text-center" style="color: white; width: 200px;">Find my Roomies is a roommate finder web application to help new and current NC State find the ideal roommate</h2>
+  </div> -->
+
+  <div class="hero-overlay-block">
+    <div class="container hero-container w-container">
+      <h1 data-ix="fade-in-on-load" class="hero-main-title"  style="color: white;">Find My Roomie</h1>
+      <h2 data-ix="fade-in-on-load-2" class="hero-main-title subtitle"  style="color: white;">Find my Roomies is a roommate cccccfinder web application to help new and current NC State find the ideal roommate</h2>
+    </div>
+    <div class="container-2 w-container">
+      <a href="{% url 'login' %}" class="button-5 w-button">Sign In</a>
+      <a href="{% url 'signup' %}" class="button-4 w-button">Sign Up</a>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}
