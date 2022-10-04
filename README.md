@@ -1,3 +1,8 @@
+[![Test](https://github.com/rohitgeddam/CSC510_HW1/actions/workflows/build.yml/badge.svg)](https://github.com/rohitgeddam/CSC510_HW1/actions/workflows/build.yml)
+[![codecov](https://codecov.io/gh/Arun152k/CSC510_HW1/branch/HW1/graph/badge.svg?token=WA4KNGKU6J)](https://codecov.io/gh/Arun152k/CSC510_HW1)
+[![code_size](https://img.shields.io/github/languages/code-size/rohitgeddam/CSC510_PROJECT1)](https://github.com/rohitgeddam/CSC510_PROJECT1) 
+[![repo_size](https://img.shields.io/github/repo-size/rohitgeddam/CSC510_PROJECT1)](https://github.com/rohitgeddam/CSC510_PROJECT1)</br>
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7061868.svg)](https://doi.org/10.5281/zenodo.7061868)
 
 # FindMyRoomie 👯‍♂️
 
