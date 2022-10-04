@@ -32,13 +32,20 @@
 
    `cd Roomies`
 
-   `python manage.py runserver`
+   `py manage.py runserver`
    
 Click the link next to "Starting development server at " to view the project
 
 ## How to create a new webpage
 
 Read the instructions starting from "Here we create the varied pages and assign the respective HTML files" on this webpage: https://www.geeksforgeeks.org/django-creating-a-multi-page-website/
+
+## After adding another field to Model
+Django's way of propagating changes you make to your models (adding a field, deleting a model, etc.) into your database schema.
+
+   `py manage.py makemigrations`
+   
+   `py manage.py migrate`
 
 ## Location of important files
 CSS is in `Roomies/static/style`
