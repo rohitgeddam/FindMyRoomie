@@ -44,3 +44,12 @@ Read the instructions starting from "Here we create the varied pages and assign 
 CSS is in `Roomies/static/style`
 
 Images are in `Roomies/static/images`
+
+
+## How to contribute 
+1) Pull from develop branch.
+2) Create a feature branch with name feature_<feature_name>.
+3) Once you are done working on your feature, merge develope into your feature branch.
+4) Push yout branch to github, and open a a PR to develop branch.
+5) Add reviewers while your create a PR, and wait for your feature to get merged. 
+6) Start working on a new feature.
