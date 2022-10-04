@@ -25,11 +25,8 @@ jobs:
             - name: Add folders to Python Path
               run: |
                   echo "PYTHONPATH=tests:code:data" >> $GITHUB_ENV
-            - name: Generate Coverage
-              run: |
-                  export CI=GITHUB_ACTIONS
-                  coverage run -m tests
-                  coverage xml
+            - name: Run tests and collect coverage
+              run: pytest --cov=.
             - name: Upload to CodeCov
               run: |
                   curl -Os https://uploader.codecov.io/latest/linux/codecov
