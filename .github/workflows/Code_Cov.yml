@@ -1,16 +1,8 @@
 name: Code Coverage
-
-on:
-    push:
-        branches: ["develop"]
-
-permissions:
-    contents: read
-
+on: [push, pull_request]
 jobs:
     build:
         runs-on: ubuntu-latest
-
         steps:
             - uses: actions/checkout@v3
             - name: Set up Python 3.10
@@ -23,9 +15,6 @@ jobs:
                   pip install coverage
                   pip install pytest-cov
                   pip install pytest
-            - name: Add folders to Python Path
-              run: |
-                  echo "PYTHONPATH=tests:code:data" >> $GITHUB_ENV
             - name: Run tests and collect coverage
               run: pytest --cov=.
             - name: Upload to CodeCov
