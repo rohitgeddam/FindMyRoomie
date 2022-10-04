@@ -8,21 +8,21 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
-      {% if user.authenticated %}
-      <li class="nav-item active">
-        <a class="nav-link" href="/profile">My Profile <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/findpeople">Find People</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/myroom">My Room</a>
+      {% if user.is_authenticated %}
+        <li class="nav-item active">
+          <a class="nav-link" href="/profile">My Profile <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/findpeople">Find People</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/myroom">My Room</a>
 
 
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Logout</a>
-      </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Logout</a>
+        </li>
       {% endif %}
     </ul>
   </div>
