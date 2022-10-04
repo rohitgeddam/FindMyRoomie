@@ -48,6 +48,6 @@ Django's way of propagating changes you make to your models (adding a field, del
    `py manage.py migrate`
 
 ## Location of important files
-CSS is in `Roomies/static/style`
+CSS is in 
 
-Images are in `Roomies/static/images`
+Images are in 
