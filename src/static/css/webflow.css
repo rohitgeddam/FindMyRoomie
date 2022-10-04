@@ -4130,13 +4130,14 @@ figcaption {
   height: 100vh;
   padding-top: 0px;
   padding-bottom: 0px;
-  background-color: rgba(255, 53, 31, 0.8);
-  background-image: url('../img/Untitled.jpeg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/Untitled.jpeg');
   background-position: 0px 0px;
   background-size: cover;
   background-clip: border-box;
   -webkit-text-fill-color: inherit;
   background-size: cover;
+  background-blend-mode: darken;
+
 }
 
 .blog-posts-list {
@@ -7432,7 +7433,7 @@ html.w-mod-js *[data-ix="hide-lightbox"] {
 .w-button {
   display: inline-block;
   padding: 9px 15px;
-  background-color: #3898EC;
+  background-color: #990000;
   color: white;
   border: 0;
   line-height: inherit;
@@ -8667,4 +8668,3 @@ html.w-mod-js *[data-ix="hide-lightbox"] {
     padding-bottom: 20px;
   }
 }
-
