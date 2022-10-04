@@ -6,4 +6,4 @@ class PersonForm(forms.ModelForm):
 
     class Meta:
         model = Profile
-        fields = ('name', 'age', 'hometown')
+        fields = ('name', 'bio', 'birth_date', 'hometown')
