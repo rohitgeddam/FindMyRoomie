@@ -28,7 +28,7 @@ jobs:
             - name: Generate Coverage
               run: |
                   export CI=GITHUB_ACTIONS
-                  coverage run -m tests.test_sample
+                  coverage run -m tests
                   coverage xml
             - name: Upload to CodeCov
               run: |
