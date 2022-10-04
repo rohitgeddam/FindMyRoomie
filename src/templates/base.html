@@ -1,21 +1,28 @@
 {% load static %}
 
 <html>
+<link rel="stylesheet" href="{% static 'css/webflow.css' %}">
 <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
 <link rel="stylesheet" href="{% static 'fa/css/all.min.css' %}">
 <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="{% static 'js/bootstrap.min.js' %}"></script>
 
 <head>
-    <title>Find My Roomies</title>
+    <title>
+        {% block title %}{% endblock %}
+    </title>
+
 </head>
 
 <body>
-    <div class="container">
-        {% block content %}
+  
+    {% include './components/navbar.html' %}
 
-        {% endblock %}
-    </div>
+    {% block content %}
+
+    {% endblock %}
+
 
     {% block login %}
     {% endblock %}

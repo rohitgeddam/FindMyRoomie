@@ -22,6 +22,7 @@ def index(request):
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('base.urls')),
     path("accounts/", include("django.contrib.auth.urls")),
-    path('', index, name="index")
+    # path('', index, name="index")
 ]
