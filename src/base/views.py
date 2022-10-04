@@ -18,6 +18,7 @@ def profile(request):
         form = ProfileForm(request.POST)
         if form.is_valid():
             form.save()
+            
     person = Profile.objects.all()
     form = ProfileForm()
     return render(request, "pages/profile.html", {"form": form, "profiles": person})
