@@ -2,7 +2,7 @@ from django import forms
 from .models import Profile
 
 
-class PersonForm(forms.ModelForm):
+class ProfileForm(forms.ModelForm):
 
     class Meta:
         model = Profile
