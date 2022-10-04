@@ -11,7 +11,7 @@ class SignUpView(generic.CreateView):
     template_name = "registration/signup.html"
 
 def home(request):
-    return render(request, "home.html")
+    return render(request, "index.html")
 
 def profile(request):
     if request.method == "POST":
@@ -20,13 +20,11 @@ def profile(request):
             form.save()
     person = Profile.objects.all()
     form = ProfileForm()
-    return render(request, "profile.html", {"form": form, "profiles": person})
+    return render(request, "pages/profile.html", {"form": form, "profiles": person})
 
-def matches(request):
-    return render(request, "matches.html")
 
 def findpeople(request):
-    return render(request, "findpeople.html")
+    return render(request, "pages/findpeople.html")
 
 def myroom(request):
-    return render(request, "myroom.html")
+    return render(request, "pages/myroom.html")

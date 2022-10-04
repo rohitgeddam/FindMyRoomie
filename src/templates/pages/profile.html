@@ -1,10 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% include 'components/navbar.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'styles/style.css' %}">
 
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+
+<title>My Profile</title>
+<section class="home">
+		<center>
+			<font size="6">
+				
+<p>Profile </p>
+
+			</font>
+			<img src="{% static 'img/profilepage.png' %}" width="200" height="200">
+			<font size="4">
+
+			</font>
+		</center>
+</section>
+
+<body>
+      {% load crispy_forms_tags %}
+
+      <br><br>
+
+      <div class="container">
+      <form method="post">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <br>
+        <button class ="btn btn-primary" type="submit" id= "submit_button">Submit</button>
+      </form>
+      </div>
+<br><br>
+      <div class="container">
+        {% for player in players %}
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">{{ person.name }}</h5>
+            <p class="card-text">{{ person.bio }}</p>
+              <p class="card-text">{{ person.birthdate }}</p>
+            <p class="card-text">{{ person.hometown }}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
 </body>
-</html>

@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import path, include
 
 def index(request):
-    return render(request, 'home.html', {})
+    return render(request, 'index.html', {})
 
 urlpatterns = [
     path('admin/', admin.site.urls),
