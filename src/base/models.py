@@ -6,27 +6,43 @@ from django.dispatch import receiver
 from django_countries.fields import CountryField
  
  
-GENDER_CHOICES = (
-    ('--', '-----'),
-    ("M", "Male"),
-    ("F", "Female"),
-    ("O", "Other")
-)
- 
-DEGREE_CHOICES = (
-    ('--', '-----'),
-    ("B", "Bachelors Program (BS)"),
-    ("M", "Masters Program (MS)"),
-    ("P", "Post Docterate (PHD)")
-)
- 
-DIET_CHOICES = (
-    ('--', '-----'),
-    ("V", "Veg"),
-    ("NV", "Non Veg")
-)
+
  
 class Profile(models.Model):
+    GENDER_MALE = 'M'
+    GENDER_FEMALE = 'F'
+    GENDER_OTHER = 'O'
+    
+    DEGREE_BS = 'B'
+    DEGREE_MS = 'M'
+    DEGREE_PHD = 'P'
+    
+    DIET_VEG = 'V'
+    DIET_NON_VEG = 'NV'
+    
+    BLANK = '--'
+    
+    
+    GENDER_CHOICES = (
+        (BLANK, '-----'),
+        (GENDER_MALE, "Male"),
+        (GENDER_FEMALE, "Female"),
+        (GENDER_OTHER, "Other")
+    )
+    
+    DEGREE_CHOICES = (
+        (BLANK, '-----'),
+        (DEGREE_BS, "Bachelors Program (BS)"),
+        (DEGREE_MS, "Masters Program (MS)"),
+        (DEGREE_PHD, "Post Docterate (PHD)")
+    )
+    
+    DIET_CHOICES = (
+        (BLANK, '-----'),
+        (DIET_VEG, "Veg"),
+        (DIET_NON_VEG, "Non Veg")
+    )
+
     """User Profile Model"""
     name = models.CharField(max_length=100, default='')
     user = models.OneToOneField(User, on_delete=models.CASCADE)
@@ -34,9 +50,9 @@ class Profile(models.Model):
     birth_date = models.DateField(null=True, blank=True)
     hometown = models.CharField(max_length=100, default='')
  
-    gender = models.CharField(max_length=5, choices=GENDER_CHOICES, default='--')
-    degree = models.CharField(max_length=5, choices=DEGREE_CHOICES, default="--")
-    diet = models.CharField(max_length=5, choices=DIET_CHOICES, default="--")
+    gender = models.CharField(max_length=5, choices=GENDER_CHOICES, default=BLANK)
+    degree = models.CharField(max_length=5, choices=DEGREE_CHOICES, default=BLANK)
+    diet = models.CharField(max_length=5, choices=DIET_CHOICES, default=BLANK)
     country = CountryField(blank_label='select country', default="")
  
     def __str__(self):
