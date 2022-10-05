@@ -96,9 +96,9 @@ class Profile(models.Model):
     
     # preferences
 
-    preference_gender = models.CharField(max_length=5, choices=GENDER_CHOICES, blank=True)
-    preference_degree = models.CharField(max_length=5, choices=DEGREE_CHOICES, blank=True)
-    preference_diet = models.CharField(max_length=5, choices=DIET_CHOICES, blank=True)
+    preference_gender = models.CharField(max_length=5, choices=PREF_GENDER_CHOICES, blank=True)
+    preference_degree = models.CharField(max_length=5, choices=PREF_DEGREE_CHOICES, blank=True)
+    preference_diet = models.CharField(max_length=5, choices=PREF_DIET_CHOICES, blank=True)
     preference_country = CountryField(blank_label="select country", blank=True)
     preference_course = models.CharField(max_length=5, choices = PREF_COURSE_CHOICES, blank = True)
     
