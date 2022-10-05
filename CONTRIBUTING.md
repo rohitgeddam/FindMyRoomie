@@ -1,6 +1,6 @@
 ## Contributing to the Project
 
-Hey! We are happy to see you willing to contribute to this project. Before you go ahead, make sure you check out our [CODE OF CONDUCT](https://github.com/rohitgeddam/CSC510_HW1/blob/HW1/CODE-OF-CONDUCT.md) to contribute and participate in this project.
+Hey! We are happy to see you willing to contribute to this project. Before you go ahead, make sure you check out our [CODE OF CONDUCT](https://github.com/rohitgeddam/CSC510_PROJECT1/blob/develop/CODE-OF-CONDUCT.md) to contribute and participate in this project.
 
 # Some tips if you decide to contribute:
 * Try to follow the code style used in the project, in case you are making any changes, modify the documentation to reflect the changes.
