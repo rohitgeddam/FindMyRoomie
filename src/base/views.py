@@ -7,6 +7,8 @@ from django.contrib.auth import logout
 from .forms import ProfileForm
 from .models import Profile
  
+from .filters import ProfileFilter
+ 
  
 class SignUpView(generic.CreateView):
     form_class = UserCreationForm
@@ -30,7 +32,9 @@ def profile(request):
  
  
 def findpeople(request):
-    return render(request, "pages/findpeople.html")
+    qs = Profile.objects.filter(visibility=True)
+    f = ProfileFilter(request.GET, queryset=qs)
+    return render(request, "pages/findpeople.html", {"filter": f})
  
  
 def myroom(request):
