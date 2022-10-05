@@ -75,10 +75,8 @@ Images are in
 ## Populate fake data for testing
 
 ```
-python manage.py shell
+python manage.py seed_users <number of fake instances>
 
->>> from django.contrib.auth.models import User
->>> from django_seed import Seed
->>> seeder = Seed.seeder()
->>> seeder.add_entity(User)
+# creates 10 fake users
+python manage.py seed_users 10
 ```
