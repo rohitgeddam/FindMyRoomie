@@ -50,5 +50,6 @@ class Command(BaseCommand):
 
         for _ in range(number):
             u = UserFactory()
+            ProfileFactory(user=u)
 
         self.stdout.write(self.style.SUCCESS(f"Created {number} User(s)"))
