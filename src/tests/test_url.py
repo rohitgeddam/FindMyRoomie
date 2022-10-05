@@ -1,5 +1,6 @@
 from django.test import SimpleTestCase, Client
 from django.urls import reverse, resolve 
+from base.views import home, profile, findpeople, myroom
 
 class TestUrls(SimpleTestCase):
     def test_url(self):
