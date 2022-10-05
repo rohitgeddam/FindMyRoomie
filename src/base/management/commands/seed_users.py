@@ -26,22 +26,8 @@ class ProfileFactory(factory.django.DjangoModelFactory):
     name = factory.Faker("name")
     bio = factory.Faker("text")
     birth_date = factory.Faker("date")
-    hometown = factory.Faker("city")
-
-    # gender = random.choice(
-    #     [Profile.GENDER_MALE, Profile.GENDER_FEMALE, Profile.GENDER_OTHER]
-    # )
-    # degree = random.choice([Profile.DEGREE_BS, Profile.DEGREE_MS, Profile.DEGREE_PHD])
-    # diet = random.choice([Profile.DIET_NON_VEG, Profile.DIET_VEG])
-    # gender_list = [Profile.GENDER_MALE, Profile.GENDER_FEMALE, Profile.GENDER_OTHER]
-    # degree_list = [Profile.DEGREE_BS, Profile.DEGREE_MS, Profile.DEGREE_PHD]
-    # diet_list = [Profile.DIET_NON_VEG, Profile.DIET_VEG]
-    
-    gender = [Profile.GENDER_MALE, Profile.GENDER_FEMALE, Profile.GENDER_OTHER][random.randint(0,2)]
-    degree = [Profile.DEGREE_BS, Profile.DEGREE_MS, Profile.DEGREE_PHD][random.randint(0,2)]
-    diet = [Profile.DIET_NON_VEG, Profile.DIET_VEG][random.randint(0,1)]
-    
-    country = factory.Faker("country")
+    hometown = factory.Faker("city")  
+    country = factory.Faker("country_code")
 
 
 class Command(BaseCommand):
@@ -57,7 +43,17 @@ class Command(BaseCommand):
             raise CommandError("Something went wrong!")
 
         for _ in range(number):
-            u = UserFactory()
-            ProfileFactory(user=u)
+            
+            try:
+                u = UserFactory()
+                p = ProfileFactory(user=u)
+                p.gender = random.choices([Profile.GENDER_MALE, Profile.GENDER_FEMALE, Profile.GENDER_OTHER] * 1000)[0]
+                p.degree = random.choices([Profile.DEGREE_BS, Profile.DEGREE_MS, Profile.DEGREE_PHD] * 1000)[0]
+                p.diet = random.choices([Profile.DIET_NON_VEG, Profile.DIET_VEG] * 1000)[0]
+                p.save()
+                print(p.gender, p.degree, p.diet, p.country)
+            except: 
+                self.stdout.write(self.style.ERROR(f"Something went wrong!"))
+
 
         self.stdout.write(self.style.SUCCESS(f"Created {number} User(s)"))
