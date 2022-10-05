@@ -59,7 +59,7 @@ class Command(BaseCommand):
                 p.preference_degree = random.choices(Profile.PREF_DEGREE_CHOICES)[0][0]
                 p.preference_diet = random.choices(Profile.PREF_DIET_CHOICES)[0][0]
                 p.preference_course = random.choices(Profile.PREF_COURSE_CHOICES)[0][0]
-
+                p.is_profile_complete = True
                 p.save()
             except: 
                 self.stdout.write(self.style.ERROR(f"Something went wrong!"))
