@@ -33,13 +33,13 @@ class ProfileFactory(factory.django.DjangoModelFactory):
     # )
     # degree = random.choice([Profile.DEGREE_BS, Profile.DEGREE_MS, Profile.DEGREE_PHD])
     # diet = random.choice([Profile.DIET_NON_VEG, Profile.DIET_VEG])
-    gender_list = [Profile.GENDER_MALE, Profile.GENDER_FEMALE, Profile.GENDER_OTHER]
-    degree_list = [Profile.DEGREE_BS, Profile.DEGREE_MS, Profile.DEGREE_PHD]
-    diet_list = [Profile.DIET_NON_VEG, Profile.DIET_VEG]
+    # gender_list = [Profile.GENDER_MALE, Profile.GENDER_FEMALE, Profile.GENDER_OTHER]
+    # degree_list = [Profile.DEGREE_BS, Profile.DEGREE_MS, Profile.DEGREE_PHD]
+    # diet_list = [Profile.DIET_NON_VEG, Profile.DIET_VEG]
     
-    gender = gender_list[random.randint(0,len(gender_list)-1)]
-    degree = degree_list[random.randint(0,len(degree_list)-1)]
-    diet = diet_list[random.randint(0,len(diet_list)-1)]
+    gender = [Profile.GENDER_MALE, Profile.GENDER_FEMALE, Profile.GENDER_OTHER][random.randint(0,2)]
+    degree = [Profile.DEGREE_BS, Profile.DEGREE_MS, Profile.DEGREE_PHD][random.randint(0,2)]
+    diet = [Profile.DIET_NON_VEG, Profile.DIET_VEG][random.randint(0,1)]
     
     country = factory.Faker("country")
 
