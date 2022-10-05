@@ -1,40 +1,40 @@
 <bootstrap class="js"></bootstrap>
 
 <nav class="navbar navbar-expand-lg custom-color__navbar">
-  <a class="navbar-brand" href="/">FindMyRoomie</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
-      {% if user.is_authenticated %}
-        <li class="nav-item active">
-          <a class="nav-link" href="/profile">My Profile <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/findpeople">Find People</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/myroom">My Room</a>
+    <a class="navbar-brand" href="/">FindMyRoomie</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            {% if user.is_authenticated %}
+            <li class="nav-item active">
+                <a class="nav-link" href="/profile">My Profile <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/findpeople">Find People</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/myroom">My Room</a>
 
 
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Logout</a>
-        </li>
-      {% endif %}
-    </ul>
-  </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'user_logout' %}">Logout</a>
+            </li>
+            {% endif %}
+        </ul>
+    </div>
 </nav>
 
 <style>
-  .custom-color__navbar {
-    background-color: #cc0000;
-    color: white;
-  }
+    .custom-color__navbar {
+        background-color: #cc0000;
+        color: white;
+    }
 
-  .custom-color__navbar a {
-    color: white
-  }
+    .custom-color__navbar a {
+        color: white
+    }
 </style>
