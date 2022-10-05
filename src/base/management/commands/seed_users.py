@@ -28,6 +28,8 @@ class ProfileFactory(factory.django.DjangoModelFactory):
     birth_date = factory.Faker("date")
     hometown = factory.Faker("city")  
     country = factory.Faker("country_code")
+    preference_country = factory.Faker("country_code")
+    
 
 
 class Command(BaseCommand):
@@ -41,19 +43,27 @@ class Command(BaseCommand):
             number = options["number"][0]
         except:
             raise CommandError("Something went wrong!")
-
+        
+        count = number
         for _ in range(number):
             
-            try:
+            try: 
                 u = UserFactory()
                 p = ProfileFactory(user=u)
-                p.gender = random.choices([Profile.GENDER_MALE, Profile.GENDER_FEMALE, Profile.GENDER_OTHER] * 1000)[0]
-                p.degree = random.choices([Profile.DEGREE_BS, Profile.DEGREE_MS, Profile.DEGREE_PHD] * 1000)[0]
-                p.diet = random.choices([Profile.DIET_NON_VEG, Profile.DIET_VEG] * 1000)[0]
+                p.gender = random.choices(Profile.GENDER_CHOICES)[0][0]
+                p.degree = random.choices(Profile.DEGREE_CHOICES)[0][0]
+                p.diet = random.choices(Profile.DIET_CHOICES)[0][0]
+                p.course = random.choices(Profile.COURSE_CHOICES)[0][0]
+                
+                p.preference_gender = random.choices(Profile.PREF_GENDER_CHOICES)[0][0]
+                p.preference_degree = random.choices(Profile.PREF_DEGREE_CHOICES)[0][0]
+                p.preference_diet = random.choices(Profile.PREF_DIET_CHOICES)[0][0]
+                p.preference_course = random.choices(Profile.PREF_COURSE_CHOICES)[0][0]
+
                 p.save()
-                print(p.gender, p.degree, p.diet, p.country)
             except: 
                 self.stdout.write(self.style.ERROR(f"Something went wrong!"))
+                count -= 1
 
 
-        self.stdout.write(self.style.SUCCESS(f"Created {number} User(s)"))
+        self.stdout.write(self.style.SUCCESS(f"Created {count} User(s)"))
