@@ -69,6 +69,7 @@ class Profile(models.Model):
     
     
     PREF_COURSE_CHOICES = (
+        (NO_PREF, "No Preference"),
         (COURSE_CS, "Computer Science"),
         (COURSE_CE, "Computer Engg."),
         (COURSE_EE, "Electrical Engg."),
