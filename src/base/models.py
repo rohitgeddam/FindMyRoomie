@@ -66,6 +66,7 @@ class Profile(models.Model):
     country = CountryField(blank_label="Select Country", blank=True)
     
     visibility = models.BooleanField(default=True)
+    is_profile_complete = models.BooleanField(default=False)
     
     
     # preferences
