@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Sai Girishwar"
+  given-names: "Rohit Geddam"
+  orcid: "https://orcid.org/0000-0000-0000-0000"
+- family-names: "Ramesh"
+  given-names: "Arun Kumar"
+  orcid: "https://orcid.org/0000-0002-1949-5926"
+- family-names: "Jayesh"
+  given-names: "Kiron"
+  orcid: "https://orcid.org/0000-0000-0000-0000" 
+- family-names: "Teja Varma"
+  given-names: "Sai Krishna"
+  orcid: "https://orcid.org/0000-0000-0000-0000"
+- family-names: "Mason"
+  given-names: "Shandler"
+  orcid: "https://orcid.org/0000-0000-0000-0000"
+title: "CSC510_PROJECT1"
+version: 1.0.0
+doi: 10.5281/zenodo.1234
+date-released: 2022-10-04
+url: "https://github.com/rohitgeddam/CSC510_PROJECT1"
