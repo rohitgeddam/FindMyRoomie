@@ -5,6 +5,7 @@ Django==4.1.1
 django-countries==7.3.2
 django-crispy-forms==1.14.0
 django-seed==0.3.1
+factory-boy==3.2.1
 Faker==15.0.0
 flake8==5.0.4
 mccabe==0.7.0
