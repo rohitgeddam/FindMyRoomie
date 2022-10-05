@@ -28,11 +28,19 @@ class ProfileFactory(factory.django.DjangoModelFactory):
     birth_date = factory.Faker("date")
     hometown = factory.Faker("city")
 
-    gender = random.choice(
-        [Profile.GENDER_MALE, Profile.GENDER_FEMALE, Profile.GENDER_OTHER]
-    )
-    degree = random.choice([Profile.DEGREE_BS, Profile.DEGREE_MS, Profile.DEGREE_PHD])
-    diet = random.choice([Profile.DIET_NON_VEG, Profile.DIET_VEG])
+    # gender = random.choice(
+    #     [Profile.GENDER_MALE, Profile.GENDER_FEMALE, Profile.GENDER_OTHER]
+    # )
+    # degree = random.choice([Profile.DEGREE_BS, Profile.DEGREE_MS, Profile.DEGREE_PHD])
+    # diet = random.choice([Profile.DIET_NON_VEG, Profile.DIET_VEG])
+    gender_list = [Profile.GENDER_MALE, Profile.GENDER_FEMALE, Profile.GENDER_OTHER]
+    degree_list = [Profile.DEGREE_BS, Profile.DEGREE_MS, Profile.DEGREE_PHD]
+    diet_list = [Profile.DIET_NON_VEG, Profile.DIET_VEG]
+    
+    gender = gender_list[random.randint(0,len(gender_list)-1)]
+    degree = degree_list[random.randint(0,len(degree_list)-1)]
+    diet = diet_list[random.randint(0,len(diet_list)-1)]
+    
     country = factory.Faker("country")
 
 
