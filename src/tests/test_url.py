@@ -1,5 +1,5 @@
 from django.test import SimpleTestCase, Client
-from django.urls import reverse
+from django.urls import reverse, resolve 
 
 class TestUrls(SimpleTestCase):
     def test_url(self):
