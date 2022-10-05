@@ -1,13 +1,133 @@
 {% extends 'base.html' %}
 {% include 'components/navbar.html' %}
+{% load crispy_forms_tags %}
+ 
 {% load static %}
 <link rel="stylesheet" href="{% static 'styles/style.css' %}">
-
-
+ 
+ 
 {% load crispy_forms_tags %}
-
-
+ 
+ 
 {% block title %}Find People{% endblock %}
 {% block content %}
-Find people
+ 
+<!-- <div class="container"> -->
+ 
+<div id="find-people-container">
+ 
+    <div style="width: 20%;">
+        <form method="get">
+            {{ filter.form|crispy }}
+            <input class="btn btn-danger w-100" type="submit" value="Wolf Filter" />
+        </form>
+    </div>
+ 
+    <div id="right-section">
+        <div class="cards-container">
+            {% for profile in filter.qs %}
+ 
+            <div class="card shadow-sm bg-body rounded card-style" data-bs-toggle="modal"
+                data-bs-target="#profile-modal-{{profile.id}}">
+                <div class="card-body">
+                    <h4 class="card-title">{{profile.name}}</h4>
+                    <p class="card-text"><b>Gender:</b>{{profile.gender}}</p>
+                    <p class="card-text"><b>Diet: </b>{{profile.diet}}</p>
+                    <p class="card-text"><b>Hometown: </b> {{profile.hometown}}</p>
+                    <p class="card-text"><b>Country: </b> {{profile.country}}</p>
+                    <!-- <a href="#" class="btn btn-primary"></a> -->
+                </div>
+            </div>
+ 
+ 
+            <!-- Modal -->
+            <div class="modal fade" id="profile-modal-{{profile.id}}" tabindex="-1"
+                aria-labelledby="profile-modal-{{profile.id}}" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">{{profile.name}}</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <b>Bio: </b>{{profile.bio}}<br>
+                            </div>
+                            <div>
+                                <b>Gender: </b>{{profile.gender}}<br>
+                            </div>
+                            <div>
+                                <b>Diet: </b>{{profile.diet}}<br>
+                            </div>
+                            <div>
+                                <b>Hometown: </b>{{profile.hometown}}<br>
+                            </div>
+                            <div>
+                                <b>Country: </b>{{profile.country}}<br>
+                            </div>
+ 
+ 
+ 
+ 
+                        </div>
+                        <!-- <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+ 
+            {% endfor %}
+        </div>
+    </div>
+ 
+</div>
+ 
+ 
+<!-- Button trigger modal -->
+ 
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"> -->
+<!-- Launch demo modal
+</button> -->
+ 
+ 
+ 
+ 
+<style>
+    #find-people-container {
+        display: flex;
+        padding: 16px;
+    }
+ 
+    #right-section {
+        width: 80%;
+        margin-left: 16px;
+ 
+    }
+ 
+    .cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+    }
+ 
+    .card-style {
+        margin: 8px;
+        border: 1px solid #cc0000;
+    }
+ 
+    .card:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+ 
+        background-color: #cc0000;
+        color: white;
+    }
+</style>
+ 
+ 
+ 
+<!-- </div> -->
+ 
 {% endblock %}
