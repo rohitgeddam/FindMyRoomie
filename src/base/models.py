@@ -17,6 +17,12 @@ class Profile(models.Model):
 
     DIET_VEG = "V"
     DIET_NON_VEG = "NV"
+    
+    COURSE_CS = "CS"
+    COURSE_CE = "CE"
+    COURSE_EE = "EE"
+    COURSE_MEC = "MEC"
+    
 
     BLANK = "--"
     NO_PREF = "N/A"
@@ -31,6 +37,14 @@ class Profile(models.Model):
         (DEGREE_BS, "Bachelors Program (BS)"),
         (DEGREE_MS, "Masters Program (MS)"),
         (DEGREE_PHD, "Post Docterate (PHD)"),
+    )
+    
+    COURSE_CHOICES = (
+        (COURSE_CS, "Computer Science"),
+        (COURSE_CE, "Computer Engg."),
+        (COURSE_EE, "Electrical Engg."),
+        (COURSE_MEC, "Mechanical Engg.")
+        
     )
 
     DIET_CHOICES = ((DIET_VEG, "Veg"), (DIET_NON_VEG, "Non Veg"))
@@ -52,6 +66,15 @@ class Profile(models.Model):
     )
 
     PREF_DIET_CHOICES = ((NO_PREF, "No Preference"), (DIET_VEG, "Veg"), (DIET_NON_VEG, "Non Veg"))
+    
+    
+    PREF_COURSE_CHOICES = (
+        (COURSE_CS, "Computer Science"),
+        (COURSE_CE, "Computer Engg."),
+        (COURSE_EE, "Electrical Engg."),
+        (COURSE_MEC, "Mechanical Engg.")
+        
+    )
 
     """User Profile Model"""
     name = models.CharField(max_length=100, default="")
@@ -64,6 +87,7 @@ class Profile(models.Model):
     degree = models.CharField(max_length=5, choices=DEGREE_CHOICES, blank=True)
     diet = models.CharField(max_length=5, choices=DIET_CHOICES, blank=True)
     country = CountryField(blank_label="Select Country", blank=True)
+    course = models.CharField(max_length=5, choices = COURSE_CHOICES, blank = True)
     
     visibility = models.BooleanField(default=True)
     is_profile_complete = models.BooleanField(default=False)
@@ -75,6 +99,8 @@ class Profile(models.Model):
     preference_degree = models.CharField(max_length=5, choices=DEGREE_CHOICES, blank=True)
     preference_diet = models.CharField(max_length=5, choices=DIET_CHOICES, blank=True)
     preference_country = CountryField(blank_label="select country", blank=True)
+    preference_course = models.CharField(max_length=5, choices = PREF_COURSE_CHOICES, blank = True)
+    
     
     def __str__(self):
         return f"{self.user.username}-profile"
