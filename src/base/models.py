@@ -19,6 +19,7 @@ class Profile(models.Model):
     DIET_NON_VEG = "NV"
 
     BLANK = "--"
+    NO_PREF = "N/A"
 
     GENDER_CHOICES = (
         (GENDER_MALE, "Male"),
@@ -33,6 +34,24 @@ class Profile(models.Model):
     )
 
     DIET_CHOICES = ((DIET_VEG, "Veg"), (DIET_NON_VEG, "Non Veg"))
+    
+    
+    
+    PREF_GENDER_CHOICES = (
+        (NO_PREF, "No Preference"),
+        (GENDER_MALE, "Male"),
+        (GENDER_FEMALE, "Female"),
+        (GENDER_OTHER, "Other"),
+    )
+
+    PREF_DEGREE_CHOICES = (
+        (NO_PREF, "No Preference"),
+        (DEGREE_BS, "Bachelors Program (BS)"),
+        (DEGREE_MS, "Masters Program (MS)"),
+        (DEGREE_PHD, "Post Docterate (PHD)"),
+    )
+
+    PREF_DIET_CHOICES = ((NO_PREF, "No Preference"), (DIET_VEG, "Veg"), (DIET_NON_VEG, "Non Veg"))
 
     """User Profile Model"""
     name = models.CharField(max_length=100, default="")
@@ -41,12 +60,20 @@ class Profile(models.Model):
     birth_date = models.DateField(null=True, blank=True)
     hometown = models.CharField(max_length=100, default="")
 
-    gender = models.CharField(max_length=5, choices=GENDER_CHOICES, default=BLANK)
-    degree = models.CharField(max_length=5, choices=DEGREE_CHOICES, default=BLANK)
-    diet = models.CharField(max_length=5, choices=DIET_CHOICES, default=BLANK)
-    country = CountryField(blank_label="select country", default="")
-
+    gender = models.CharField(max_length=5, choices=GENDER_CHOICES, blank=True)
+    degree = models.CharField(max_length=5, choices=DEGREE_CHOICES, blank=True)
+    diet = models.CharField(max_length=5, choices=DIET_CHOICES, blank=True)
+    country = CountryField(blank_label="Select Country", blank=True)
+    
     visibility = models.BooleanField(default=True)
+    
+    
+    # preferences
+
+    preference_gender = models.CharField(max_length=5, choices=GENDER_CHOICES, blank=True)
+    preference_degree = models.CharField(max_length=5, choices=DEGREE_CHOICES, blank=True)
+    preference_diet = models.CharField(max_length=5, choices=DIET_CHOICES, blank=True)
+    preference_country = CountryField(blank_label="select country", blank=True)
     
     def __str__(self):
         return f"{self.user.username}-profile"
