@@ -21,20 +21,18 @@ class Profile(models.Model):
     BLANK = "--"
 
     GENDER_CHOICES = (
-        (BLANK, "-----"),
         (GENDER_MALE, "Male"),
         (GENDER_FEMALE, "Female"),
         (GENDER_OTHER, "Other"),
     )
 
     DEGREE_CHOICES = (
-        (BLANK, "-----"),
         (DEGREE_BS, "Bachelors Program (BS)"),
         (DEGREE_MS, "Masters Program (MS)"),
         (DEGREE_PHD, "Post Docterate (PHD)"),
     )
 
-    DIET_CHOICES = ((BLANK, "-----"), (DIET_VEG, "Veg"), (DIET_NON_VEG, "Non Veg"))
+    DIET_CHOICES = ((DIET_VEG, "Veg"), (DIET_NON_VEG, "Non Veg"))
 
     """User Profile Model"""
     name = models.CharField(max_length=100, default="")

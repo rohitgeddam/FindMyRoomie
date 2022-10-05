@@ -1,32 +1,33 @@
 {% extends 'base.html' %}
 {% include 'components/navbar.html' %}
 {% load crispy_forms_tags %}
- 
+
 {% load static %}
 <link rel="stylesheet" href="{% static 'styles/style.css' %}">
- 
- 
+
+
 {% load crispy_forms_tags %}
- 
- 
+
+
 {% block title %}Find People{% endblock %}
 {% block content %}
- 
+
 <!-- <div class="container"> -->
- 
+
 <div id="find-people-container">
- 
+
     <div style="width: 20%;">
         <form method="get">
             {{ filter.form|crispy }}
             <input class="btn btn-danger w-100" type="submit" value="Wolf Filter" />
         </form>
     </div>
- 
+
     <div id="right-section">
         <div class="cards-container">
             {% for profile in filter.qs %}
- 
+
+            {% if profile.name != ""%}
             <div class="card shadow-sm bg-body rounded card-style" data-bs-toggle="modal"
                 data-bs-target="#profile-modal-{{profile.id}}">
                 <div class="card-body">
@@ -38,8 +39,9 @@
                     <!-- <a href="#" class="btn btn-primary"></a> -->
                 </div>
             </div>
- 
- 
+            {% endif %}
+
+
             <!-- Modal -->
             <div class="modal fade" id="profile-modal-{{profile.id}}" tabindex="-1"
                 aria-labelledby="profile-modal-{{profile.id}}" aria-hidden="true">
@@ -65,10 +67,10 @@
                             <div>
                                 <b>Country: </b>{{profile.country}}<br>
                             </div>
- 
- 
- 
- 
+
+
+
+
                         </div>
                         <!-- <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -77,57 +79,59 @@
                     </div>
                 </div>
             </div>
- 
+
             {% endfor %}
         </div>
     </div>
- 
+
 </div>
- 
- 
+
+
 <!-- Button trigger modal -->
- 
+
 <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"> -->
 <!-- Launch demo modal
 </button> -->
- 
- 
- 
- 
+
+
+
+
 <style>
     #find-people-container {
         display: flex;
         padding: 16px;
+        height: 95vh;
     }
- 
+
     #right-section {
         width: 80%;
         margin-left: 16px;
- 
+        overflow-y: scroll;
+
     }
- 
+
     .cards-container {
         display: flex;
         flex-wrap: wrap;
         flex-grow: 1;
     }
- 
+
     .card-style {
         margin: 8px;
         border: 1px solid #cc0000;
     }
- 
+
     .card:hover {
         transform: scale(1.1);
         cursor: pointer;
- 
+
         background-color: #cc0000;
         color: white;
     }
 </style>
- 
- 
- 
+
+
+
 <!-- </div> -->
- 
+
 {% endblock %}
