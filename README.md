@@ -18,3 +18,15 @@
 * `cd src`
 * `python manage.py runserver`
 * `python manage.py migrate`
+
+
+## Populate fake data for testing
+
+```
+python manage.py shell
+
+>>> from django.contrib.auth.models import User
+>>> from django_seed import Seed
+>>> seeder = Seed.seeder()
+>>> seeder.add_entity(User)
+```
