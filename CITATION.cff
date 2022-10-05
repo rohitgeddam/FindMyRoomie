@@ -1,9 +1,9 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 authors:
-- family-names: "Sai Girishwar"
-  given-names: "Rohit Geddam"
-  orcid: "https://orcid.org/0000-0000-0000-0000"
+- family-names: "Geddam"
+  given-names: "Rohit"
+  orcid: "https://orcid.org/0000-0002-1010-1070"
 - family-names: "Ramesh"
   given-names: "Arun Kumar"
   orcid: "https://orcid.org/0000-0002-1949-5926"
