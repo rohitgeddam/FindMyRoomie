@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     "crispy_forms",
     "django_countries",
     "django_seed",
+    "django_filters",
     "base",
 ]
  
