@@ -9,7 +9,7 @@ from .forms import ProfileForm
 from .models import Profile
 
 from .filters import ProfileFilter
-
+from .matching import matchings
 
 class SignUpView(generic.CreateView):
     form_class = UserCreationForm
@@ -42,7 +42,14 @@ def findpeople(request):
 
 @login_required()
 def myroom(request):
-    return render(request, "pages/myroom.html")
+    if(not request.user.profile.is_profile_complete):
+        messages.error(request, "Please complete your profile first!")
+        return redirect("profile")
+    
+    
+    matches = matchings(request.user)
+    
+    return render(request, "pages/myroom.html", {"matches": matches})
 
 
 def user_logout(request):
