@@ -6,7 +6,6 @@
 
 # FindMyRoomie 👯‍♂️
 
-
 ### How to setup the project on your local machine?
 * `git clone https://github.com/rohitgeddam/CSC510_PROJECT1.git`
 * Setup virtual environment
@@ -50,9 +49,9 @@
 
    Type into the terminal:
 
-   `cd Roomies`
+   `cd src`
 
-   `py manage.py runserver`
+   `python manage.py runserver`
    
 Click the link next to "Starting development server at " to view the project
 
@@ -66,11 +65,6 @@ Django's way of propagating changes you make to your models (adding a field, del
    `py manage.py makemigrations`
    
    `py manage.py migrate`
-
-## Location of important files
-CSS is in 
-
-Images are in 
 
 ## Populate fake data for testing
 
