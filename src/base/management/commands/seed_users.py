@@ -1,11 +1,11 @@
 import factory
 import random
-from urllib.parse import uses_fragment
 from django.core.management.base import BaseCommand, CommandError
 from django.contrib.auth.models import User
 from django.db.models.signals import post_save
 
 from base.models import Profile
+
 
 @factory.django.mute_signals(post_save)
 class UserFactory(factory.django.DjangoModelFactory):
@@ -26,10 +26,9 @@ class ProfileFactory(factory.django.DjangoModelFactory):
     name = factory.Faker("name")
     bio = factory.Faker("text")
     birth_date = factory.Faker("date")
-    hometown = factory.Faker("city")  
+    hometown = factory.Faker("city")
     country = factory.Faker("country_code")
     preference_country = factory.Faker("country_code")
-    
 
 
 class Command(BaseCommand):
@@ -41,29 +40,28 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         try:
             number = options["number"][0]
-        except:
+        except BaseException:
             raise CommandError("Something went wrong!")
-        
+
         count = number
         for _ in range(number):
-            
-            try: 
+
+            try:
                 u = UserFactory()
                 p = ProfileFactory(user=u)
                 p.gender = random.choices(Profile.GENDER_CHOICES)[0][0]
                 p.degree = random.choices(Profile.DEGREE_CHOICES)[0][0]
                 p.diet = random.choices(Profile.DIET_CHOICES)[0][0]
                 p.course = random.choices(Profile.COURSE_CHOICES)[0][0]
-                
+
                 p.preference_gender = random.choices(Profile.PREF_GENDER_CHOICES)[0][0]
                 p.preference_degree = random.choices(Profile.PREF_DEGREE_CHOICES)[0][0]
                 p.preference_diet = random.choices(Profile.PREF_DIET_CHOICES)[0][0]
                 p.preference_course = random.choices(Profile.PREF_COURSE_CHOICES)[0][0]
                 p.is_profile_complete = True
                 p.save()
-            except: 
-                self.stdout.write(self.style.ERROR(f"Something went wrong!"))
+            except BaseException:
+                self.stdout.write(self.style.ERROR("Something went wrong!"))
                 count -= 1
-
 
         self.stdout.write(self.style.SUCCESS(f"Created {count} User(s)"))

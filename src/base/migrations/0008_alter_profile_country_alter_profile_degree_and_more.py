@@ -33,7 +33,9 @@ class Migration(migrations.Migration):
             model_name="profile",
             name="diet",
             field=models.CharField(
-                blank=True, choices=[("V", "Veg"), ("NV", "Non Veg")], max_length=5
+                blank=True,
+                choices=[("V", "Veg"), ("NV", "Non Veg")],
+                max_length=5,
             ),
         ),
         migrations.AlterField(
@@ -67,7 +69,9 @@ class Migration(migrations.Migration):
             model_name="profile",
             name="preference_diet",
             field=models.CharField(
-                blank=True, choices=[("V", "Veg"), ("NV", "Non Veg")], max_length=5
+                blank=True,
+                choices=[("V", "Veg"), ("NV", "Non Veg")],
+                max_length=5,
             ),
         ),
     ]

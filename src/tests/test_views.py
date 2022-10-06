@@ -2,7 +2,7 @@
 # from django.urls import reverse, resolve
 # from base.views import home, profile, findpeople, myroom
 # import json
-        
+
 # class TestViews(TestCase):
 #     def test_home(self):
 #         client = Client()

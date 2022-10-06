@@ -6,7 +6,10 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ("base", "0006_profile_preference_country_profile_preference_degree_and_more"),
+        (
+            "base",
+            "0006_profile_preference_country_profile_preference_degree_and_more",
+        ),
     ]
 
     operations = [
