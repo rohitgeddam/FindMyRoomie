@@ -2,7 +2,7 @@ name: Code Coverage
 
 on:
     push:
-        branches: ["HW1"]
+        branches: ["develop"]
 
 permissions:
     contents: read
