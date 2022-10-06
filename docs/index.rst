@@ -3,14 +3,22 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+
+
+
 Welcome to FindMyPack's documentation!
 ======================================
+
+This piece of software is intended to help the lonely wolves find their roomates.
+Moving to a new country can be frustrationg, we built this app to reduce atleaset
+some of your worries by matching you with a roommate of your choice.
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-
+   requirements
+   quick_start
 
 Indices and tables
 ==================
