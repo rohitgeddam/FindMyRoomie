@@ -8,6 +8,9 @@ To contribute to the repository, the repository has to be forked into your own G
 ## Writing Code
 Please follow the style guide that has been maintained in the codebase of the repository. Looking at existing code shoudl help you understand the structure better. For testing purposes, use unittest. Take a look at [Testing in Django](https://docs.djangoproject.com/en/4.1/topics/testing/) for more information. 
 
+## Before you push
+Please run tests and flake8 to check for errors before you push to github. Use black to format code.
+
 ## Pull request process
 1. Make a pull before pushing the changes to a new branch that is dedicated for the change you are going to make.
 2. After pushing your contribution to the new branch, make sure all tests are passing before making a pull request to merge the changes with the develop branch. Owners of the repository will look out for new Pull Requests and review them timely. Another layer of merge happens from develop to main branch after final review. 
