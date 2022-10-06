@@ -16,7 +16,7 @@ class TestModels(TestCase):
         profile.diet = "NV"
         profile.country = "India"
         profile.visibility = "True"
-        profile.is_profile_complete="True"
+        profile.is_profile_complete= "True"
         profile.save()
         self.assertEqual(user.username, "admin")
         self.assertEqual(profile.name, "Arun")
@@ -28,4 +28,4 @@ class TestModels(TestCase):
         self.assertEqual(profile.diet, "NV")
         self.assertEqual(profile.country, "India")
         self.assertEqual(profile.visibility, "True")
-        self.assertEqual(profile.is_profile_complete,"True")
+        self.assertEqual(profile.is_profile_complete, "True")
