@@ -2,7 +2,7 @@ name: Code Coverage
 
 on:
     push:
-        branches: ["develop"]
+        branches: ["HW1"]
 
 permissions:
     contents: read
@@ -21,13 +21,15 @@ jobs:
               run: |
                   python -m pip install --upgrade pip
                   pip install coverage
-                  pip install pytest-cov
                   pip install pytest
             - name: Add folders to Python Path
               run: |
                   echo "PYTHONPATH=tests:code:data" >> $GITHUB_ENV
-            - name: Run tests and collect coverage
-              run: pytest --cov=.
+            - name: Generate Coverage
+              run: |
+                  export CI=GITHUB_ACTIONS
+                  coverage run -m src.manage
+                  coverage xml
             - name: Upload to CodeCov
               run: |
                   curl -Os https://uploader.codecov.io/latest/linux/codecov
