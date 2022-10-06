@@ -6,7 +6,7 @@
 
 
 
-Welcome to FindMyPack's documentation!
+Welcome to FindMyRoomie's documentation!
 ======================================
 
 This piece of software is intended to help the lonely wolves find their roomates.

@@ -22,7 +22,7 @@ settings.configure()
 
 # -- Project information -----------------------------------------------------
 
-project = 'FindMyPack'
+project = 'FindMyRoomie'
 copyright = '2022, Rohit Geddam'
 author = 'Rohit Geddam'
 
