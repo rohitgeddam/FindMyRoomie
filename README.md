@@ -80,4 +80,10 @@ python manage.py seed_users 10
 
 ## Black - Code Formatter
 
+We are using Black code formatter to format our code before pushing to github.
+Run the line below everytime you push to github.
+```
+black --line-length 120 <filename>
+```
+
 ## Future features/work
