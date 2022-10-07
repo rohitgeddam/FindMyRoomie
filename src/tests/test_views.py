@@ -1,16 +1,13 @@
 from django.test import SimpleTestCase, TestCase, Client
 from django.urls import reverse, resolve
 from base.views import home, profile, findpeople, myroom
-from unittest.mock import patch, MagicMock
-import mock
+#from unittest.mock import patch, MagicMock
+#import mock
 import unittest
 
 import json
 
 class TestViews(TestCase):
-
-
-
 
     def setUp(self):
         self.response = self.client.login(username='admin',

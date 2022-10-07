@@ -1,5 +1,7 @@
-[![Test](https://github.com/rohitgeddam/CSC510_HW1/actions/workflows/build.yml/badge.svg)](https://github.com/rohitgeddam/CSC510_HW1/actions/workflows/build.yml)
+[![Test](https://github.com/rohitgeddam/FindMyRoomie/actions/workflows/unit_tests.yml/badge.svg)](https://github.com/rohitgeddam/FinMyRoomie/actions/workflows/unit_tests.yml)
 [![codecov](https://codecov.io/gh/rohitgeddam/FindMyRoomie/branch/main/graph/badge.svg?token=PCOHJETYCD)](https://codecov.io/gh/rohitgeddam/FindMyRoomie)
+[![Test](https://github.com/rohitgeddam/FindMyRoomie/actions/workflows/linting.yml/badge.svg)](https://github.com/rohitgeddam/FinMyRoomie/actions/workflows/linting.yml)
+![CodeQL](https://github.com/rohitgeddam/FindMyRoomie/workflows/CodeQL/badge.svg)
 [![code_size](https://img.shields.io/github/languages/code-size/rohitgeddam/CSC510_PROJECT1)](https://github.com/rohitgeddam/CSC510_PROJECT1) 
 [![repo_size](https://img.shields.io/github/repo-size/rohitgeddam/CSC510_PROJECT1)](https://github.com/rohitgeddam/CSC510_PROJECT1)</br>
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7061868.svg)](https://doi.org/10.5281/zenodo.7061868)
@@ -9,19 +11,6 @@
 ![GitHub version](https://img.shields.io/github/v/release/rohitgeddam/FindMyRoomie)
 
 # FindMyRoomie 👯‍♂️
-
-### How to setup the project on your local machine?
-* `git clone https://github.com/rohitgeddam/CSC510_PROJECT1.git`
-* Setup virtual environment
-  * `python -m venv venv`
-  * On Mac/Linux
-    * `source venv/bin/activate`
-  * On Windows
-    * `venv\Scripts\activate`
-* `pip install -r requirements.txt`
-* `cd src`
-* `python manage.py runserver`
-* `python manage.py migrate`
 
 ## How to setup the project on your local machine?
 1. Download a free Python IDE such as PyCharm, Visual Studio Code, Spyder, etc. from online.
@@ -78,3 +67,5 @@ python manage.py seed_users <number of fake instances>
 # creates 10 fake users
 python manage.py seed_users 10
 ```
+
+## Live Server Test Demo
