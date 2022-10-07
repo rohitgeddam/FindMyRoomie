@@ -15,6 +15,8 @@
 # FindMyRoomie 👯‍♂️
 (Write about problem statement and aim. Provide a clear, high-level overview of the software. Describe the type of user who should use your software. make note that the software is available for free).
 
+![My Image](images/homepage.jpeg)
+
 ## Software commands and functions
 
 ## Features of the software
