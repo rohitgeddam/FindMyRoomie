@@ -1,6 +1,7 @@
-from django.test import SimpleTestCase, TestCase, Client
-from django.urls import reverse, resolve
-from base.views import home, profile, findpeople, myroom
+from django.test import TestCase, Client
+from django.urls import reverse
+
+# from base.views import home, profile, findpeople, myroom
 
 # from unittest.mock import patch, MagicMock
 # import mock
