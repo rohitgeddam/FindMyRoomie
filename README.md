@@ -78,10 +78,21 @@ python manage.py seed_users 10
 
 ## Live Server Test Demo
 
+## Flake8 - Code Linting
+
+We are using Flake8 for linting and syntax checking.
+Use flake8 before you push code to github.
+config file present in `setup.cfg`
+
+```
+flake8 <directory>
+```
+
 ## Black - Code Formatter
 
 We are using Black code formatter to format our code before pushing to github.
 Run the line below everytime you push to github.
+config file present in `pyproject.toml`
 ```
 black --line-length 120 <filename>
 ```
