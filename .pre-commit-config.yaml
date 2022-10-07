@@ -1,0 +1,17 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+repos:
+  - repo: https://github.com/odwyersoftware/brunette
+    rev: b8fc75f460885f986a01842664e0571769b2cc12
+    hooks:
+      - id: brunette
+  # Drop-in replacement for black with brunette
+  # - repo: https://github.com/psf/black
+  #   rev: stable
+  #   hooks:
+  #     - id: black
+  #       language_version: python3.6
+  - repo: https://gitlab.com/pycqa/flake8
+    rev: 3.8.1
+    hooks:
+      - id: flake8
