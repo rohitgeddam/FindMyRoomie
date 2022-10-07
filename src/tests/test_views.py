@@ -8,6 +8,7 @@ import unittest
 
 import json
 
+
 class TestViews(TestCase):
     def setUp(self):
         self.response = self.client.login(username="admin", password="admin")
