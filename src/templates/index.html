@@ -25,7 +25,7 @@
 {% if user.is_authenticated %}
 <div class="hero-overlay-block">
   <div class="container hero-container w-container">
-    <h1 data-ix="fade-in-on-load" class="hero-main-title" style="color: white;">🐺Welcome, {{user.email}}!🐺</h1>
+    <h1 data-ix="fade-in-on-load" class="hero-main-title" style="color: white;">🐺Welcome {{user.profile.name}}!🐺</h1>
     <h2 data-ix="fade-in-on-load-2" class="hero-main-title subtitle" style="color: white;">Start your roommate search by
       going to Find People Page.</h2>
   </div>
