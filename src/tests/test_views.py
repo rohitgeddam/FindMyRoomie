@@ -1,9 +1,11 @@
-from django.test import SimpleTestCase, TestCase, Client
-from django.urls import reverse, resolve
-from base.views import home, profile, findpeople, myroom
-from unittest.mock import patch
+from django.test import TestCase, Client
+from django.urls import reverse
 
-import json
+# from base.views import home, profile, findpeople, myroom
+# from unittest.mock import patch
+
+# import json
+
 
 class TestViews(TestCase):
     def test_home(self):
@@ -19,8 +21,6 @@ class TestViews(TestCase):
 
     #     self.assertEquals(response.status_code, 200)
     #     self.assertTemplateUsed(response, "pages/profile.html")
-
-
 
     #     with mock.patch('profiles.views.ProfileForm.is_valid') as mock_profile_form:
     #         mock_profile_form.return_value = True
