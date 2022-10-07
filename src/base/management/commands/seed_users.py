@@ -54,10 +54,18 @@ class Command(BaseCommand):
                 p.diet = random.choices(Profile.DIET_CHOICES)[0][0]
                 p.course = random.choices(Profile.COURSE_CHOICES)[0][0]
 
-                p.preference_gender = random.choices(Profile.PREF_GENDER_CHOICES)[0][0]
-                p.preference_degree = random.choices(Profile.PREF_DEGREE_CHOICES)[0][0]
-                p.preference_diet = random.choices(Profile.PREF_DIET_CHOICES)[0][0]
-                p.preference_course = random.choices(Profile.PREF_COURSE_CHOICES)[0][0]
+                p.preference_gender = random.choices(
+                    Profile.PREF_GENDER_CHOICES
+                )[0][0]
+                p.preference_degree = random.choices(
+                    Profile.PREF_DEGREE_CHOICES
+                )[0][0]
+                p.preference_diet = random.choices(Profile.PREF_DIET_CHOICES)[
+                    0
+                ][0]
+                p.preference_course = random.choices(
+                    Profile.PREF_COURSE_CHOICES
+                )[0][0]
                 p.is_profile_complete = True
                 p.save()
             except BaseException:

@@ -14,7 +14,9 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name="profile",
             name="preference_country",
-            field=django_countries.fields.CountryField(default="IND", max_length=2),
+            field=django_countries.fields.CountryField(
+                default="IND", max_length=2
+            ),
         ),
         migrations.AddField(
             model_name="profile",
@@ -50,7 +52,9 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name="profile",
             name="country",
-            field=django_countries.fields.CountryField(default="IND", max_length=2),
+            field=django_countries.fields.CountryField(
+                default="IND", max_length=2
+            ),
         ),
         migrations.AlterField(
             model_name="profile",

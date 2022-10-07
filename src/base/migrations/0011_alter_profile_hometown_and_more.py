@@ -34,7 +34,11 @@ class Migration(migrations.Migration):
             name="preference_diet",
             field=models.CharField(
                 blank=True,
-                choices=[("N/A", "No Preference"), ("V", "Veg"), ("NV", "Non Veg")],
+                choices=[
+                    ("N/A", "No Preference"),
+                    ("V", "Veg"),
+                    ("NV", "Non Veg"),
+                ],
                 max_length=5,
             ),
         ),

@@ -14,7 +14,9 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name="profile",
             name="country",
-            field=django_countries.fields.CountryField(default="", max_length=2),
+            field=django_countries.fields.CountryField(
+                default="", max_length=2
+            ),
         ),
         migrations.AddField(
             model_name="profile",
