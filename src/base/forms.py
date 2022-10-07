@@ -48,3 +48,6 @@ class ProfileForm(forms.ModelForm):
             "preference_country",
             "preference_course",
         ]
+        widgets = {
+        'birth_date': forms.DateInput(format=('%m/%d/%Y'), attrs={'class':'form-control', 'placeholder':'Select a date', 'type':'date'}),
+    }
