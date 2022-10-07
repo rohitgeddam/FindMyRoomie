@@ -57,7 +57,7 @@ def findpeople(request):
 def myroom(request):
     if not request.user.profile.is_profile_complete:
         messages.error(request, "Please complete your profile first!")
-        return redirect("profile")
+        return redirect("profile_edit")
 
     matches = matchings(request.user)
 
