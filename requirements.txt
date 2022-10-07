@@ -61,6 +61,7 @@ typing_extensions==4.3.0
 urllib3==1.26.12
 virtualenv==20.16.5
 whitenoise==6.2.0
+webdriver-manager>=3.5.1
 zipp==3.8.1
 
 selenium~=4.5.0
