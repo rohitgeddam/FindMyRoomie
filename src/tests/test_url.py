@@ -23,4 +23,3 @@ class TestUrls(SimpleTestCase):
     def test_logout(self):
         url = reverse("user_logout")
         self.assertEquals(resolve(url).func, user_logout)
- 
