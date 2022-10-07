@@ -4,9 +4,9 @@ from base.views import home, profile, findpeople, myroom
 
 # from unittest.mock import patch, MagicMock
 # import mock
-import unittest
+# import unittest
 
-import json
+# import json
 
 
 class TestViews(TestCase):
