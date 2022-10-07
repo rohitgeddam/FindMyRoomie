@@ -36,7 +36,10 @@ def profile_edit(request):
     if request.method == "POST":
         form = ProfileForm(request.POST, instance=profile)
         if form.is_valid():
-            form.save()
+            p = form.save(commit=False)
+            p.is_profile_complete = True
+            p.save()
+
             return redirect("profile")
 
     person = Profile.objects.all()
