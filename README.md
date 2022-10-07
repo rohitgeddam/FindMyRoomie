@@ -82,11 +82,13 @@ Demonstration of how Live Server Test works for Profile Edit Page and Profile Pa
 
 #To run test
 In a terminal:
+
 `cd src`
 
 `py manage.py runserver`
 
 Open another terminal:
+
 `cd src`
 
 `py manage.py test`
