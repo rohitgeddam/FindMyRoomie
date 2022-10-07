@@ -8,6 +8,7 @@ from django_countries.fields import CountryField
 
 class Profile(models.Model):
     """Model for User Profile"""
+
     GENDER_MALE = "M"
     GENDER_FEMALE = "F"
     GENDER_OTHER = "O"

@@ -1,16 +1,15 @@
 from django.test import SimpleTestCase, TestCase, Client
 from django.urls import reverse, resolve
 from base.views import home, profile, findpeople, myroom
-#from unittest.mock import patch, MagicMock
-#import mock
+
+# from unittest.mock import patch, MagicMock
+# import mock
 import unittest
 
 
 class TestViews(TestCase):
-
     def setUp(self):
-        self.response = self.client.login(username='admin',
-        password='admin')
+        self.response = self.client.login(username="admin", password="admin")
 
     # def test_profile_form_success(self):
     #     self.response = self.client.get(reverse('clients:profile'))
@@ -29,14 +28,14 @@ class TestViews(TestCase):
         self.response = self.client.get(reverse("profile"))
 
         self.assertTrue(200, self.response.status_code)
-        #self.assertTemplateUsed(self.response, "pages/profile.html")
+        # self.assertTemplateUsed(self.response, "pages/profile.html")
 
     def test_findpeople(self):
         self.client = Client()
         self.response = self.client.get(reverse("findpeople"))
 
         self.assertTrue(200, self.response.status_code)
-        #self.assertTemplateUsed(self.response, "pages/findpeople.html")
+        # self.assertTemplateUsed(self.response, "pages/findpeople.html")
 
     # def test_myroom(self):
     #     client = Client()

@@ -14,6 +14,7 @@ from .matching import matchings
 
 class SignUpView(generic.CreateView):
     """Sign up View"""
+
     form_class = UserCreationForm
     success_url = reverse_lazy("login")
     template_name = "registration/signup.html"
@@ -63,7 +64,7 @@ def findpeople(request):
 
 @login_required()
 def myroom(request):
-    """Render Myroom page based on Profile Completion """
+    """Render Myroom page based on Profile Completion"""
     if not request.user.profile.is_profile_complete:
         messages.error(request, "Please complete your profile first!")
         return redirect("profile_edit")
