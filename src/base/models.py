@@ -80,7 +80,7 @@ class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     bio = models.TextField(max_length=500, blank=True)
     birth_date = models.DateField(null=True, blank=True)
-    hometown = models.CharField(max_length=100, default="")
+    hometown = models.CharField(max_length=100, default="", blank = True)
 
     gender = models.CharField(max_length=5, choices=GENDER_CHOICES, blank=True)
     degree = models.CharField(max_length=5, choices=DEGREE_CHOICES, blank=True)
