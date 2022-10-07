@@ -8,6 +8,11 @@ from django.db.models.signals import post_save
 from base.models import Profile
 
 
+from faker import Faker as RealFaker
+
+real_faker = RealFaker()
+
+
 @factory.django.mute_signals(post_save)
 class UserFactory(factory.django.DjangoModelFactory):
     class Meta:
@@ -15,6 +20,7 @@ class UserFactory(factory.django.DjangoModelFactory):
 
     first_name = factory.Faker("first_name")
     last_name = factory.Faker("last_name")
+    email = factory.LazyAttribute(lambda a: f"{real_faker.name()}@ncsu.edu")
 
     is_staff = False
 

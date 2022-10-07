@@ -24,6 +24,7 @@
     </div>
 
     <div id="right-section">
+        {% if filter.qs %}
         <div class="cards-container">
             {% for profile in filter.qs %}
 
@@ -97,6 +98,10 @@
 
             {% endfor %}
         </div>
+        {% else %}
+        <H4>We got no profiles to show you 😅.</H4>
+        {% endif %}
+
     </div>
 
 </div>
