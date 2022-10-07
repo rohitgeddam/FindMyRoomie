@@ -86,4 +86,13 @@ Run the line below everytime you push to github.
 black --line-length 120 <filename>
 ```
 
+If you prefer using Black in VSCode, you can add the below settings in your vscode settings
+```
+{
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": ["--line-length", "120"],
+    "python.linting.enabled": true
+}
+```
+
 ## Future features/work
