@@ -8,7 +8,7 @@ from selenium.webdriver.common.keys import Keys
 
 class ProfileFormTest(LiveServerTestCase):
 
-    def testform(self):
+    def test_form(self):
         selenium = webdriver.Chrome(ChromeDriverManager().install())
 
         selenium.maximize_window()  # For maximizing window
