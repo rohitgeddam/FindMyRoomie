@@ -22,4 +22,20 @@ class ProfileForm(forms.ModelForm):
             "preference_country",
             "preference_course",
         )
- 
+        required_fields = [
+            "name",
+            "bio",
+            "birth_date",
+            "gender",
+            "diet",
+            "degree",
+            "course",
+            "hometown",
+            "country",
+            "visibility",
+            "preference_gender",
+            "preference_degree",
+            "preference_diet",
+            "preference_country",
+            "preference_course",
+        ]
