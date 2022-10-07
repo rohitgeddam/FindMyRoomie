@@ -1,9 +1,35 @@
 from django.db import models
-from django.contrib.auth.models import User
 from django.db.models.signals import post_save
 from django.dispatch import receiver
+from django.contrib.auth import get_user_model
 
 from django_countries.fields import CountryField
+
+
+from django.contrib.auth.models import AbstractUser
+
+from .managers import CustomUserManager
+from .utils import check_ncsu_email
+
+
+class CustomUser(AbstractUser):
+    username = None
+    email = models.EmailField("email address", unique=True)
+
+    USERNAME_FIELD = "email"
+    REQUIRED_FIELDS = []
+
+    objects = CustomUserManager()
+
+    def save(self, *args, **kwargs):
+        email = self.email
+
+        if not check_ncsu_email(email):
+            raise ValueError("Please use NCSU Email Id!")
+        super(CustomUser, self).save(*args, **kwargs)
+
+    def __str__(self):
+        return self.email
 
 
 class Profile(models.Model):
@@ -79,7 +105,7 @@ class Profile(models.Model):
 
     """User Profile Model"""
     name = models.CharField(max_length=100, default="")
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    user = models.OneToOneField(get_user_model(), on_delete=models.CASCADE)
     bio = models.TextField(max_length=500, blank=True)
     birth_date = models.DateField(null=True, blank=True)
     hometown = models.CharField(max_length=100, default="", blank=True)
@@ -110,17 +136,17 @@ class Profile(models.Model):
     )
 
     def __str__(self):
-        return f"{self.user.username}-profile"
+        return f"{self.user.email}-profile"
 
 
-@receiver(post_save, sender=User)
+@receiver(post_save, sender=get_user_model())
 def create_user_profile(sender, instance, created, **kwargs):
     """Create User Profile"""
     if created:
         Profile.objects.create(user=instance)
 
 
-@receiver(post_save, sender=User)
+@receiver(post_save, sender=get_user_model())
 def save_user_profile(sender, instance, **kwargs):
     """Save User Profile"""
     instance.profile.save()

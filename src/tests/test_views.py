@@ -12,7 +12,9 @@ from django.urls import reverse
 
 class TestViews(TestCase):
     def setUp(self):
-        self.response = self.client.login(username="admin", password="admin")
+        self.response = self.client.login(
+            email="admin@ncsu.edu", password="admin"
+        )
 
     # def test_profile_form_success(self):
     #     self.response = self.client.get(reverse('clients:profile'))
