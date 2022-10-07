@@ -1,12 +1,13 @@
 from django.contrib import messages
-from django.contrib.auth.forms import UserCreationForm
 from django.urls import reverse_lazy
 from django.views import generic
 from django.shortcuts import render, redirect
 from django.contrib.auth import logout
 from django.contrib.auth.decorators import login_required
-from .forms import ProfileForm
+from .forms import ProfileForm, SignUpForm
 from .models import Profile
+
+# from django.contrib.auth.forms import UserCreationForm
 
 from .filters import ProfileFilter
 from .matching import matchings
@@ -15,7 +16,7 @@ from .matching import matchings
 class SignUpView(generic.CreateView):
     """Sign up View"""
 
-    form_class = UserCreationForm
+    form_class = SignUpForm
     success_url = reverse_lazy("login")
     template_name = "registration/signup.html"
 

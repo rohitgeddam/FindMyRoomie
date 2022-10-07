@@ -1,7 +1,8 @@
 import factory
 import random
 from django.core.management.base import BaseCommand, CommandError
-from django.contrib.auth.models import User
+from django.contrib.auth import get_user_model
+
 from django.db.models.signals import post_save
 
 from base.models import Profile
@@ -10,11 +11,10 @@ from base.models import Profile
 @factory.django.mute_signals(post_save)
 class UserFactory(factory.django.DjangoModelFactory):
     class Meta:
-        model = User
+        model = get_user_model()
 
     first_name = factory.Faker("first_name")
     last_name = factory.Faker("last_name")
-    username = factory.Faker("name")
 
     is_staff = False
 

@@ -1,5 +1,31 @@
 from django import forms
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth import get_user_model
+from .utils import check_ncsu_email
+
 from .models import Profile
+
+
+class SignUpForm(UserCreationForm):
+    # username = forms.CharField(label="<b>NCSU</b> E-mail", max_length=100)
+    class Meta:
+        model = get_user_model()
+        fields = [
+            "email",
+        ]
+
+    def clean(self):
+        # data is feteched using the super function of django
+        super(SignUpForm, self).clean()
+
+        email = self.cleaned_data.get("email")
+
+        if not check_ncsu_email(email):
+            self._errors["email"] = self.error_class(
+                ["Please use a valid ncsu email id"]
+            )
+
+        return self.cleaned_data
 
 
 class ProfileForm(forms.ModelForm):
