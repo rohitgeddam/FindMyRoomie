@@ -38,7 +38,7 @@ def profile_edit(request):
         if form.is_valid():
             form.save()
             return redirect("profile")
-            
+
     person = Profile.objects.all()
     form = ProfileForm(instance=profile)
     return render(
