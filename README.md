@@ -79,7 +79,9 @@ python manage.py seed_users 10
 ## Live Server Test Demo
 Demonstration of how Live Server Test works for Profile Edit Page and Profile Page
 
-(Inserting video soon)
+
+https://user-images.githubusercontent.com/46688470/194643639-be9ded12-3d6e-4276-a873-a8fd4516abe5.mp4
+
 
 ### To run test
 
