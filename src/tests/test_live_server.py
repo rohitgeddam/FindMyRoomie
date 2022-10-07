@@ -1,16 +1,11 @@
 import time
-
 from django.test import LiveServerTestCase
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 
 
-
-# Create your tests here.
 class ProfileFormTest(LiveServerTestCase):
 
     def testform(self):
@@ -37,7 +32,7 @@ class ProfileFormTest(LiveServerTestCase):
         person_pgender = selenium.find_element(By.ID, "id_preference_gender")
         person_pdegree = selenium.find_element(By.ID, "id_preference_degree")
         person_pdiet = selenium.find_element(By.ID, "id_preference_diet")
-        person_pcountry= selenium.find_element(By.ID, "id_preference_country")
+        person_pcountry = selenium.find_element(By.ID, "id_preference_country")
         person_pcourse = selenium.find_element(By.ID, "id_preference_course")
 
         submit = selenium.find_element(By.ID, "submit_button")
