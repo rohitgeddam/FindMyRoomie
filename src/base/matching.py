@@ -11,6 +11,7 @@ WEIGHTS = {
 
 
 def similarity_score(gender, degree, diet, country, course):
+    """Calculate the similarity score"""
     score = (
         WEIGHTS["gender"] * gender
         + WEIGHTS["diet"] * diet
@@ -23,7 +24,7 @@ def similarity_score(gender, degree, diet, country, course):
 
 
 def matchings(current_user):
-
+    """Generate matches using Manhattan Distance Algorithm"""
     user_profile = Profile.objects.get(user=current_user)
     all_profiles = Profile.objects.exclude(user=current_user)
 

@@ -3,6 +3,7 @@ from .models import Profile
 
 
 class ProfileForm(forms.ModelForm):
+    """ Build the User Profile Form """
     def __init__(self, *args, **kwargs):
         super(ProfileForm, self).__init__(*args, **kwargs)
         for bound_field in self:

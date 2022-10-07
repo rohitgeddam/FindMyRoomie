@@ -13,17 +13,20 @@ from .matching import matchings
 
 
 class SignUpView(generic.CreateView):
+    """Sign up View"""
     form_class = UserCreationForm
     success_url = reverse_lazy("login")
     template_name = "registration/signup.html"
 
 
 def home(request):
+    """Render Home Page"""
     return render(request, "index.html")
 
 
 @login_required()
 def profile(request):
+    """Render profile page"""
     profile = Profile.objects.get(user=request.user)
 
     return render(request, "pages/profile.html", {"profile": profile})
@@ -31,6 +34,7 @@ def profile(request):
 
 @login_required()
 def profile_edit(request):
+    """Render Edit Profile Page"""
     profile = Profile.objects.get(user=request.user)
 
     if request.method == "POST":
@@ -51,6 +55,7 @@ def profile_edit(request):
 
 @login_required()
 def findpeople(request):
+    """Render findpeople page"""
     qs = Profile.objects.filter(visibility=True)
     f = ProfileFilter(request.GET, queryset=qs)
     return render(request, "pages/findpeople.html", {"filter": f})
@@ -58,6 +63,7 @@ def findpeople(request):
 
 @login_required()
 def myroom(request):
+    """Render Myroom page based on Profile Completion """
     if not request.user.profile.is_profile_complete:
         messages.error(request, "Please complete your profile first!")
         return redirect("profile_edit")
@@ -68,6 +74,7 @@ def myroom(request):
 
 
 def user_logout(request):
+    """Log out and redirect to Home Page"""
     logout(request)
     messages.error(request, "Logged out successfully!")
     return redirect("home")

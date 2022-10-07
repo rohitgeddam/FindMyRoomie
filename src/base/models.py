@@ -7,6 +7,7 @@ from django_countries.fields import CountryField
 
 
 class Profile(models.Model):
+    """Model for User Profile"""
     GENDER_MALE = "M"
     GENDER_FEMALE = "F"
     GENDER_OTHER = "O"
@@ -113,10 +114,12 @@ class Profile(models.Model):
 
 @receiver(post_save, sender=User)
 def create_user_profile(sender, instance, created, **kwargs):
+    """Create User Profile"""
     if created:
         Profile.objects.create(user=instance)
 
 
 @receiver(post_save, sender=User)
 def save_user_profile(sender, instance, **kwargs):
+    """Save User Profile"""
     instance.profile.save()
