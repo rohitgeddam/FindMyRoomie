@@ -21,6 +21,8 @@ My Profile
             <img src=" {% static 'img/profilepage.png' %}" class="card-img-top">
             <div class="card-body">
                 <h5 class="card-title">{{profile.name}}</h5>
+                <h5 class="card-title">{{profile.user.email}}</h5>
+
             </div>
             <div class="card-body">
                 <a href="{% url 'profile_edit' %}" class="card-link">Edit Profile</a>
