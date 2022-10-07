@@ -78,9 +78,11 @@ python manage.py seed_users 10
 
 ## Live Server Test Demo
 Demonstration of how Live Server Test works for Profile Edit Page and Profile Page
+
 (Inserting video soon)
 
-#To run test
+### To run test
+
 In a terminal:
 
 `cd src`
