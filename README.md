@@ -112,4 +112,8 @@ If you prefer using Black in VSCode, you can add the below settings in your vsco
 }
 ```
 
+### Pre Commit Hooks for Black Code formatting and Flake8 Linting
+* run  `pre-commit install`
+* Now everytime you commit, Black and Flake8 will run automatically and will not allow you to push if the code standards are not met.
+
 ## Future features/work
