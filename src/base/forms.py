@@ -56,7 +56,6 @@ class ProfileForm(forms.ModelForm):
             "preference_gender",
             "preference_degree",
             "preference_diet",
-            "preference_country",
             "preference_course",
         )
         required_fields = [
@@ -73,7 +72,6 @@ class ProfileForm(forms.ModelForm):
             "preference_gender",
             "preference_degree",
             "preference_diet",
-            "preference_country",
             "preference_course",
         ]
         widgets = {
