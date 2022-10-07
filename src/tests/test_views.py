@@ -6,6 +6,7 @@ from base.views import home, profile, findpeople, myroom
 # import mock
 import unittest
 
+import json
 
 class TestViews(TestCase):
     def setUp(self):

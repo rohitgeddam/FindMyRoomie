@@ -4,13 +4,21 @@
 ![CodeQL](https://github.com/rohitgeddam/FindMyRoomie/workflows/CodeQL/badge.svg)
 [![code_size](https://img.shields.io/github/languages/code-size/rohitgeddam/CSC510_PROJECT1)](https://github.com/rohitgeddam/CSC510_PROJECT1) 
 [![repo_size](https://img.shields.io/github/repo-size/rohitgeddam/CSC510_PROJECT1)](https://github.com/rohitgeddam/CSC510_PROJECT1)</br>
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7061868.svg)](https://doi.org/10.5281/zenodo.7061868)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7155519.svg)](https://doi.org/10.5281/zenodo.7155519)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub issues](https://img.shields.io/github/issues/rohitgeddam/FindMyRoomie.svg)](https://GitHub.com/rohitgeddam/FindMyRoomie/issues/)
 [![GitHub issues-closed](https://img.shields.io/github/issues-closed/rohitgeddam/FindMyRoomie.svg)](https://GitHub.com/rohitgeddam/FindMyRoomie/issues?q=is%3Aissue+is%3Aclosed)
 ![GitHub version](https://img.shields.io/github/v/release/rohitgeddam/FindMyRoomie)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
 
 # FindMyRoomie 👯‍♂️
+(Write about problem statement and aim. Provide a clear, high-level overview of the software. Describe the type of user who should use your software. make note that the software is available for free).
+
+## Software commands and functions
+
+## Features of the software
+(Manhattan distance - similarity score)
 
 ## How to setup the project on your local machine?
 1. Download a free Python IDE such as PyCharm, Visual Studio Code, Spyder, etc. from online.
@@ -69,3 +77,22 @@ python manage.py seed_users 10
 ```
 
 ## Live Server Test Demo
+
+## Black - Code Formatter
+
+We are using Black code formatter to format our code before pushing to github.
+Run the line below everytime you push to github.
+```
+black --line-length 120 <filename>
+```
+
+If you prefer using Black in VSCode, you can add the below settings in your vscode settings
+```
+{
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": ["--line-length", "120"],
+    "python.linting.enabled": true
+}
+```
+
+## Future features/work
