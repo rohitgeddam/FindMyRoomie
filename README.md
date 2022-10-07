@@ -16,6 +16,8 @@
 
 FindMyRoomie is a Web Application created by NC State students that allows anyone (literally anyone) to find roomates of their preference. The software has functionalities that allows you to filter your ideal roommate. But if that is too much work for you, we also provide roommate suggestions based on your preferences! The software is free for use to anyone, and we also welcome any contributions to improve our software application (Please read Contributions.md for more details). If you would like to cite our repository, please see the Citations.ciff. 
 
+Check this website to write about high level design in README.md: https://ipwithease.com/what-is-a-high-level-design-hld/
+
 The components of the application include:
 1. SignUp - Allows new users to register to our roommate finding portal.
 2. LogIn - Allows existing users to continue their roommate search.
