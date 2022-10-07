@@ -3,7 +3,6 @@ asgiref==3.5.2
 autopep8==1.7.0
 Babel==2.10.3
 black==21.12b0
-brunette==0.2.7
 certifi==2022.9.24
 charset-normalizer==2.1.1
 click==8.1.3
