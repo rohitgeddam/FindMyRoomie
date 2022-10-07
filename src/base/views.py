@@ -25,24 +25,26 @@ def home(request):
 @login_required()
 def profile(request):
     profile = Profile.objects.get(user=request.user)
- 
+
     return render(request, "pages/profile.html", {"profile": profile})
+
 
 @login_required()
 def profile_edit(request):
     profile = Profile.objects.get(user=request.user)
- 
+
     if request.method == "POST":
         form = ProfileForm(request.POST, instance=profile)
         if form.is_valid():
             form.save()
             return redirect("profile")
- 
+
     person = Profile.objects.all()
     form = ProfileForm(instance=profile)
     return render(
         request, "pages/profile_edit.html", {"form": form, "profiles": person}
     )
+
 
 @login_required()
 def findpeople(request):
