@@ -1,13 +1,22 @@
-from django.test import TestCase, Client
-from django.urls import reverse
-
-# from base.views import home, profile, findpeople, myroom
-# from unittest.mock import patch
-
-# import json
+from django.test import SimpleTestCase, TestCase, Client
+from django.urls import reverse, resolve
+from base.views import home, profile, findpeople, myroom
+from unittest.mock import patch, MagicMock
+import mock
+import unittest
 
 
 class TestViews(TestCase):
+
+    def setUp(self):
+        self.response = self.client.login(username='admin',
+        password='admin')
+
+    # def test_profile_form_success(self):
+    #     self.response = self.client.get(reverse('clients:profile'))
+    #     self.assertTrue(200, self.response.status_code)
+    #     self.assertTemplateUsed(self.response, 'clients/profile_form.html')
+
     def test_home(self):
         client = Client()
         response = client.get(reverse("home"))
@@ -15,24 +24,19 @@ class TestViews(TestCase):
         self.assertEquals(response.status_code, 200)
         self.assertTemplateUsed(response, "index.html")
 
-    # def test_profile(self):
-    #     client = Client()
-    #     response = client.post(reverse("profile"))
+    def test_profile(self):
+        self.client = Client()
+        self.response = self.client.get(reverse("profile"))
 
-    #     self.assertEquals(response.status_code, 200)
-    #     self.assertTemplateUsed(response, "pages/profile.html")
+        self.assertTrue(200, self.response.status_code)
+        #self.assertTemplateUsed(self.response, "pages/profile.html")
 
-    #     with mock.patch('profiles.views.ProfileForm.is_valid') as mock_profile_form:
-    #         mock_profile_form.return_value = True
-    #         request = self.factory.post(reverse("profile"), data={})
-    #         response = profile(request)
+    def test_findpeople(self):
+        self.client = Client()
+        self.response = self.client.get(reverse("findpeople"))
 
-    # def test_findpeople(self):
-    #     client = Client()
-    #     response = client.get(reverse("findpeople"))
-
-    #     self.assertEquals(response.status_code, 200)
-    #     self.assertTemplateUsed(response, "pages/findpeople.html")
+        self.assertTrue(200, self.response.status_code)
+        #self.assertTemplateUsed(self.response, "pages/findpeople.html")
 
     # def test_myroom(self):
     #     client = Client()
