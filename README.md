@@ -14,17 +14,17 @@
 
 # FindMyRoomie 👯‍♂️
 
-FindMyRoomie is a Web Application created by NC State students that allows anyone (literally anyone) to find roomates of their preference. The software has functionalities that allows you to filter your ideal roommate. But if that is too much work for you, we also provide roommate suggestions based on your preferences!
+FindMyRoomie is a Web Application created by NC State students that allows anyone (literally anyone) to find roomates of their preference. The software has functionalities that allows you to filter your ideal roommate. But if that is too much work for you, we also provide roommate suggestions based on your preferences! The software is free for use to anyone, and we also welcome any contributions to improve our software application (Please read Contributions.md for more details). If you would like to cite our repository, please see the Citations.ciff. 
 
 The components of the application include:
 1. SignUp - Allows new users to register to our roommate finding portal.
 2. LogIn - Allows existing users to continue their roommate search.
-3. Homepage - A page that has a happy Mr. and Mrs. Wolf in the background, just like you and your roommate should be.
+3. Homepage - A page that has a happy Mr. and Mrs. Wolf enjoying each others company in the background, just like you and your roommates would be 
 4. My Profile - Allows you to express a little about who you are, and what you want from your roommate.
 5. Find people - Lists the people who are looking for roommates just like you. The "Wolf Filter" lets you to filter candidates based on your preferences.
 6. My room - Lists your roommates (feature not available yet), and also provides suggestions based on your preferences.  
 
-(Write about problem statement and aim. Provide a clear, high-level overview of the software. Describe the type of user who should use your software. make note that the software is available for free).
+#### (Write about problem statement and aim. Provide a clear, high-level overview of the software. Describe the type of user who should use your software. make note that the software is available for free).
 
 ## Software commands and functions
 
