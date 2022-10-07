@@ -67,3 +67,5 @@ python manage.py seed_users <number of fake instances>
 # creates 10 fake users
 python manage.py seed_users 10
 ```
+
+## Live Server Test Demo
