@@ -16,6 +16,10 @@ class ProfileForm(forms.ModelForm):
             "hometown",
             "country",
             "visibility",
+            "preference_gender",
+            "preference_degree",
+            "preference_diet",
+            "preference_country",
+            "preference_course",
         )
-
  
