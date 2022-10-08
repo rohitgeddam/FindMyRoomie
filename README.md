@@ -16,6 +16,9 @@
 
 FindMyRoomie is a Web Application that provides a platform for NC State students to find roomates of their preference. The software has functionalities that allows you to filter and choose your ideal roommate. But if that is too much work for you, we also provide roommate suggestions based on your preferences! The software is free for use to anyone, and we also welcome any contributions to improve our software application (Please read our [Contributions.md](https://github.com/rohitgeddam/FindMyRoomie/blob/main/CONTRIBUTING.md) file for more details). If you would like to cite our repository, please check our [Citations.cff](https://github.com/rohitgeddam/FindMyRoomie/blob/main/CITATION.cff) file. 
 
+![roommate-rachel](https://user-images.githubusercontent.com/52373569/194727868-201a036a-c400-46c4-b359-98777a92ce86.gif)
+
+
 Check this website to write about high level design in README.md: https://ipwithease.com/what-is-a-high-level-design-hld/
 
 The components of the application include:
@@ -163,3 +166,5 @@ Shandler Mason - samason4@ncsu.edu </br>
 
 ## License:
 Distibuted under the MIT License. See `LICENSE` for more information
+
+![jim-parsons-sheldon-cooper](https://user-images.githubusercontent.com/52373569/194727890-48c53f9d-f351-433e-82bf-df33d7945b25.gif)
