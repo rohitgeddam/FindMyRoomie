@@ -21,7 +21,7 @@ Check this website to write about high level design in README.md: https://ipwith
 The components of the application include:
 1. SignUp - Allows new users to register to our roommate finding portal.
 2. LogIn - Allows existing users to continue their roommate search.
-3. Homepage - A page that has a happy Mr. and Mrs. Wolf enjoying each others company in the background, just like you and your roommates would be 
+3. Homepage - A page that has a happy Mr. and Mrs. Wolf enjoying each others company in the background, just like you and your roommates would be. 
 4. My Profile - Allows you to express a little about who you are, and what you want from your roommate.
 5. Find people - Lists the people who are looking for roommates just like you. The "Wolf Filter" lets you to filter candidates based on your preferences.
 6. My room - Lists your roommates (feature not available yet), and also provides suggestions based on your preferences.  
