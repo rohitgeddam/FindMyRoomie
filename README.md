@@ -14,14 +14,14 @@
 
 # FindMyRoomie 👯‍♂️
 
-FindMyRoomie is a Web Application that provides a platform for NC State students to find roommates of their preference. The stakes are high when it comes to finding your best roommate because this relationship starts with a living relationship :sweat_smile:  We understand how stressful this can be. FindMyRoomie is a one-stop solution to your roommate's finding needs. Our software has functionalities that allow you to filter and choose your ideal roommate. But if that is too much work for you, we also provide roommate suggestions based on your preferences! Any NC State student could  sign up with their NC State Email ID from any corner of the world in our website and begin searching for roomates. 
-
-The software is free for use to anyone, and we also welcome any contributions to improve our software application (Please read our [Contributions.md](https://github.com/rohitgeddam/FindMyRoomie/blob/main/CONTRIBUTING.md) file for more details). If you would like to cite our repository, please check our [Citations.cff](https://github.com/rohitgeddam/FindMyRoomie/blob/main/CITATION.cff) file. 
-
+FindMyRoomie is a Web Application that provides a platform for NC State students to find roommates of their preference. The stakes are high when it comes to finding your best roommate because this relationship starts with a living relationship :sweat_smile:  We understand how stressful this can be. FindMyRoomie is a one-stop solution to your roommate finding needs. Our software has functionalities that allow you to filter and choose your ideal roommate. But if that is too much work for you, we also provide roommate suggestions based on your preferences! Any NC State student could sign up with their NC State Email ID from any corner of the world on our website and begin searching for roommates. 
 
 <p align = "center">
 <img width = "400", src = "https://user-images.githubusercontent.com/52373569/194727868-201a036a-c400-46c4-b359-98777a92ce86.gif">
 </p>
+
+The software is free for use to anyone, and we also welcome any contributions to improve our software (Please read our [CONTRIBUTING.md](https://github.com/rohitgeddam/FindMyRoomie/blob/main/CONTRIBUTING.md) file for more details). If you would like to cite our repository, please check our [CITATION.cff](https://github.com/rohitgeddam/FindMyRoomie/blob/main/CITATION.cff) file. 
+
 
 Check this website to write about high level design in README.md: https://ipwithease.com/what-is-a-high-level-design-hld/
 
@@ -29,10 +29,10 @@ The components of the application include:
 
 1. SignUp - Allows new users to register to our roommate finding portal.
 2. LogIn - Allows existing users to continue their roommate search.
-3. Homepage - A page that has a happy Mr. and Mrs. Wolf enjoying each others company in the background, just like you and your roommates would be. 
-4. My Profile - Allows you to express a little about who you are, and what you want from your roommate.
-5. Find people - Lists the people who are looking for roommates just like you. The "Wolf Filter" lets you to filter candidates based on your preferences.
-6. My room - Lists your roommates (feature not available yet), and also provides suggestions based on your preferences.  
+3. Homepage - A page with a happy Mr. and Mrs. Wolf enjoying each other's company in the background, just like you and your roommates would be. 
+4. My Profile - Allows you to express a little about who you are and what you want from your roommate.
+5. Find people - Lists the people looking for roommates just like you. The "Wolf Filter" lets you filter candidates based on your preferences.
+6. My room - Lists your roommates (feature not available yet) and  provides suggestions based on your preferences.  
 
 The above features are explained in greater detail below.
 
@@ -45,13 +45,13 @@ The above features are explained in greater detail below.
 Pages: 
 
 Visibility - 
-Roomate suggestion - Similarity score
+Roommate suggestion - Similarity score
 (Manhattan distance - similarity score)
 
 ## How to setup the project on your local machine?
-1. Download a free Python IDE such as PyCharm, Visual Studio Code, Spyder, etc. from online.
+1. Download a free Python IDE online, such as PyCharm, Visual Studio Code, Spyder, etc.
 
-2. In the IDE terminal copy and paste the command: 
+2. In the IDE terminal, copy and paste the command: 
 
    `git clone https://github.com/rohitgeddam/CSC510_PROJECT1.git`
 
@@ -70,11 +70,11 @@ Roomate suggestion - Similarity score
    
    `pip install -r requirements.txt`
 
-   If you get an error do `pip install django`. 
+   If you get an error, do `pip install django`. 
    
    If you get this message "ModuleNotFoundError: No module named 'crispy_forms'" enter the command `pip install django-crispy-forms`
 
-4. To run virtual environment
+4. To run the virtual environment
 
    Type into the terminal:
    
@@ -83,7 +83,7 @@ Roomate suggestion - Similarity score
    python manage.py runserver
    ```
    
-Click the link next to "Starting development server at " to view the project
+Click the link next to "Starting development server at " to view the project.
 
 ## How to create a new webpage
 
@@ -102,7 +102,7 @@ Django's way of propagating changes you make to your models (adding a field, del
 ```
 python manage.py seed_users <number of fake instances>
 
-# creates 10 fake users
+# creates ten fake users
 python manage.py seed_users 10
 ```
 
@@ -117,7 +117,7 @@ python manage.py seed_users 10
 ### Flake8 - Code Linting
 
 We are using Flake8 for linting and syntax checking.
-Use flake8 before you push code to github.
+Use flake8 before you push code to GitHub.
 config file present in `setup.cfg`
 
 ```
@@ -126,14 +126,15 @@ flake8 <directory>
 
 ### Black - Code Formatter
 
-We are using Black code formatter to format our code before pushing to github.
-Run the line below everytime you push to github.
+We are using the Black code formatter to format our code before pushing it to GitHub.
+Run the line below everytime you push to GitHub.
 config file present in `pyproject.toml`
 ```
 black --line-length 120 <filename>
 ```
 
-If you prefer using Black in VSCode, you can add the below settings in your vscode settings
+If you prefer using Black in VSCode, you can add the below settings in your vscode settings:
+
 ```
 {
     "python.formatting.provider": "black",
@@ -146,15 +147,15 @@ If you prefer using Black in VSCode, you can add the below settings in your vsco
 
 ### 1. What personal details of yours would you be sharing with us and why?
 
-To aid you in your roommate search, to help others find you and also to provide you relevant roommate suggestions, you will be asked to share your "Name", "Email", "Date of Birth", "Gender", "Diet", "Hometown", "Degree and Course", "Country of Origin". You are free to include anything in your bio (which could include your instagram ID and other social media handles). 
+To aid you in your roommate search, to help others find you, and also to provide you with relevant roommate suggestions, you will be asked to share your "Name", "Email", "Date of Birth", "Gender", "Diet", "Hometown", "Degree and Course", "Country of Origin". You are free to include anything in your bio (which could include your Instagram ID and other social media handles). 
 
-### 2. Will we be storing your details and if so how would we use them?
+### 2. Will we be storing your details, and how will we use them?
 
-Yes, we will be storing them in our database. This will ONLY be used by us to match you with potential roommates and to improve our software. 
+Yes, we will be storing them in our database. We will ONLY use this to match you with potential roommates and improve our software. 
 
-### 3. Will we share it with any third-party instituitons?
+### 3. Will we share it with any third-party institutions?
 
-NO. Your data is safe with us and we will not be sharing/lending/renting it with any outside instituitons/personnel.
+NO. Your data is safe with us, and we will not be sharing/lending/renting it with any outside institutions/personnel.
 
 ### 4. How long will you store my data?
 
@@ -162,7 +163,7 @@ We retain your information as long as needed to provide you with our services.
 
 ### 5. How to remove my data from the website?
 
-Our current release does not provide you a mechanism to remove your data from our website. You are always free to turn off your visibility. If you still feel the need to remove your data from our website, kindly email one of the contributors from your registered Email ID, and we will take care of the rest!
+Our current release does not provide you with a mechanism to remove your data directly from our website. You are always free to turn off your visibility. If you still feel the need to remove your data from our website, kindly email one of the contributors from your registered Email ID, and we will take care of the rest!
 
 ## Technology Used
 -   `Python 3.7+`
@@ -171,7 +172,7 @@ Our current release does not provide you a mechanism to remove your data from ou
 -   `CSS3`
 
 ## Future features/work:
-1. Include Apartment in the profile section. Along with the budget of each person.
+1. Include the Apartment in the profile section. Along with the budget of each person.
 2. Include features of MyRoom.
 3. Add leasing/subleasing apartments.
 4. Chat room to chat with other users. 
@@ -184,7 +185,10 @@ Sai Krishna Teja Varma - smanthe@ncsu.edu </br>
 Shandler Mason - samason4@ncsu.edu </br>
 
 ## License:
-Distibuted under the MIT License. See `LICENSE` for more information
+Distributed under the MIT License. See `LICENSE` for more information
+
+-----
+
 <p align = "center">
 <img width = "450" src = "https://user-images.githubusercontent.com/52373569/194727890-48c53f9d-f351-433e-82bf-df33d7945b25.gif">
 </p>
