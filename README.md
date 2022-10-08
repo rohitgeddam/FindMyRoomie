@@ -14,7 +14,7 @@
 
 # FindMyRoomie 👯‍♂️
 
-FindMyRoomie is a Web Application that provides a platform for NC State students to find roommates of their preference. The stakes are high when it comes to finding your best roommate because this relationship starts with a living relationship :sweat_smile:  We understand how stressful this can be. FindMyRoomie is a one-stop solution to your roommate's finding needs. Our software has functionalities that allow you to filter and choose your ideal roommate. But if that is too much work for you, we also provide roommate suggestions based on your preferences! Any NC State student could  sign up with their NC State Email ID from any corner of the world in our website and begin searching for roomates.
+FindMyRoomie is a Web Application that provides a platform for NC State students to find roommates of their preference. The stakes are high when it comes to finding your best roommate because this relationship starts with a living relationship :sweat_smile:  We understand how stressful this can be. FindMyRoomie is a one-stop solution to your roommate's finding needs. Our software has functionalities that allow you to filter and choose your ideal roommate. But if that is too much work for you, we also provide roommate suggestions based on your preferences! Any NC State student could  sign up with their NC State Email ID from any corner of the world in our website and begin searching for roomates. 
 
 The software is free for use to anyone, and we also welcome any contributions to improve our software application (Please read our [Contributions.md](https://github.com/rohitgeddam/FindMyRoomie/blob/main/CONTRIBUTING.md) file for more details). If you would like to cite our repository, please check our [Citations.cff](https://github.com/rohitgeddam/FindMyRoomie/blob/main/CITATION.cff) file. 
 
@@ -26,12 +26,15 @@ The software is free for use to anyone, and we also welcome any contributions to
 Check this website to write about high level design in README.md: https://ipwithease.com/what-is-a-high-level-design-hld/
 
 The components of the application include:
+
 1. SignUp - Allows new users to register to our roommate finding portal.
 2. LogIn - Allows existing users to continue their roommate search.
 3. Homepage - A page that has a happy Mr. and Mrs. Wolf enjoying each others company in the background, just like you and your roommates would be. 
 4. My Profile - Allows you to express a little about who you are, and what you want from your roommate.
 5. Find people - Lists the people who are looking for roommates just like you. The "Wolf Filter" lets you to filter candidates based on your preferences.
 6. My room - Lists your roommates (feature not available yet), and also provides suggestions based on your preferences.  
+
+The above features are explained in greater detail below.
 
 #### (Write about problem statement and aim. Provide a clear, high-level overview of the software. Describe the type of user who should use your software. make note that the software is available for free).
 
@@ -161,15 +164,17 @@ We retain your information as long as needed to provide you with our services.
 
 Our current release does not provide you a mechanism to remove your data from our website. You are always free to turn off your visibility. If you still feel the need to remove your data from our website, kindly email one of the contributors from your registered Email ID, and we will take care of the rest!
 
-## Future features/work:
-1. Include Apartment in the profile section. Along with the budget of each person.
-2. Include features of MyRoom.
-
 ## Technology Used
 -   `Python 3.7+`
 -   `Django 4.1.2`
 -   `HTML5`
 -   `CSS3`
+
+## Future features/work:
+1. Include Apartment in the profile section. Along with the budget of each person.
+2. Include features of MyRoom.
+3. Add leasing/subleasing apartments.
+4. Chat room to chat with other users. 
 
 ## Contact us:
 Rohit Geddam - rgeddam@ncsu.edu </br>
