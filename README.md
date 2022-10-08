@@ -16,8 +16,9 @@
 
 FindMyRoomie is a Web Application that provides a platform for NC State students to find roomates of their preference. The software has functionalities that allows you to filter and choose your ideal roommate. But if that is too much work for you, we also provide roommate suggestions based on your preferences! The software is free for use to anyone, and we also welcome any contributions to improve our software application (Please read our [Contributions.md](https://github.com/rohitgeddam/FindMyRoomie/blob/main/CONTRIBUTING.md) file for more details). If you would like to cite our repository, please check our [Citations.cff](https://github.com/rohitgeddam/FindMyRoomie/blob/main/CITATION.cff) file. 
 
-![roommate-rachel](https://user-images.githubusercontent.com/52373569/194727868-201a036a-c400-46c4-b359-98777a92ce86.gif)
-
+<p align = "center">
+<img width = "400", src = "https://user-images.githubusercontent.com/52373569/194727868-201a036a-c400-46c4-b359-98777a92ce86.gif">
+</p>
 
 Check this website to write about high level design in README.md: https://ipwithease.com/what-is-a-high-level-design-hld/
 
@@ -68,10 +69,11 @@ Roomate suggestion - Similarity score
 4. To run virtual environment
 
    Type into the terminal:
-
-   `cd src`
-
-   `python manage.py runserver`
+   
+   ```
+   cd src 
+   python manage.py runserver
+   ```
    
 Click the link next to "Starting development server at " to view the project
 
@@ -82,9 +84,10 @@ Read the instructions starting from "Here we create the varied pages and assign 
 ## After adding another field to Model
 Django's way of propagating changes you make to your models (adding a field, deleting a model, etc.) into your database schema.
 
-   `py manage.py makemigrations`
-   
-   `py manage.py migrate`
+   ```
+   py manage.py makemigrations
+   py manage.py migrate
+   ```
 
 ## Populate fake data for testing
 
@@ -133,23 +136,23 @@ If you prefer using Black in VSCode, you can add the below settings in your vsco
 
 ## Privacy Notice
 
-1. What personal details of yours would you be sharing with us and why?
+### 1. What personal details of yours would you be sharing with us and why?
 
 To aid you in your roommate search, to help others find you and also to provide you relevant roommate suggestions, you will be asked to share your "Name", "Email", "Date of Birth", "Gender", "Diet", "Hometown", "Degree and Course", "Country of Origin". You are free to include anything in your bio (which could include your instagram ID and other social media handles). 
 
-2. Will we be storing your details and if so how would we use them?
+### 2. Will we be storing your details and if so how would we use them?
 
 Yes, we will be storing them in our database. This will ONLY be used by us to match you with potential roommates and to improve our software. 
 
-3. Will we share it with any third-party instituitons?
+### 3. Will we share it with any third-party instituitons?
 
 NO. Your data is safe with us and we will not be sharing/lending/renting it with any outside instituitons/personnel.
 
-4. How long will you store my data?
+### 4. How long will you store my data?
 
 We retain your information as long as needed to provide you with our services.
 
-5. How to remove my data from the website?
+### 5. How to remove my data from the website?
 
 Our current release does not provide you a mechanism to remove your data from our website. You are always free to turn off your visibility. If you still feel the need to remove your data from our website, kindly email one of the contributors from your registered Email ID, and we will take care of the rest!
 
@@ -172,5 +175,6 @@ Shandler Mason - samason4@ncsu.edu </br>
 
 ## License:
 Distibuted under the MIT License. See `LICENSE` for more information
-
-![jim-parsons-sheldon-cooper](https://user-images.githubusercontent.com/52373569/194727890-48c53f9d-f351-433e-82bf-df33d7945b25.gif)
+<p align = "center">
+<img width = "450" src = "https://user-images.githubusercontent.com/52373569/194727890-48c53f9d-f351-433e-82bf-df33d7945b25.gif">
+</p>
