@@ -132,7 +132,7 @@ If you prefer using Black in VSCode, you can add the below settings in your vsco
 
 1. What personal details of yours would you be sharing with us and why?
 
-To aid you in your roommate search, to help others find you and also to provide you relevant roommate suggestions, you will be asked to share your "Name", "Email", "Date of Birth", "Gender", "Diet", "Hometown", "Degree and Course", "Country of Origin". You are free to include anything in your bio (which could include your instagram handles and other social media handles). 
+To aid you in your roommate search, to help others find you and also to provide you relevant roommate suggestions, you will be asked to share your "Name", "Email", "Date of Birth", "Gender", "Diet", "Hometown", "Degree and Course", "Country of Origin". You are free to include anything in your bio (which could include your instagram ID and other social media handles). 
 
 2. Will we be storing your details and if so how would we use them?
 
