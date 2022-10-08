@@ -27,5 +27,3 @@ And if you don't have GNU gettext, check this |taskbuster_section|.
  
     <a href="http://marinamele.com/taskbuster-django-tutorial/internationalization-localization-languages-time-zones" target="_blank">TaskBuster tutorial section</a>
  
- 
-**Ready!?** Continue to the :doc:`quick_start`!

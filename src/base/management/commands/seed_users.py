@@ -15,6 +15,8 @@ real_faker = RealFaker()
 
 @factory.django.mute_signals(post_save)
 class UserFactory(factory.django.DjangoModelFactory):
+    """Faker Factory for User model"""
+
     class Meta:
         model = get_user_model()
 
@@ -26,6 +28,8 @@ class UserFactory(factory.django.DjangoModelFactory):
 
 
 class ProfileFactory(factory.django.DjangoModelFactory):
+    """Faker Factory for Profile Model"""
+
     class Meta:
         model = Profile
 
@@ -38,6 +42,8 @@ class ProfileFactory(factory.django.DjangoModelFactory):
 
 
 class Command(BaseCommand):
+    """Django manage.py command"""
+
     help = "Seed models using fake data"
 
     def add_arguments(self, parser):
