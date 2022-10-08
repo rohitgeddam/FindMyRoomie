@@ -157,6 +157,12 @@ Our current release does not provide you a mechanism to remove your data from ou
 1. Include Apartment in the profile section. Along with the budget of each person.
 2. Include features of MyRoom.
 
+## Technology Used
+-   `Python 3.7+`
+-   `Django 4.1.2`
+-   `HTML5`
+-   `CSS3`
+
 ## Contact us:
 Rohit Geddam - rgeddam@ncsu.edu </br>
 Arun Kumar Ramesh - arames25@ncsu.edu </br> 
