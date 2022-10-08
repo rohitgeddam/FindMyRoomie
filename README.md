@@ -14,7 +14,7 @@
 
 # FindMyRoomie 👯‍♂️
 
-FindMyRoomie is a Web Application created by NC State students that allows anyone (literally anyone) to find roomates of their preference. The software has functionalities that allows you to filter your ideal roommate. But if that is too much work for you, we also provide roommate suggestions based on your preferences! The software is free for use to anyone, and we also welcome any contributions to improve our software application (Please read Contributions.md for more details). If you would like to cite our repository, please see the Citations.ciff. 
+FindMyRoomie is a Web Application that provides a platform for NC State students to find roomates of their preference. The software has functionalities that allows you to filter and choose your ideal roommate. But if that is too much work for you, we also provide roommate suggestions based on your preferences! The software is free for use to anyone, and we also welcome any contributions to improve our software application (Please read our [Contributions.md](https://github.com/rohitgeddam/FindMyRoomie/blob/main/CONTRIBUTING.md) file for more details). If you would like to cite our repository, please check our [Citations.cff](https://github.com/rohitgeddam/FindMyRoomie/blob/main/CITATION.cff) file. 
 
 Check this website to write about high level design in README.md: https://ipwithease.com/what-is-a-high-level-design-hld/
 
@@ -129,17 +129,34 @@ If you prefer using Black in VSCode, you can add the below settings in your vsco
 ```
 
 ## Privacy Notice
-What personal details of yours are we storing?
 
-How do we use your personal details?
+1. What personal details of yours would you be sharing with us and why?
 
-Will we share it with any third-party agencies?
+To aid you in your roommate search, to help others find you and also to provide you relevant roommate suggestions, you will be asked to share your "Name", "Email", "Date of Birth", "Gender", "Diet", "Hometown", "Degree and Course", "Country of Origin". You are free to include anything in your bio (which could include your instagram handles and other social media handles). 
 
-How long will we store your personal data?
+2. Will we be storing your details and if so how would we use them?
 
+Yes, we will be storing them in our database. This will ONLY be used by us to match you with potential roommates and to improve our software. 
+
+3. Will we share it with any third-party instituitons?
+
+NO. Your data is safe with us and we will not be sharing/lending/renting it with any outside instituitons/personnel.
+
+4. How long will you store my data?
+
+We retain your information as long as needed to provide you with our services.
+
+5. How to remove my data from the website?
+
+Our current release does not provide you a mechanism to remove your data from our website. You are always free to turn off your visibility. If you still feel the need to remove your data from our website, kindly email one of the contributors from your registered Email ID, and we will take care of the rest!
 
 ## Future features/work:
 1. Include Apartment in the profile section. Along with the budget of each person.
 2. Include features of MyRoom.
 
 ## Contact us:
+Rohit Geddam - rgeddam@ncsu.edu </br>
+Arun Kumar Ramesh - arames25@ncsu.edu </br> 
+Kiron Jayesh - kjayesh@ncsu.edu </br>
+Sai Krishna Teja Varma - smanthe@ncsu.edu </br>
+Shandler Mason - samason4@ncsu.edu </br>
