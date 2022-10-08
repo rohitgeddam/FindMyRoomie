@@ -69,10 +69,6 @@ class ProfileForm(forms.ModelForm):
             "course",
             "hometown",
             "country",
-            "preference_gender",
-            "preference_degree",
-            "preference_diet",
-            "preference_course",
         ]
         widgets = {
             "birth_date": forms.DateInput(
