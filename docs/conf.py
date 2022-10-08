@@ -31,7 +31,7 @@ django.setup()
 
 project = "FindMyRoomie"
 copyright = "2022, Rohit Geddam"
-author = "Rohit Geddam"
+author = "Rohit Geddam, Arun Kuma Ramesh, Kiron Jayesh, Shandler Mason and Sai Krishna Teja Varma Manthena"
 
 # The full version, including alpha/beta/rc tags
 release = "v2.0"

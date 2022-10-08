@@ -9,8 +9,8 @@
 Welcome to FindMyRoomie's documentation!
 ========================================
 
-This piece of software is intended to help the lonely wolves find their roomates.
-Moving to a new country can be frustrationg, we built this app to reduce atleaset
+This piece of software is intended to help the lonely wolves find their roommates.
+Moving to a new city or country for your study can be frustrationg, we built this application to reduce atleast
 some of your worries by matching you with a roommate of your choice.
 
 .. toctree::
