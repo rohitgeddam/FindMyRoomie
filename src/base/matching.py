@@ -69,8 +69,9 @@ def matchings(current_user):
         if score > 0.5:
             match_list.append((profile, score))
 
-        match_list.sort(key=lambda x: x[1], reverse=True)
-        for m in match_list:
-            matches.append(m[0])
+    match_list.sort(key=lambda x: x[1], reverse=True)
+
+    for m in match_list:
+        matches.append(m[0])
 
     return matches
