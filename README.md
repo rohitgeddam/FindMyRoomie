@@ -160,3 +160,6 @@ Arun Kumar Ramesh - arames25@ncsu.edu </br>
 Kiron Jayesh - kjayesh@ncsu.edu </br>
 Sai Krishna Teja Varma - smanthe@ncsu.edu </br>
 Shandler Mason - samason4@ncsu.edu </br>
+
+## License:
+Distibuted under the MIT License. See `LICENSE` for more information
