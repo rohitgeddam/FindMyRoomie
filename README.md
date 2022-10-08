@@ -31,6 +31,9 @@ The components of the application include:
 ## Software commands and functions
 
 ## Features of the software
+
+Visibility - 
+Roomate suggestion - Similarity score
 (Manhattan distance - similarity score)
 
 ## How to setup the project on your local machine?
@@ -125,6 +128,18 @@ If you prefer using Black in VSCode, you can add the below settings in your vsco
 }
 ```
 
+## Privacy Notice
+What personal details of yours are we storing?
+
+How do we use your personal details?
+
+Will we share it with any third-party agencies?
+
+How long will we store your personal data?
+
+
 ## Future features/work:
 1. Include Apartment in the profile section. Along with the budget of each person.
 2. Include features of MyRoom.
+
+## Contact us:
