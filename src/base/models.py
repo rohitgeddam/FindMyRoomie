@@ -1,3 +1,4 @@
+from email.policy import default
 from django.db import models
 from django.db.models.signals import post_save
 from django.dispatch import receiver
@@ -122,17 +123,19 @@ class Profile(models.Model):
     # preferences
 
     preference_gender = models.CharField(
-        max_length=5, choices=PREF_GENDER_CHOICES, blank=True
+        max_length=5, choices=PREF_GENDER_CHOICES, default=NO_PREF
     )
     preference_degree = models.CharField(
-        max_length=5, choices=PREF_DEGREE_CHOICES, blank=True
+        max_length=5, choices=PREF_DEGREE_CHOICES, default=NO_PREF
     )
     preference_diet = models.CharField(
-        max_length=5, choices=PREF_DIET_CHOICES, blank=True
+        max_length=5, choices=PREF_DIET_CHOICES, default=NO_PREF
     )
-    preference_country = CountryField(blank_label="select country", blank=True)
+    preference_country = CountryField(
+        blank_label="No Preference", blank=True, default="No Preference"
+    )
     preference_course = models.CharField(
-        max_length=5, choices=PREF_COURSE_CHOICES, blank=True
+        max_length=5, choices=PREF_COURSE_CHOICES, default=NO_PREF
     )
 
     def __str__(self):
