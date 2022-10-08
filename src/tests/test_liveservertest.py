@@ -7,7 +7,6 @@ from selenium.webdriver.common.keys import Keys
 
 
 class ProfileFormTest(LiveServerTestCase):
-
     def test_form(self):
         selenium = webdriver.Chrome(ChromeDriverManager().install())
 
@@ -15,9 +14,9 @@ class ProfileFormTest(LiveServerTestCase):
 
         time.sleep(2)
 
-        selenium.get('http://127.0.0.1:8000/profile/edit/')
+        selenium.get("http://127.0.0.1:8000/profile/edit/")
 
-        time.sleep(15)
+        time.sleep(30)
 
         # find the elements you need to submit form
         person_name = selenium.find_element(By.ID, "id_name")
@@ -32,7 +31,9 @@ class ProfileFormTest(LiveServerTestCase):
         person_p_gender = selenium.find_element(By.ID, "id_preference_gender")
         person_p_degree = selenium.find_element(By.ID, "id_preference_degree")
         person_p_diet = selenium.find_element(By.ID, "id_preference_diet")
-        person_p_country = selenium.find_element(By.ID, "id_preference_country")
+        person_p_country = selenium.find_element(
+            By.ID, "id_preference_country"
+        )
         person_p_course = selenium.find_element(By.ID, "id_preference_course")
 
         submit = selenium.find_element(By.ID, "submit_button")

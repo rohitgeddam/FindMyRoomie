@@ -3,6 +3,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import get_user_model
 from .utils import check_ncsu_email
 
+# from django.contrib.admin.widgets import AdminDateWidget
 from .models import Profile
 
 
@@ -30,6 +31,8 @@ class SignUpForm(UserCreationForm):
 
 class ProfileForm(forms.ModelForm):
     """Build the User Profile Form"""
+
+    # birth_date = forms.DateField(widget=AdminDateWidget)
 
     def __init__(self, *args, **kwargs):
         super(ProfileForm, self).__init__(*args, **kwargs)
@@ -77,11 +80,11 @@ class ProfileForm(forms.ModelForm):
         ]
         widgets = {
             "birth_date": forms.DateInput(
-                format=("%m/%d/%Y"),
+                format=("%Y-%m-%d"),
                 attrs={
                     "class": "form-control",
-                    "placeholder": "Select a date",
+                    "placeholder": "Select Date",
                     "type": "date",
                 },
-            ),
+            )
         }

@@ -34,6 +34,7 @@
                 <div class="card-body">
                     <h4 class="card-title">{{profile.name}}</h4>
                     <p class="card-text"><b>Gender:</b>{{profile.gender}}</p>
+                    <p class="card-text"><b>DOB:</b> {{profile.birth_date}}</p>
                     <p class="card-text"><b>Diet: </b>{{profile.diet}}</p>
                     <p class="card-text"><b>Hometown: </b> {{profile.hometown}}</p>
                     <p class="card-text"><b>Country: </b> {{profile.country}}</p>
@@ -63,6 +64,9 @@
                                 <b>Gender: </b>{{profile.gender}}<br>
                             </div>
                             <div>
+                            <div>
+                                <b>DOB: </b>{{profile.birthdate}}<br>
+                            </div>    
                                 <b>Diet: </b>{{profile.diet}}<br>
                             </div>
                             <div>
@@ -76,6 +80,7 @@
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item"><b>Gender: </b>{{profile.preference_gender}}
                                     </li>
+
                                     <li class="list-group-item"><b>Degree: </b>{{profile.preference_degree}}
                                     </li>
                                     <li class="list-group-item"><b>Course: </b>{{profile.preference_course}}
