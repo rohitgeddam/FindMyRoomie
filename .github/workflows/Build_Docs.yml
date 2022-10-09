@@ -32,7 +32,6 @@ jobs:
 
       - name: Building Docs
         run: |
-          rm -r ./docs/build
           sphinx-build -b html docs/  docs/build
           
       - name: Commit changes to github  
