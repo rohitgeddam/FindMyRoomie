@@ -13,18 +13,21 @@
 
 
 # FindMyRoomie
-
+<p align = "justify">
 'FindMyRoomie' is a Web Application that provides a platform for lonely wolves (NC State students) to find roommates of their preference. The stakes are high when it comes to finding your best roommate because this relationship starts with a living relationship :sweat_smile:. We understand how stressful this can be, especially if you are moving to a new city or country. FindMyRoomie is a one-stop solution to your roommate finding needs. Our software has functionalities that allow you to filter and choose your ideal roommate. But if that is too much work for you, we also provide roommate suggestions based on your preferences! Any NC State student could sign up with their NC State Email address from any corner of the world on our website and begin searching for roommates. 
+</p>
 
 <p align = "center">
 <img width = "400", src = "https://user-images.githubusercontent.com/52373569/194727868-201a036a-c400-46c4-b359-98777a92ce86.gif">
 </p>
 
-The software is free for use by anyone, and we also welcome any contributions to improve our software (Please read our [CONTRIBUTING.md](https://github.com/rohitgeddam/FindMyRoomie/blob/main/CONTRIBUTING.md) file for more details). If you would like to cite our repository, please check our [CITATION.cff](https://github.com/rohitgeddam/FindMyRoomie/blob/main/CITATION.cff) file. 
+<p align = "justify">
+The software is free for use by anyone, and we also welcome any contributions to improve our software (Please read our [CONTRIBUTING.md](https://github.com/rohitgeddam/FindMyRoomie/blob/main/CONTRIBUTING.md) file for more details). If you would like to cite our repository, please check our [CITATION.cff](https://github.com/rohitgeddam/FindMyRoomie/blob/main/CITATION.cff) file.
+</p>
 
 ## Features of the software
 
-1. SignUp: 
+#### 1. SignUp: 
 
 <p align = "center">
 <img width = "600" src = "https://user-images.githubusercontent.com/52373569/194731737-93009a6e-141a-4bc8-8ba4-cc898f504186.png">
@@ -32,7 +35,7 @@ The software is free for use by anyone, and we also welcome any contributions to
 
   Allows new users to register to our roommate finding portal. New users could register using their NCSU Email ID.
 
-2. SignIn: 
+#### 2. SignIn: 
 
 <p align = "center">
 <img width = "600" src = "https://user-images.githubusercontent.com/52373569/194731814-4aa13d05-3c17-4723-a444-e69d02d949a3.png">
@@ -40,21 +43,22 @@ The software is free for use by anyone, and we also welcome any contributions to
 
   Allows existing users to LogIn to our website using their credentials.
 
-3. Homepage:
+#### 3. Homepage:
 <p align = "center">
 <img width = "600" src ="https://user-images.githubusercontent.com/52373569/194731856-0130e163-cea8-4897-941c-530f5bf9dec3.png">
 
   A page with happy Mr. and Mrs. Wolf enjoying each other's company in the background, just like you and your roommates would be :heart_on_fire:. 
 
-4. My Profile: 
-
+#### 4. My Profile: 
+<p align = "justify">
 Allows you to introduce whom you are to your future roommate! You are given the opportunity to tell others a little bit about yourself and your preferences. The "Visibility" checkbox in your profile allows you to choose whether you want to be visible to others. If you are looking for roommates, you can toggle it on, and if you have found one (Congratulations :partying_face: :partying_face:), you can toggle it off. It's that easy!
+</p>
 
- 5. Find people:
+ #### 5. Find people:
  
  Lists the people looking for roommates just like you. Our "Wolf Filter" lets you filter candidates based on your preferences :wolf:. Be choosy!!	
 
- 6. My room:
+ #### 6. My room:
 
   Lists your roommates (feature not available yet) and provides roommate suggestions based on your preferences. The similarity scores with other roommate seekers are calculated based on the Manhattan Distance, and the people with the top scores are shown as suggestions. 
  
@@ -63,15 +67,15 @@ Allows you to introduce whom you are to your future roommate! You are given the 
 
 ## Set up the project on your local machine
 
-1. Clone the repository:  
+#### 1. Clone the repository:  
 
    `git clone https://github.com/rohitgeddam/FindMyRoomie.git`
 
-2. Setup the virtual environment:  
+#### 2. Setup the virtual environment:  
     
     `python -m venv venv`
 
-3.  Activate the virtual environment:  
+#### 3. Activate the virtual environment:  
 
     * On Mac/Linux:    
     
@@ -81,11 +85,11 @@ Allows you to introduce whom you are to your future roommate! You are given the 
     
       `venv\Scripts\activate`
    
-3.  Install required modules and libraries:  
+#### 3. Install required modules and libraries:  
 
     `pip install -r requirements.txt`
 
-4. Run the application:  
+#### 4. Run the application:  
    
    ```
    cd src 
@@ -164,7 +168,7 @@ If you prefer using Black in VSCode, you can add the below settings in your vsco
 ## Privacy Notice
 
 #### 1. What personal details of yours would you be sharing with us and why?
-
+<p align = "justify">
 To aid you in your roommate search, to help others find you, and also to provide you with relevant roommate suggestions, you will be asked to share your "Name", "Email", "Date of Birth", "Gender", "Diet", "Hometown", "Degree and Course", "Country of Origin". You are free to include anything in your bio (which could include your Instagram ID and other social media handles). 
 
 #### 2. Will we be storing your details, and how will we use them?
@@ -182,6 +186,7 @@ We retain your information as long as needed to provide you with our services.
 #### 5. How to remove my data from the website?
 
 Our current release does not provide you with a mechanism to remove your data directly from our website. You are always free to turn off your visibility. If you still feel the need to remove your data from our website, kindly email one of the contributors from your registered Email ID, and we will take care of the rest!
+</p>
 
 ## Technology Used
 -   `Python 3.7+`
@@ -206,7 +211,7 @@ Shandler Mason - samason4@ncsu.edu </br>
 ## License:
 Distributed under the MIT License. See `LICENSE` for more information
 
------
+#
 
 <p align = "center">
 <img width = "450" src = "https://user-images.githubusercontent.com/52373569/194727890-48c53f9d-f351-433e-82bf-df33d7945b25.gif">
