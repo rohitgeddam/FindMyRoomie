@@ -239,5 +239,7 @@ Distributed under the MIT License. See `LICENSE` for more information
 <a href = "https://twitter.com/findmyroomie_nc">
 <img width = "20px" src = "https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/twitter.svg"/>
 </a> 
+<a href = "mailto:ncsu.findmyroomie@gmail.com)">
+<img width = "20px" src = "https://user-images.githubusercontent.com/73664200/194783380-5ffca5fd-f7aa-4865-849e-2ef9f1c3c9a7.png"/>
+</a> 
 
-Email: ncsu.findmyroomie@gmail.com
