@@ -20,6 +20,6 @@ Please ensure you run tests and flake8 to check for errors before you push to gi
 * If you are fixing a bug, make sure you add a test and ensure that it fails before you go fix the bug. 
 * Always add a test.
 * If it is a new feature, open an issue to discuss it with any of the maintainers.
-
+* Our GitHub Discussions can be used to discuss some potential features or aout bug fixes.
 Thank you and looking forward to your contributions!
 
