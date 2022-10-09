@@ -36,24 +36,24 @@ class CustomUser(AbstractUser):
 class Profile(models.Model):
     """Model for User Profile"""
 
-    GENDER_MALE = "M"
-    GENDER_FEMALE = "F"
-    GENDER_OTHER = "O"
+    GENDER_MALE = "Male"
+    GENDER_FEMALE = "Female"
+    GENDER_OTHER = "Other"
 
-    DEGREE_BS = "B"
-    DEGREE_MS = "M"
-    DEGREE_PHD = "P"
+    DEGREE_BS = "Bachelors"
+    DEGREE_MS = "Masters"
+    DEGREE_PHD = "Phd"
 
-    DIET_VEG = "V"
-    DIET_NON_VEG = "NV"
+    DIET_VEG = "Vegetarian"
+    DIET_NON_VEG = "Non Vegetarian"
 
-    COURSE_CS = "CS"
-    COURSE_CE = "CE"
-    COURSE_EE = "EE"
-    COURSE_MEC = "MEC"
+    COURSE_CS = "Computer Science"
+    COURSE_CE = "Computer Engineering"
+    COURSE_EE = "Electrical Engineering"
+    COURSE_MEC = "Mechanical Engineering"
 
     BLANK = "--"
-    NO_PREF = "N/A"
+    NO_PREF = "No Preference"
 
     GENDER_CHOICES = (
         (GENDER_MALE, "Male"),
@@ -111,11 +111,17 @@ class Profile(models.Model):
     birth_date = models.DateField(null=True, blank=True)
     hometown = models.CharField(max_length=100, default="", blank=True)
 
-    gender = models.CharField(max_length=5, choices=GENDER_CHOICES, blank=True)
-    degree = models.CharField(max_length=5, choices=DEGREE_CHOICES, blank=True)
-    diet = models.CharField(max_length=5, choices=DIET_CHOICES, blank=True)
+    gender = models.CharField(
+        max_length=128, choices=GENDER_CHOICES, blank=True
+    )
+    degree = models.CharField(
+        max_length=128, choices=DEGREE_CHOICES, blank=True
+    )
+    diet = models.CharField(max_length=128, choices=DIET_CHOICES, blank=True)
     country = CountryField(blank_label="Select Country", blank=True)
-    course = models.CharField(max_length=5, choices=COURSE_CHOICES, blank=True)
+    course = models.CharField(
+        max_length=128, choices=COURSE_CHOICES, blank=True
+    )
 
     visibility = models.BooleanField(default=True)
     is_profile_complete = models.BooleanField(default=False)
@@ -123,19 +129,19 @@ class Profile(models.Model):
     # preferences
 
     preference_gender = models.CharField(
-        max_length=5, choices=PREF_GENDER_CHOICES, default=NO_PREF
+        max_length=128, choices=PREF_GENDER_CHOICES, default=NO_PREF
     )
     preference_degree = models.CharField(
-        max_length=5, choices=PREF_DEGREE_CHOICES, default=NO_PREF
+        max_length=128, choices=PREF_DEGREE_CHOICES, default=NO_PREF
     )
     preference_diet = models.CharField(
-        max_length=5, choices=PREF_DIET_CHOICES, default=NO_PREF
+        max_length=128, choices=PREF_DIET_CHOICES, default=NO_PREF
     )
     preference_country = CountryField(
         blank_label="No Preference", blank=True, default="No Preference"
     )
     preference_course = models.CharField(
-        max_length=5, choices=PREF_COURSE_CHOICES, default=NO_PREF
+        max_length=128, choices=PREF_COURSE_CHOICES, default=NO_PREF
     )
 
     def __str__(self):

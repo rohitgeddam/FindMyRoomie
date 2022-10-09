@@ -22,7 +22,12 @@ class UserFactory(factory.django.DjangoModelFactory):
 
     first_name = factory.Faker("first_name")
     last_name = factory.Faker("last_name")
-    email = factory.LazyAttribute(lambda a: f"{real_faker.name()}@ncsu.edu")
+
+    # first_name = ""
+    # last_name = ""
+    email = factory.LazyAttribute(
+        lambda a: f"{real_faker.first_name().lower()}@ncsu.edu"
+    )
 
     is_staff = False
 
@@ -33,7 +38,7 @@ class ProfileFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = Profile
 
-    name = factory.Faker("name")
+    # name = factory.Faker("name")
     bio = factory.Faker("text")
     birth_date = factory.Faker("date")
     hometown = factory.Faker("city")
@@ -61,6 +66,7 @@ class Command(BaseCommand):
             try:
                 u = UserFactory()
                 p = ProfileFactory(user=u)
+                p.name = u.first_name + " " + u.last_name
                 p.gender = random.choices(Profile.GENDER_CHOICES)[0][0]
                 p.degree = random.choices(Profile.DEGREE_CHOICES)[0][0]
                 p.diet = random.choices(Profile.DIET_CHOICES)[0][0]
