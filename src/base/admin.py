@@ -1,6 +1,6 @@
 from django.contrib import admin
 from base.models import Profile
 
-# Register your models here.
+"""Register Profile Model to Admin Panel"""
 
 admin.site.register(Profile)

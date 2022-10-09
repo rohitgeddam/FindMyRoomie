@@ -3,6 +3,7 @@ from base.models import Profile
 
 
 class ProfileFilter(django_filters.FilterSet):
+    """Filtering the profile"""
     class Meta:
         model = Profile
         fields = ["gender", "degree", "course", "diet", "country"]

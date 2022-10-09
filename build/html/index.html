@@ -169,7 +169,12 @@
             
   <section id="welcome-to-findmyroomie-s-documentation">
 <h1>Welcome to FindMyRoomie’s documentation!<a class="headerlink" href="#welcome-to-findmyroomie-s-documentation" title="Permalink to this heading">¶</a></h1>
-<p>‘FindMyRoomie’ is a Web Application that provides a platform for lonely wolves (NC State students) to find roommates of their preference. The stakes are high when it comes to finding your best roommate because this relationship starts with a living relationship 😅. We understand how stressful this can be, especially if you are moving to a new city or country. FindMyRoomie is a one-stop solution to your roommate finding needs. Our software has functionalities that allow you to filter and choose your ideal roommate. But if that is too much work for you, we also provide roommate suggestions based on your preferences! Any NC State student could sign up with their NC State Email address from any corner of the world on our website and begin searching for roommates.</p>
+<p>‘FindMyRoomie’ is a Web Application that provides a platform for lonely wolves (NC State students) to find roommates of their preference.
+The stakes are high when it comes to finding your best roommate because this relationship starts with a living relationship 😅.
+We understand how stressful this can be, especially if you are moving to a new city or country.
+FindMyRoomie is a one-stop solution to your roommate finding needs. Our software has functionalities that allow you to filter and choose your ideal roommate.
+But if that is too much work for you, we also provide roommate suggestions based on your preferences!
+Any NC State student could sign up with their NC State Email address from any corner of the world on our website and begin searching for roommates.</p>
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
@@ -198,7 +203,9 @@
 <li class="toctree-l1"><a class="reference internal" href="releases/main.html">Releases</a></li>
 </ul>
 </div>
-<span class="target" id="module-base.management.commands.seed_users"></span><dl class="py class">
+<section id="module-base.management.commands.seed_users">
+<span id="seed-users"></span><h2>Seed users<a class="headerlink" href="#module-base.management.commands.seed_users" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
 <dt class="sig sig-object py" id="base.management.commands.seed_users.Command">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">base.management.commands.seed_users.</span></span><span class="sig-name descname"><span class="pre">Command</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stdout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stderr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">no_color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force_color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#base.management.commands.seed_users.Command" title="Permalink to this definition">¶</a></dt>
 <dd><p>Django manage.py command</p>
@@ -229,7 +236,10 @@ this method.</p>
 <dd><p>Faker Factory for User model</p>
 </dd></dl>
 
-<span class="target" id="module-base.matching"></span><dl class="py function">
+</section>
+<section id="module-base.matching">
+<span id="matching-algorithm"></span><h2>Matching Algorithm<a class="headerlink" href="#module-base.matching" title="Permalink to this heading">¶</a></h2>
+<dl class="py function">
 <dt class="sig sig-object py" id="base.matching.matchings">
 <span class="sig-prename descclassname"><span class="pre">base.matching.</span></span><span class="sig-name descname"><span class="pre">matchings</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">current_user</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#base.matching.matchings" title="Permalink to this definition">¶</a></dt>
 <dd><p>Generate matches using Manhattan Distance Algorithm</p>
@@ -241,12 +251,19 @@ this method.</p>
 <dd><p>Calculate the similarity score</p>
 </dd></dl>
 
-<span class="target" id="module-base.admin"></span><span class="target" id="module-base.apps"></span><dl class="py class">
-<dt class="sig sig-object py" id="base.apps.ProfilesConfig">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">base.apps.</span></span><span class="sig-name descname"><span class="pre">ProfilesConfig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_module</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#base.apps.ProfilesConfig" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+</section>
+<section id="module-base.filters">
+<span id="profile-filter"></span><h2>Profile filter<a class="headerlink" href="#module-base.filters" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="base.filters.ProfileFilter">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">base.filters.</span></span><span class="sig-name descname"><span class="pre">ProfileFilter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">queryset</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">request</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#base.filters.ProfileFilter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Filtering the profile</p>
+</dd></dl>
 
-<span class="target" id="module-base.filters"></span><span class="target" id="module-base.forms"></span><dl class="py class">
+</section>
+<section id="module-base.forms">
+<span id="forms"></span><h2>Forms<a class="headerlink" href="#module-base.forms" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
 <dt class="sig sig-object py" id="base.forms.ProfileForm">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">base.forms.</span></span><span class="sig-name descname"><span class="pre">ProfileForm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#base.forms.ProfileForm" title="Permalink to this definition">¶</a></dt>
 <dd><p>Build the User Profile Form</p>
@@ -279,7 +296,10 @@ association with the field named ‘__all__’.</p>
 
 </dd></dl>
 
-<span class="target" id="module-base.managers"></span><dl class="py class">
+</section>
+<section id="module-base.managers">
+<span id="user-manager-model"></span><h2>User Manager model<a class="headerlink" href="#module-base.managers" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
 <dt class="sig sig-object py" id="base.managers.CustomUserManager">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">base.managers.</span></span><span class="sig-name descname"><span class="pre">CustomUserManager</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#base.managers.CustomUserManager" title="Permalink to this definition">¶</a></dt>
 <dd><p>Custom user model manager where email is the unique identifiers
@@ -298,10 +318,14 @@ for authentication instead of usernames.</p>
 
 </dd></dl>
 
-<span class="target" id="module-base.models"></span><dl class="py class">
+</section>
+<section id="module-base.models">
+<span id="profile-model"></span><h2>Profile model<a class="headerlink" href="#module-base.models" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
 <dt class="sig sig-object py" id="base.models.CustomUser">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">base.models.</span></span><span class="sig-name descname"><span class="pre">CustomUser</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">password</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">last_login</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_superuser</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">first_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">last_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_staff</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_active</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date_joined</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">email</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#base.models.CustomUser" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="py exception">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">base.models.</span></span><span class="sig-name descname"><span class="pre">CustomUser</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#base.models.CustomUser" title="Permalink to this definition">¶</a></dt>
+<dd><p>Custom User Model</p>
+<dl class="py exception">
 <dt class="sig sig-object py" id="base.models.CustomUser.DoesNotExist">
 <em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#base.models.CustomUser.DoesNotExist" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
@@ -362,13 +386,19 @@ non-SQL backends), respectively. Normally, they should not be set.</p>
 <dd><p>Save User Profile</p>
 </dd></dl>
 
-<span class="target" id="module-base.urls"></span><span class="target" id="module-base.utils"></span><dl class="py function">
+</section>
+<section id="module-base.utils">
+<span id="utility-functions"></span><h2>Utility Functions<a class="headerlink" href="#module-base.utils" title="Permalink to this heading">¶</a></h2>
+<dl class="py function">
 <dt class="sig sig-object py" id="base.utils.check_ncsu_email">
 <span class="sig-prename descclassname"><span class="pre">base.utils.</span></span><span class="sig-name descname"><span class="pre">check_ncsu_email</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">email</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#base.utils.check_ncsu_email" title="Permalink to this definition">¶</a></dt>
 <dd><p>Check if the given email belongs to NCSU email id.</p>
 </dd></dl>
 
-<span class="target" id="module-config.asgi"></span><p>ASGI config for config project.</p>
+</section>
+<section id="module-config.asgi">
+<span id="configuration"></span><h2>Configuration<a class="headerlink" href="#module-config.asgi" title="Permalink to this heading">¶</a></h2>
+<p>ASGI config for config project.</p>
 <p>It exposes the ASGI callable as a module-level variable named <code class="docutils literal notranslate"><span class="pre">application</span></code>.</p>
 <p>For more information on this file, see
 <a class="reference external" href="https://docs.djangoproject.com/en/3.1/howto/deployment/asgi/">https://docs.djangoproject.com/en/3.1/howto/deployment/asgi/</a></p>
@@ -395,6 +425,7 @@ Including another URLconf:
 <p>It exposes the WSGI callable as a module-level variable named <code class="docutils literal notranslate"><span class="pre">application</span></code>.</p>
 <p>For more information on this file, see
 <a class="reference external" href="https://docs.djangoproject.com/en/3.1/howto/deployment/wsgi/">https://docs.djangoproject.com/en/3.1/howto/deployment/wsgi/</a></p>
+</section>
 <section id="indices-and-tables">
 <h2>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">

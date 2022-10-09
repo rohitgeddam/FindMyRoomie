@@ -14,6 +14,7 @@ from .utils import check_ncsu_email
 
 
 class CustomUser(AbstractUser):
+    """Custom User Model"""
     username = None
     email = models.EmailField("email address", unique=True)
 
