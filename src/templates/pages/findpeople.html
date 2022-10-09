@@ -37,7 +37,7 @@
                     <p class="card-text"><b>DOB:</b> {{profile.birth_date}}</p>
                     <p class="card-text"><b>Diet: </b>{{profile.diet}}</p>
                     <p class="card-text"><b>Hometown: </b> {{profile.hometown}}</p>
-                    <p class="card-text"><b>Country: </b> {{profile.country}}</p>
+                    <p class="card-text"><b>Country: </b> {{profile.country.name}}</p>
                     <!-- <a href="#" class="btn btn-primary"></a> -->
                 </div>
             </div>
@@ -64,16 +64,16 @@
                                 <b>Gender: </b>{{profile.gender}}<br>
                             </div>
                             <div>
-                            <div>
-                                <b>DOB: </b>{{profile.birth_date}}<br>
-                            </div>    
+                                <div>
+                                    <b>DOB: </b>{{profile.birth_date}}<br>
+                                </div>
                                 <b>Diet: </b>{{profile.diet}}<br>
                             </div>
                             <div>
                                 <b>Hometown: </b>{{profile.hometown}}<br>
                             </div>
                             <div>
-                                <b>Country: </b>{{profile.country}}<br>
+                                <b>Country: </b>{{profile.country.name}}<br>
                             </div>
                             <div style="margin-top: 32px;">
                                 <div class="card-title"><b>Preferences</b></div>
@@ -86,7 +86,7 @@
                                     <li class="list-group-item"><b>Course: </b>{{profile.preference_course}}
                                     </li>
                                     <li class="list-group-item"><b>Diet: </b>{{profile.preference_diet}}</li>
-                                    <li class="list-group-item"><b>Country: </b>{{profile.preference_country}}
+                                    <li class="list-group-item"><b>Country: </b>{{profile.preference_country.name}}
                                     </li>
                                 </ul>
                             </div>
