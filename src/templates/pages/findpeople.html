@@ -33,10 +33,10 @@
 
             <div class="card shadow-sm bg-body rounded card-style" data-bs-toggle="modal"
                 data-bs-target="#profile-modal-{{profile.id}}" style="max-width: 540px;">
-                <div class="row g-0">
+                <div class="row g-0" style="padding: 0 16px">
                     <div class="col-md-4"
                         style="display:flex; flex-direction: column; justify-content:center; align-items:center; text-align: center; padding: 18px;">
-                        <img src="{{profile.profile_photo.url}}" width=200 height=200 class="img-fluid rounded-start"
+                        <img class = "rounded-circle" alt = "80x80" src="{{profile.profile_photo.url}}" width=150 height=150 class="img-fluid rounded-start"
                             alt="{{profile.name}}">
                         <h5 class="card-title">{{profile.name}}</h5>
                     </div>
@@ -82,7 +82,7 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header" style="display: flex; align-items: center;">
-                            <img src="{{profile.profile_photo.url}}" class="img-fluid rounded-start"
+                            <img class = "rounded-circle" alt = "80x80" src="{{profile.profile_photo.url}}" class="img-fluid rounded-start"
                                 alt="{{profile.name}}" width="200" height="200">
                             <h5 class="modal-title">{{profile.name}}</h5>
                             <button type="button" class="btn-close" style="align-self: flex-start;"
