@@ -232,10 +232,12 @@ Distributed under the MIT License. See `LICENSE` for more information
 <p align = "center">
 <img width = "450" src = "https://user-images.githubusercontent.com/52373569/194727890-48c53f9d-f351-433e-82bf-df33d7945b25.gif">
 </p>
-=======
 
 ## Contact Us:
-* Email: ncsu.findmyroomie@gmail.com
-* Twitter: [Twitter Profile](https://twitter.com/findmyroomie_nc)
-* Chat/Discuss: [Github Discussions](https://github.com/rohitgeddam/FindMyRoomie/discussions)
 
+[![iconmonstr-github-1](https://user-images.githubusercontent.com/73664200/194782970-2344bb90-e0be-4d78-aee0-da0727439aa6.svg)](https://github.com/rohitgeddam/FindMyRoomie/discussions)
+<a href = "https://twitter.com/findmyroomie_nc">
+<img width = "20px" src = "https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/twitter.svg"/>
+</a> 
+
+Email: ncsu.findmyroomie@gmail.com
