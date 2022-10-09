@@ -18,6 +18,7 @@ Test code to validate the URLs of the web application. This tests whether the fu
 Test code that creates a user object and checks if the values are correctly stored in the attributes.
 
 #### 3. [test_views.py](https://github.com/rohitgeddam/FindMyRoomie/blob/README---Arun/src/tests/test_views.py):
+Test code to check if the HTTP request was succesful (based on the status code).
 
 #### 4. [test_utils.py](https://github.com/rohitgeddam/FindMyRoomie/blob/README---Arun/src/tests/test_utils.py):
 Test code that validates the Email ID (checks if it is has a NCSU Email ID). 
