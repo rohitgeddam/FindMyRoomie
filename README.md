@@ -44,7 +44,7 @@ The software is free for use by anyone, and we also welcome any contributions to
 <p align = "center">
 <img width = "600" src ="https://user-images.githubusercontent.com/52373569/194731856-0130e163-cea8-4897-941c-530f5bf9dec3.png">
 
-  A page with a happy Mr. and Mrs. Wolf enjoying each other's company in the background, just like you and your roommates would be :heart_on_fire:. 
+  A page with happy Mr. and Mrs. Wolf enjoying each other's company in the background, just like you and your roommates would be :heart_on_fire:. 
 
 4. My Profile: 
 
