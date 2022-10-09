@@ -21,6 +21,7 @@ django-filter==22.1
 django-heroku==0.3.1
 django-seed==0.3.1
 django-sphinx-autodoc==0.2
+django-utils-six==2.0
 docutils==0.19
 exceptiongroup==1.0.0rc9
 factory-boy==3.2.1

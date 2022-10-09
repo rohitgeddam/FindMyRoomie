@@ -15,6 +15,7 @@ from .utils import check_ncsu_email
 
 class CustomUser(AbstractUser):
     """Custom User Model"""
+
     username = None
     email = models.EmailField("email address", unique=True)
 
@@ -147,6 +148,8 @@ class Profile(models.Model):
     preference_course = models.CharField(
         max_length=128, choices=PREF_COURSE_CHOICES, default=NO_PREF
     )
+
+    email_confirmed = models.BooleanField(default=False)
 
     def __str__(self):
         return f"{self.user.email}-profile"
