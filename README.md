@@ -22,10 +22,6 @@ Moving to a new city or a country for your study can be frustrating,'FindMyRoomi
 
 The software is free for use by anyone, and we also welcome any contributions to improve our software (Please read our [CONTRIBUTING.md](https://github.com/rohitgeddam/FindMyRoomie/blob/main/CONTRIBUTING.md) file for more details). If you would like to cite our repository, please check our [CITATION.cff](https://github.com/rohitgeddam/FindMyRoomie/blob/main/CITATION.cff) file. 
 
-#### (Write about problem statement and aim. Provide a clear, high-level overview of the software. Describe the type of user who should use your software. make note that the software is available for free).
-
-## Software commands and functions
-
 ## Features of the software
 
 1. SignUp: 
@@ -163,7 +159,7 @@ If you prefer using Black in VSCode, you can add the below settings in your vsco
 
 ### CodeQL
 
-`CodeQL.yml` performs automated security checks on the codebase and scans it for any vulnerabilities and bugs. For more information about CodeQL, please provide visit this [link](https://codeql.github.com/docs/codeql-overview/about-codeql/). 
+`CodeQL.yml` performs automated security checks on the codebase and scans it for any vulnerabilities and bugs. For more information about CodeQL, please visit this [link](https://codeql.github.com/docs/codeql-overview/about-codeql/). 
   
 ## Privacy Notice
 
