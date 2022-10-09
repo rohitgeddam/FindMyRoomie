@@ -24,7 +24,7 @@
 The software is free for use by anyone, and we also welcome any contributions to improve our software. Please read our [CONTRIBUTING.md](https://github.com/rohitgeddam/FindMyRoomie/blob/main/CONTRIBUTING.md) file for more details). If you would like to cite our repository, please check our [CITATION.cff](https://github.com/rohitgeddam/FindMyRoomie/blob/main/CITATION.cff) file.
 
 
-## Features of the software
+## Features of our software
 
 #### 1. SignUp: 
 
@@ -64,7 +64,7 @@ Allows you to introduce whom you are to your future roommate! You are given the 
 #### The website flow is depicted in the below video:
 
 
-## Set up the project on your local machine
+## Steps to set up the project on your local machine
 
 #### 1. Clone the repository:  
 
