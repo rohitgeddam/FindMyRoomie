@@ -12,7 +12,7 @@ Please ensure you run tests and flake8 to check for errors before you push to gi
 
 ## Pull request process
 1. Make a pull before pushing the changes to a new branch that is dedicated for the change you are going to make.
-2. After pushing your contribution to the new branch, make sure all tests are passing before making a pull request to merge the changes with the develop branch. Owners of the repository will look out for new Pull Requests and review them timely. Another layer of merge happens from develop to main branch after final review. 
+2. After pushing your contribution to the new branch, make sure all tests are passing before making a pull request to merge the changes with the develop branch. Owners of the repository will look out for new Pull Requests and review them timely. Another layer of merge happens from develop to main branch after final review. Said merge will be done by the repository's owners under their sole discretion.
 3. Kindly add required documentation in README.md and comment on the PRs to elaborate on the changes that were made. 
 
 ## Additional tips!
