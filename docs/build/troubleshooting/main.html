@@ -170,6 +170,18 @@
             
   <section id="troubleshooting">
 <h1>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this heading">¶</a></h1>
+<ul class="simple">
+<li><p>If you come across any error where requirements are not met, run the following command in the project directory:</p></li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-r</span> <span class="pre">requirements.txt</span></code></p>
+<ul class="simple">
+<li><p>If you do not make migrations after adding another field to the model, you will face an error, ensure you run the followning commands:</p></li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">manage.py</span> <span class="pre">makemigrations</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">manage.py</span> <span class="pre">migrate</span></code></p>
+<ul class="simple">
+<li><p>If you are facing any lint issues, ensure you have performed the pre-commit hook as mentioned in the quickstart guide.</p></li>
+</ul>
 </section>
 
 

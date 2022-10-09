@@ -86,10 +86,17 @@ Configuration
 .. automodule:: config.wsgi
    :members:
 
-
 Indices and tables
 ==================
 
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
+**Authors**:
+
+Rohit Geddam, Arun Kumar Ramesh, Kiron Jayesh, Shandler Mason, and Sai Krishna Teja Varma Manthena.
+
+**Version**: 
+
+v3.1 of 2022/10/08

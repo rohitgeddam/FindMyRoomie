@@ -72,3 +72,8 @@ Open another terminal:
 
 ``py manage.py test``
 
+Pre Commit Hooks for Black Code formatting and Flake8 Linting
+=============================================================
+* run  ``pre-commit install``
+* Now everytime you commit, Black and Flake8 will run automatically and will not allow you to push if the code standards are not met.
+
