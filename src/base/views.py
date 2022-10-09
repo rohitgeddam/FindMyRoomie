@@ -1,12 +1,13 @@
 from django.contrib import messages
-from django.contrib.auth.forms import UserCreationForm
 from django.urls import reverse_lazy
 from django.views import generic
 from django.shortcuts import render, redirect
 from django.contrib.auth import logout
 from django.contrib.auth.decorators import login_required
-from .forms import ProfileForm
+from .forms import ProfileForm, SignUpForm
 from .models import Profile
+
+# from django.contrib.auth.forms import UserCreationForm
 
 from .filters import ProfileFilter
 from .matching import matchings
@@ -15,7 +16,7 @@ from .matching import matchings
 class SignUpView(generic.CreateView):
     """Sign up View"""
 
-    form_class = UserCreationForm
+    form_class = SignUpForm
     success_url = reverse_lazy("login")
     template_name = "registration/signup.html"
 
@@ -28,6 +29,10 @@ def home(request):
 @login_required()
 def profile(request):
     """Render profile page"""
+    if not request.user.profile.is_profile_complete:
+        messages.error(request, "Please complete your profile first!")
+        return redirect("profile_edit")
+
     profile = Profile.objects.get(user=request.user)
 
     return render(request, "pages/profile.html", {"profile": profile})
@@ -39,10 +44,11 @@ def profile_edit(request):
     profile = Profile.objects.get(user=request.user)
 
     if request.method == "POST":
-        form = ProfileForm(request.POST, instance=profile)
+        form = ProfileForm(request.POST, request.FILES, instance=profile)
         if form.is_valid():
             p = form.save(commit=False)
             p.is_profile_complete = True
+            print(p.profile_photo)
             p.save()
 
             return redirect("profile")
@@ -57,7 +63,7 @@ def profile_edit(request):
 @login_required()
 def findpeople(request):
     """Render findpeople page"""
-    qs = Profile.objects.filter(visibility=True)
+    qs = Profile.objects.filter(visibility=True).exclude(user=request.user)
     f = ProfileFilter(request.GET, queryset=qs)
     return render(request, "pages/findpeople.html", {"filter": f})
 

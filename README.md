@@ -213,6 +213,14 @@ Distributed under the MIT License. See `LICENSE` for more information
 
 #
 
+
 <p align = "center">
 <img width = "450" src = "https://user-images.githubusercontent.com/52373569/194727890-48c53f9d-f351-433e-82bf-df33d7945b25.gif">
 </p>
+=======
+
+## Contact Us:
+* Email: ncsu.findmyroomie@gmail.com
+* Twitter: [Twitter Profile](https://twitter.com/findmyroomie_nc)
+* Chat/Discuss: [Github Discussions](https://github.com/rohitgeddam/FindMyRoomie/discussions)
+

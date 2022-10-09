@@ -1,11 +1,13 @@
 from django.test import TestCase
 from base.models import Profile
-from django.contrib.auth.models import User
+from django.contrib.auth import get_user_model
 
 
 class TestModels(TestCase):
     def test_user_profile_model(self):
-        user = User.objects.create_user("admin", "password")
+        user = get_user_model().objects.create_user(
+            "admin@ncsu.edu", "password"
+        )
         profile = Profile.objects.get(user=user)
         profile.name = "Arun"
         profile.bio = "Loving Life"
@@ -18,7 +20,7 @@ class TestModels(TestCase):
         profile.visibility = "True"
         profile.is_profile_complete = "True"
         profile.save()
-        self.assertEqual(user.username, "admin")
+        self.assertEqual(user.email, "admin@ncsu.edu")
         self.assertEqual(profile.name, "Arun")
         self.assertEqual(profile.bio, "Loving Life")
         self.assertEqual(profile.birth_date, "2000-11-15")

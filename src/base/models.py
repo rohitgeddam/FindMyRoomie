@@ -1,32 +1,59 @@
+from email.policy import default
 from django.db import models
-from django.contrib.auth.models import User
 from django.db.models.signals import post_save
 from django.dispatch import receiver
+from django.contrib.auth import get_user_model
 
 from django_countries.fields import CountryField
+
+
+from django.contrib.auth.models import AbstractUser
+
+from .managers import CustomUserManager
+from .utils import check_ncsu_email
+
+
+class CustomUser(AbstractUser):
+    username = None
+    email = models.EmailField("email address", unique=True)
+
+    USERNAME_FIELD = "email"
+    REQUIRED_FIELDS = []
+
+    objects = CustomUserManager()
+
+    def save(self, *args, **kwargs):
+        email = self.email
+
+        if not check_ncsu_email(email):
+            raise ValueError("Please use NCSU Email Id!")
+        super(CustomUser, self).save(*args, **kwargs)
+
+    def __str__(self):
+        return self.email
 
 
 class Profile(models.Model):
     """Model for User Profile"""
 
-    GENDER_MALE = "M"
-    GENDER_FEMALE = "F"
-    GENDER_OTHER = "O"
+    GENDER_MALE = "Male"
+    GENDER_FEMALE = "Female"
+    GENDER_OTHER = "Other"
 
-    DEGREE_BS = "B"
-    DEGREE_MS = "M"
-    DEGREE_PHD = "P"
+    DEGREE_BS = "Bachelors"
+    DEGREE_MS = "Masters"
+    DEGREE_PHD = "Phd"
 
-    DIET_VEG = "V"
-    DIET_NON_VEG = "NV"
+    DIET_VEG = "Vegetarian"
+    DIET_NON_VEG = "Non Vegetarian"
 
-    COURSE_CS = "CS"
-    COURSE_CE = "CE"
-    COURSE_EE = "EE"
-    COURSE_MEC = "MEC"
+    COURSE_CS = "Computer Science"
+    COURSE_CE = "Computer Engineering"
+    COURSE_EE = "Electrical Engineering"
+    COURSE_MEC = "Mechanical Engineering"
 
     BLANK = "--"
-    NO_PREF = "N/A"
+    NO_PREF = "No Preference"
 
     GENDER_CHOICES = (
         (GENDER_MALE, "Male"),
@@ -79,48 +106,59 @@ class Profile(models.Model):
 
     """User Profile Model"""
     name = models.CharField(max_length=100, default="")
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    user = models.OneToOneField(get_user_model(), on_delete=models.CASCADE)
     bio = models.TextField(max_length=500, blank=True)
     birth_date = models.DateField(null=True, blank=True)
     hometown = models.CharField(max_length=100, default="", blank=True)
 
-    gender = models.CharField(max_length=5, choices=GENDER_CHOICES, blank=True)
-    degree = models.CharField(max_length=5, choices=DEGREE_CHOICES, blank=True)
-    diet = models.CharField(max_length=5, choices=DIET_CHOICES, blank=True)
+    gender = models.CharField(
+        max_length=128, choices=GENDER_CHOICES, blank=True
+    )
+    degree = models.CharField(
+        max_length=128, choices=DEGREE_CHOICES, blank=True
+    )
+    diet = models.CharField(max_length=128, choices=DIET_CHOICES, blank=True)
     country = CountryField(blank_label="Select Country", blank=True)
-    course = models.CharField(max_length=5, choices=COURSE_CHOICES, blank=True)
+    course = models.CharField(
+        max_length=128, choices=COURSE_CHOICES, blank=True
+    )
 
     visibility = models.BooleanField(default=True)
     is_profile_complete = models.BooleanField(default=False)
+    profile_photo = models.ImageField(
+        default="default.png", upload_to="profile_pics"
+    )
 
     # preferences
 
     preference_gender = models.CharField(
-        max_length=5, choices=PREF_GENDER_CHOICES, blank=True
+        max_length=128, choices=PREF_GENDER_CHOICES, default=NO_PREF
     )
     preference_degree = models.CharField(
-        max_length=5, choices=PREF_DEGREE_CHOICES, blank=True
+        max_length=128, choices=PREF_DEGREE_CHOICES, default=NO_PREF
     )
     preference_diet = models.CharField(
-        max_length=5, choices=PREF_DIET_CHOICES, blank=True
+        max_length=128, choices=PREF_DIET_CHOICES, default=NO_PREF
     )
-    preference_country = CountryField(blank_label="select country", blank=True)
+    preference_country = CountryField(
+        blank_label="No Preference", blank=True, default="No Preference"
+    )
     preference_course = models.CharField(
-        max_length=5, choices=PREF_COURSE_CHOICES, blank=True
+        max_length=128, choices=PREF_COURSE_CHOICES, default=NO_PREF
     )
 
     def __str__(self):
-        return f"{self.user.username}-profile"
+        return f"{self.user.email}-profile"
 
 
-@receiver(post_save, sender=User)
+@receiver(post_save, sender=get_user_model())
 def create_user_profile(sender, instance, created, **kwargs):
     """Create User Profile"""
     if created:
         Profile.objects.create(user=instance)
 
 
-@receiver(post_save, sender=User)
+@receiver(post_save, sender=get_user_model())
 def save_user_profile(sender, instance, **kwargs):
     """Save User Profile"""
     instance.profile.save()

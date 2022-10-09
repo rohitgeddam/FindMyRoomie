@@ -25,9 +25,10 @@
 {% if user.is_authenticated %}
 <div class="hero-overlay-block">
   <div class="container hero-container w-container">
-    <h1 data-ix="fade-in-on-load" class="hero-main-title" style="color: white;">🐺Welcome, {{user.username}}!🐺</h1>
-    <h2 data-ix="fade-in-on-load-2" class="hero-main-title subtitle" style="color: white;">Start your roommate search by
-      going to Find People Page.</h2>
+    <h2 data-ix="fade-in-on-load" style="color:white; line-height: 1.2;" class="hero-main-title">🐺Welcome
+      {{user.profile.name}}!🐺</h2>
+    <h5 data-ix="fade-in-on-load-2" style="color: white; text-justify: auto;">Start your roommate search by
+      going to Find People Page.</h5>
   </div>
 </div>
 </div>
@@ -36,9 +37,9 @@
 
 <div class="hero-overlay-block">
   <div class="container hero-container w-container">
-    <h1 data-ix="fade-in-on-load" class="hero-main-title" style="color: white;">Find My Roomie</h1>
-    <h2 data-ix="fade-in-on-load-2" class="hero-main-title subtitle" style="color: white;">FindMyRoomies is a roommate
-      finder web application to help new and current NC State students find their ideal roommate.</h2>
+    <h2 data-ix="fade-in-on-load" style="color:white; line-height: 1.2;">Find My Roomie</h2>
+    <h5 data-ix="fade-in-on-load-2" style="color: white; text-justify: auto;">FindMyRoomies is a roommate
+      finder web application to help new and current NC State students find their ideal roommate.</h5>
   </div>
   <div class="container-2 w-container">
     <a href="{% url 'login' %}" class="button-5 w-button">Sign In</a>

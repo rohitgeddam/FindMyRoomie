@@ -1,29 +1,44 @@
 import factory
 import random
 from django.core.management.base import BaseCommand, CommandError
-from django.contrib.auth.models import User
+from django.contrib.auth import get_user_model
+from django.db.utils import OperationalError
 from django.db.models.signals import post_save
 
 from base.models import Profile
 
 
+from faker import Faker as RealFaker
+
+real_faker = RealFaker()
+
+
 @factory.django.mute_signals(post_save)
 class UserFactory(factory.django.DjangoModelFactory):
+    """Faker Factory for User model"""
+
     class Meta:
-        model = User
+        model = get_user_model()
 
     first_name = factory.Faker("first_name")
     last_name = factory.Faker("last_name")
-    username = factory.Faker("name")
+
+    # first_name = ""
+    # last_name = ""
+    email = factory.LazyAttribute(
+        lambda a: f"{real_faker.first_name().lower()}@ncsu.edu"
+    )
 
     is_staff = False
 
 
 class ProfileFactory(factory.django.DjangoModelFactory):
+    """Faker Factory for Profile Model"""
+
     class Meta:
         model = Profile
 
-    name = factory.Faker("name")
+    # name = factory.Faker("name")
     bio = factory.Faker("text")
     birth_date = factory.Faker("date")
     hometown = factory.Faker("city")
@@ -32,6 +47,8 @@ class ProfileFactory(factory.django.DjangoModelFactory):
 
 
 class Command(BaseCommand):
+    """Django manage.py command"""
+
     help = "Seed models using fake data"
 
     def add_arguments(self, parser):
@@ -49,17 +66,34 @@ class Command(BaseCommand):
             try:
                 u = UserFactory()
                 p = ProfileFactory(user=u)
+                p.name = u.first_name + " " + u.last_name
                 p.gender = random.choices(Profile.GENDER_CHOICES)[0][0]
                 p.degree = random.choices(Profile.DEGREE_CHOICES)[0][0]
                 p.diet = random.choices(Profile.DIET_CHOICES)[0][0]
                 p.course = random.choices(Profile.COURSE_CHOICES)[0][0]
 
-                p.preference_gender = random.choices(Profile.PREF_GENDER_CHOICES)[0][0]
-                p.preference_degree = random.choices(Profile.PREF_DEGREE_CHOICES)[0][0]
-                p.preference_diet = random.choices(Profile.PREF_DIET_CHOICES)[0][0]
-                p.preference_course = random.choices(Profile.PREF_COURSE_CHOICES)[0][0]
+                p.preference_gender = random.choices(
+                    Profile.PREF_GENDER_CHOICES
+                )[0][0]
+                p.preference_degree = random.choices(
+                    Profile.PREF_DEGREE_CHOICES
+                )[0][0]
+                p.preference_diet = random.choices(Profile.PREF_DIET_CHOICES)[
+                    0
+                ][0]
+                p.preference_course = random.choices(
+                    Profile.PREF_COURSE_CHOICES
+                )[0][0]
                 p.is_profile_complete = True
                 p.save()
+            except OperationalError:
+                self.stdout.write(
+                    self.style.ERROR(
+                        "Please make migrations and Migrate. Something went wrong in the DB tables."
+                    )
+                )
+                count = 0
+                break
             except BaseException:
                 self.stdout.write(self.style.ERROR("Something went wrong!"))
                 count -= 1

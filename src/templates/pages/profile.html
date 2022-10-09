@@ -1,33 +1,36 @@
 {% extends 'base.html' %}
 {% include 'components/navbar.html' %}
 {% load static %}
- 
- 
- 
+
+
+
 {% load crispy_forms_tags %}
- 
- 
- 
+
+
+
 {% block title %}
 My Profile
 {% endblock %}
- 
+
 {% block content %}
- 
- 
-<div class="container" style="display: flex; justify-content: center; margin-top: 32px;">
-    <div id="section-right" style="width: 20%">
+
+
+<div style="display: flex; justify-content: center; margin: 32px 16px; height: 95vh; overflow-y: scroll;">
+    <div id="section-right" style="width: 20%;">
         <div class="card">
-            <img src=" {% static 'img/profilepage.png' %}" class="card-img-top">
+            <img src="{{profile.profile_photo.url}}" class="card-img-top" style="border-radius: 50%; padding: 8px;"
+                width=250 height=250>
             <div class="card-body">
                 <h5 class="card-title">{{profile.name}}</h5>
+                <h5 class="card-title">{{profile.user.email}}</h5>
+
             </div>
             <div class="card-body">
-                <a href="{% url 'profile_edit' %}" class="card-link">Edit Profile</a>
+                <a href="{% url 'profile_edit' %}" class="btn btn-danger" style="width: 100%;">Edit Profile</a>
             </div>
         </div>
     </div>
- 
+
     <div id="section-left" style="width: 80%">
         <div class="container">
             <div class="card">
@@ -36,18 +39,18 @@ My Profile
                 </div>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item"><b>Hometown: </b>{{profile.hometown}}</li>
-                    <li class="list-group-item"><b>Country: </b>{{profile.country}}</li>
- 
+                    <li class="list-group-item"><b>Country: </b>{{profile.country.name}}</li>
+                    <li class="list-group-item"><b>DOB: </b>{{profile.birth_date}}</li>
                     <li class="list-group-item"><b>Gender: </b>{{profile.gender}}</li>
- 
+
                     <li class="list-group-item"><b>Degree: </b>{{profile.degree}}</li>
- 
- 
+
+
                     <li class="list-group-item"><b>Course: </b>{{profile.course}}</li>
                     <li class="list-group-item"><b>Visible in search: </b>{{profile.visibility}}</li>
                 </ul>
             </div>
- 
+
             <div class="card" style="margin-top: 32px;">
                 <div class="card-body">
                     <div class="card-title"><b>Preferences</b></div>
@@ -57,13 +60,12 @@ My Profile
                     <li class="list-group-item"><b>Preferred Degree: </b>{{profile.preference_degree}}</li>
                     <li class="list-group-item"><b>Preferred Course: </b>{{profile.preference_course}}</li>
                     <li class="list-group-item"><b>Preferred Diet: </b>{{profile.preference_diet}}</li>
-                    <li class="list-group-item"><b>Preferred Country: </b>{{profile.preference_country}}</li>
- 
+                    <li class="list-group-item"><b>Preferred Country: </b>{{profile.preference_country.name}}</li>
                 </ul>
             </div>
         </div>
- 
+
     </div>
 </div>
- 
+
 {% endblock%}
