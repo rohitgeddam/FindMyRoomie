@@ -22,20 +22,6 @@ FindMyRoomie is a Web Application that provides a platform for NC State students
 
 The software is free for use to anyone, and we also welcome any contributions to improve our software (Please read our [CONTRIBUTING.md](https://github.com/rohitgeddam/FindMyRoomie/blob/main/CONTRIBUTING.md) file for more details). If you would like to cite our repository, please check our [CITATION.cff](https://github.com/rohitgeddam/FindMyRoomie/blob/main/CITATION.cff) file. 
 
-
-Check this website to write about high level design in README.md: https://ipwithease.com/what-is-a-high-level-design-hld/
-
-The components of the application include:
-
-1. SignUp - Allows new users to register to our roommate finding portal.
-2. LogIn - Allows existing users to continue their roommate search.
-3. Homepage - A page with a happy Mr. and Mrs. Wolf enjoying each other's company in the background, just like you and your roommates would be. 
-4. My Profile - Allows you to express a little about who you are and what you want from your roommate.
-5. Find people - Lists the people looking for roommates just like you. The "Wolf Filter" lets you filter candidates based on your preferences.
-6. My room - Lists your roommates (feature not available yet) and  provides suggestions based on your preferences.  
-
-The above features are explained in greater detail below.
-
 #### (Write about problem statement and aim. Provide a clear, high-level overview of the software. Describe the type of user who should use your software. make note that the software is available for free).
 
 ## Software commands and functions
@@ -44,9 +30,38 @@ The above features are explained in greater detail below.
 
 Pages: 
 
-Visibility - 
-Roommate suggestion - Similarity score
-(Manhattan distance - similarity score)
+1. SignUp: 
+
+<p align = "center">
+<img width = "600" src = "https://user-images.githubusercontent.com/52373569/194731737-93009a6e-141a-4bc8-8ba4-cc898f504186.png">
+</p>
+
+  Allows new users to register to our roommate finding portal. New users could register using their NCSU Email ID.
+
+2. SignIn: 
+
+<p align = "center">
+<img width = "600" src = "https://user-images.githubusercontent.com/52373569/194731814-4aa13d05-3c17-4723-a444-e69d02d949a3.png">
+</p>
+
+  Allows existing users to LogIn to our website using their credentials.
+
+3. Homepage:
+<p align = "center">
+<img width = "600" src ="https://user-images.githubusercontent.com/52373569/194731856-0130e163-cea8-4897-941c-530f5bf9dec3.png">
+
+  A page with a happy Mr. and Mrs. Wolf enjoying each other's company in the background, just like you and your roommates would be :heart_on_fire: 
+
+4. My Profile: 
+
+Allows you to introduce whom you are to your future roommate! You are given the opportunity to tell others a little bit about yourself and your preferences. The "Visibility" checkbox in your profile allows you to choose whether you want to be visible to others. If you are looking for roommates, you can toggle it on, and if you have found one (Congratulations :partying_face: :partying_face:), you can toggle it off. It's that easy!
+
+ 5. Find people:
+ Lists the people looking for roommates just like you. Our "Wolf Filter" lets you filter candidates based on your preferences :wolf:	
+
+ 6. My room:
+ Lists your roommates (feature not available yet) and provides roommate suggestions based on your preferences. The similarity scores with other roommate seekers are calculated based on the Manhattan Distance, and the people with the top scores are shown as suggestions. 
+   
 
 ## How to setup the project on your local machine?
 1. Download a free Python IDE online, such as PyCharm, Visual Studio Code, Spyder, etc.
@@ -106,15 +121,13 @@ python manage.py seed_users <number of fake instances>
 python manage.py seed_users 10
 ```
 
-## Live Server Test Demo
-
 ## Automatic tools - GitHub Actions
 
-### Unit tests
+### Unit tests:
 
-### Code Coverage
+### Code Coverage: 
 
-### Flake8 - Code Linting
+### Flake8 - Code Linting:
 
 We are using Flake8 for linting and syntax checking.
 Use flake8 before you push code to GitHub.
@@ -145,23 +158,23 @@ If you prefer using Black in VSCode, you can add the below settings in your vsco
 
 ## Privacy Notice
 
-### 1. What personal details of yours would you be sharing with us and why?
+#### 1. What personal details of yours would you be sharing with us and why?
 
 To aid you in your roommate search, to help others find you, and also to provide you with relevant roommate suggestions, you will be asked to share your "Name", "Email", "Date of Birth", "Gender", "Diet", "Hometown", "Degree and Course", "Country of Origin". You are free to include anything in your bio (which could include your Instagram ID and other social media handles). 
 
-### 2. Will we be storing your details, and how will we use them?
+#### 2. Will we be storing your details, and how will we use them?
 
 Yes, we will be storing them in our database. We will ONLY use this to match you with potential roommates and improve our software. 
 
-### 3. Will we share it with any third-party institutions?
+#### 3. Will we share it with any third-party institutions?
 
 NO. Your data is safe with us, and we will not be sharing/lending/renting it with any outside institutions/personnel.
 
-### 4. How long will you store my data?
+#### 4. How long will you store my data?
 
 We retain your information as long as needed to provide you with our services.
 
-### 5. How to remove my data from the website?
+#### 5. How to remove my data from the website?
 
 Our current release does not provide you with a mechanism to remove your data directly from our website. You are always free to turn off your visibility. If you still feel the need to remove your data from our website, kindly email one of the contributors from your registered Email ID, and we will take care of the rest!
 
