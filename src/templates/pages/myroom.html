@@ -22,13 +22,40 @@
 
     <div id="right-section">
         {% if matches %}
-        <h4><i>Found a few close matches for you! </i>👻</h4>
+        <h4 style="text-align: center;"><i>Found a few close matches for you! </i>👻</h4>
         <div class="cards-container">
 
             {% for profile in matches %}
 
             {% if profile.name != ""%}
+
             <div class="card shadow-sm bg-body rounded card-style" data-bs-toggle="modal"
+                data-bs-target="#profile-modal-{{profile.id}}" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4"
+                        style="display:flex; flex-direction: column; justify-content:center; align-items:center; text-align: center; padding: 18px;">
+                        <img src="{{profile.profile_photo.url}}" class="img-fluid rounded-start" alt="{{profile.name}}">
+                        <h5 class="card-title">{{profile.name}}</h5>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <div class="card-body">
+
+                                <p class="card-text"><b>Gender:</b>{{profile.gender}}</p>
+                                <p class="card-text"><b>DOB:</b> {{profile.birth_date}}</p>
+                                <p class="card-text"><b>Diet: </b>{{profile.diet}}</p>
+                                <p class="card-text"><b>Hometown: </b> {{profile.hometown}}</p>
+                                <p class="card-text"><b>Country: </b> {{profile.country.name}}</p>
+                                <p class="card-text"><b>Degree: </b> {{profile.degree}}</p>
+                                <p class="card-text"><b>Course: </b> {{profile.course}}</p>
+                                <!-- <a href="#" class="btn btn-primary"></a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="card shadow-sm bg-body rounded card-style" data-bs-toggle="modal"
                 data-bs-target="#profile-modal-{{profile.id}}">
                 <div class="card-body">
                     <h4 class="card-title">{{profile.name}}</h4>
@@ -37,10 +64,10 @@
                     <p class="card-text"><b>Hometown: </b> {{profile.hometown}}</p>
                     <p class="card-text"><b>Country: </b> {{profile.country.name}}</p>
                     <p class="card-text"><b>Degree: </b> {{profile.degree}}</p>
-                    <p class="card-text"><b>Course: </b> {{profile.course}}</p>
-                    <!-- <a href="#" class="btn btn-primary"></a> -->
-                </div>
-            </div>
+                    <p class="card-text"><b>Course: </b> {{profile.course}}</p> -->
+            <!-- <a href="#" class="btn btn-primary"></a> -->
+            <!-- </div>
+            </div> -->
             {% endif %}
 
 
@@ -49,9 +76,12 @@
                 aria-labelledby="profile-modal-{{profile.id}}" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
-                        <div class="modal-header">
+                        <div class="modal-header" style="display: flex; align-items: center;">
+                            <img src="{{profile.profile_photo.url}}" class="img-fluid rounded-start"
+                                alt="{{profile.name}}">
                             <h5 class="modal-title">{{profile.name}}</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <button type="button" class="btn-close" style="align-self: flex-start;"
+                                data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <div>
@@ -126,6 +156,7 @@
         display: flex;
         padding: 16px;
         height: 95vh;
+        justify-content: center;
     }
 
     #right-section {
@@ -139,6 +170,8 @@
         display: flex;
         flex-wrap: wrap;
         flex-grow: 1;
+        padding: 0;
+        justify-content: center;
     }
 
     .card-style {
@@ -147,9 +180,8 @@
     }
 
     .card:hover {
-        transform: scale(1.1);
+        transform: rotate(0.002turn);
         cursor: pointer;
-
         background-color: #cc0000;
         color: white;
     }
