@@ -12,7 +12,7 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 
-# FindMyRoomie 👯‍♂️
+# FindMyRoomie
 
 FindMyRoomie is a Web Application that provides a platform for NC State students to find roommates of their preference. The stakes are high when it comes to finding your best roommate because this relationship starts with a living relationship :sweat_smile:  We understand how stressful this can be. FindMyRoomie is a one-stop solution to your roommate finding needs. Our software has functionalities that allow you to filter and choose your ideal roommate. But if that is too much work for you, we also provide roommate suggestions based on your preferences! Any NC State student could sign up with their NC State Email ID from any corner of the world on our website and begin searching for roommates. 
 
@@ -155,6 +155,10 @@ If you prefer using Black in VSCode, you can add the below settings in your vsco
     "python.linting.enabled": true
 }
 ```
+### Pre Commit Hooks for Black Code formatting and Flake8 Linting
+* run  `pre-commit install`
+* Now everytime you commit, Black and Flake8 will run automatically and will not allow you to push if the code standards are not met.
+<img width="694" alt="Screenshot 2022-10-07 at 11 35 40 AM" src="https://user-images.githubusercontent.com/48797475/194592802-e7d7c951-9694-4260-b537-fc017a5fd06c.png">
 
 ## Privacy Notice
 
