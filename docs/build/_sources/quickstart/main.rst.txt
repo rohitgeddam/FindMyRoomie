@@ -2,70 +2,60 @@
 Quickstart
 **********
 
-Setup the project in your local machine:
-########################################
+Set up the project on your local machine
+----------------------------------------
 
-1. Download and Install a free Python IDE such as PyCharm, Visual Studio Code,
-   Spyder, etc.
+1. Clone the repository:
 
-2. In the IDE terminal copy and paste the command:
+   ``git clone https://github.com/rohitgeddam/FindMyRoomie.git``  
 
-   ``git clone https://github.com/rohitgeddam/CSC510_PROJECT1.git``
+2. Setup the virtual environment:
 
-3. To setup the virtual environment
+   ``python -m venv venv``  
 
-   ``python -m venv venv``
+3. Activate the virtual environment:
 
-   -  On Mac/Linux
+   -  On Mac/Linux:
 
-      ``source venv/bin/activate``
+      ``source venv/bin/activate``  
 
-   -  On Windows
+   -  On Windows:
 
-      ``venv\Scripts\activate``
+      ``venv\Scripts\activate``  
 
+4. Install required modules and libraries:
 
-   (If you get an error at this step, continue on.)
+   ``pip install -r requirements.txt``  
 
-   ``pip install -r requirements.txt``
+5. Run the application:  
 
+   ::
 
-   If you get an error do ``pip install django``.
-
-
-   If you get this message “ModuleNotFoundError: No module named
-   ‘crispy_forms’” enter the command ``pip install django-crispy-forms``
-
-4. To run virtual environment
-
-   Type into the terminal:
-
-   ``cd src``
-
-   ``python manage.py runserver``
-
-Click the link next to “Starting development server at” to view the
-project
-
+      cd src 
+      python manage.py migrate
+      python manage.py runserver
 
 After adding another field to Model
-###################################
+-----------------------------------
 
 Django’s way of propagating changes you make to your models (adding a
 field, deleting a model, etc.) into your database schema.
 
-``py manage.py makemigrations``
-
-``py manage.py migrate``
-
-Populate fake data for Test
-###########################
 ::
 
-   python manage.py seed_users <number of fake instances>
+   python manage.py makemigrations
+   python manage.py migrate
 
-   # creates 10 fake users
-   python manage.py seed_users 10
+Populate fake data for testing
+------------------------------
+
+\``\` python manage.py seed_users
+
+creates ten fake users
+======================
+
+python manage.py seed_users 10
+
 
 Run test
 ########
