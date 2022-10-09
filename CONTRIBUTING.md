@@ -17,7 +17,6 @@ Please run tests and flake8 to check for errors before you push to github. Use b
 3. Kindly add required documentation in README.md and comment on the PRs to elaborate on the changes that were made. 
 
 ## Additional tips!
-# Some tips if you decide to contribute:
 * Try to follow the code style used in the project, in case you are making any changes, modify the documentation to reflect the changes.
 * if you are fixing a bug, make sure you add a test and ensure that it fails before you go fix the bug. 
 * Always add a test.
