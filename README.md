@@ -55,11 +55,11 @@ Allows you to introduce whom you are to your future roommate! You are given the 
 
  #### 5. Find people:
  
- Lists the people looking for roommates just like you. Our "Wolf Filter" lets you filter candidates based on your preferences :wolf:. Be choosy!!	
+Lists the people looking for roommates just like you. Our "Wolf Filter" lets you filter candidates based on your preferences :wolf:. Be choosy!!	
 
  #### 6. My room:
 
-  Lists your roommates (feature not available yet) and provides roommate suggestions based on your preferences. The similarity scores with other roommate seekers are calculated based on the Manhattan Distance, and the people with the top scores are shown as suggestions. 
+Lists your roommates (feature not available yet) and provides roommate suggestions based on your preferences. The similarity scores with other roommate seekers are calculated based on the Manhattan Distance, and the people with the top scores are shown as suggestions. 
  
 #### The website flow is depicted in the below video:
 
@@ -215,6 +215,8 @@ Our current release does not provide you with a mechanism to remove your data di
 2. Provide an update for the 'My Room' page, giving users the option to include and display their finalized roommates.
 3. Create a platform within the website that allows homeowners to lease or sublease their apartments.
 4. Implement a Chat room that allows users to chat with one another. 
+5. Create a mobile application.
+6. Implement a subleasing option.
 
 ## Contact us:
 Rohit Geddam: sgeddam2@ncsu.edu </br>
