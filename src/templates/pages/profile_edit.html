@@ -13,10 +13,12 @@ Edit Profile
 {% endblock %}
 
 {% block content %}
-
+<center>
+  <h4>Edit Profile</h4>
+</center>
 
 <div style="height: 95vh; overflow-y: scroll;">
-  <section class="home">
+  <!-- <section class="home">
     <center>
       <font size="6">
 
@@ -28,7 +30,7 @@ Edit Profile
 
       </font>
     </center>
-  </section>
+  </section> -->
 
   <div>
     {% load crispy_forms_tags %}
@@ -36,7 +38,7 @@ Edit Profile
     <br><br>
 
     <div class="container">
-      <form method="post">
+      <form method="post" enctype='multipart/form-data'>
         {% csrf_token %}
         {{ form|crispy }}
         <br>

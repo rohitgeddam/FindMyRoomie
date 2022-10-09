@@ -29,6 +29,10 @@ def home(request):
 @login_required()
 def profile(request):
     """Render profile page"""
+    if not request.user.profile.is_profile_complete:
+        messages.error(request, "Please complete your profile first!")
+        return redirect("profile_edit")
+
     profile = Profile.objects.get(user=request.user)
 
     return render(request, "pages/profile.html", {"profile": profile})
@@ -40,10 +44,11 @@ def profile_edit(request):
     profile = Profile.objects.get(user=request.user)
 
     if request.method == "POST":
-        form = ProfileForm(request.POST, instance=profile)
+        form = ProfileForm(request.POST, request.FILES, instance=profile)
         if form.is_valid():
             p = form.save(commit=False)
             p.is_profile_complete = True
+            print(p.profile_photo)
             p.save()
 
             return redirect("profile")

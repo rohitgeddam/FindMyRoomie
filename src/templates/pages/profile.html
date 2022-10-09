@@ -16,9 +16,10 @@ My Profile
 
 
 <div style="display: flex; justify-content: center; margin: 32px 16px; height: 95vh; overflow-y: scroll;">
-    <div id="section-right" style="width: 20%">
+    <div id="section-right" style="width: 20%;">
         <div class="card">
-            <img src=" {% static 'img/profilepage.png' %}" class="card-img-top">
+            <img src="{{profile.profile_photo.url}}" class="card-img-top" style="border-radius: 50%; padding: 8px;"
+                width=250 height=250>
             <div class="card-body">
                 <h5 class="card-title">{{profile.name}}</h5>
                 <h5 class="card-title">{{profile.user.email}}</h5>

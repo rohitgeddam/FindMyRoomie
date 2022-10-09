@@ -9,6 +9,7 @@ from .models import Profile
 
 class SignUpForm(UserCreationForm):
     """Build Sign up Form"""
+
     # username = forms.CharField(label="<b>NCSU</b> E-mail", max_length=100)
     class Meta:
         model = get_user_model()
@@ -49,6 +50,7 @@ class ProfileForm(forms.ModelForm):
         fields = (
             "name",
             "bio",
+            "profile_photo",
             "birth_date",
             "gender",
             "diet",

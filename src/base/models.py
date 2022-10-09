@@ -125,6 +125,9 @@ class Profile(models.Model):
 
     visibility = models.BooleanField(default=True)
     is_profile_complete = models.BooleanField(default=False)
+    profile_photo = models.ImageField(
+        default="default.png", upload_to="profile_pics"
+    )
 
     # preferences
 
