@@ -15,9 +15,14 @@ class TestModels(TestCase):
         profile.hometown = "Chennai"
         profile.gender = "Male"
         profile.degree = "Masters Program (MS)"
-        profile.diet = "NV"
+        profile.diet = "Non Veg"
         profile.country = "India"
         profile.visibility = "True"
+        profile.preference_gender = "Male"
+        profile.preference_country = "India"
+        profile.preference_degree = "Masters Program (MS)"
+        profile.preference_course = "Computer Science"
+        profile.preference_diet = "Non Veg"
         profile.is_profile_complete = "True"
         profile.save()
         self.assertEqual(user.email, "admin@ncsu.edu")
@@ -27,7 +32,12 @@ class TestModels(TestCase):
         self.assertEqual(profile.hometown, "Chennai")
         self.assertEqual(profile.gender, "Male")
         self.assertEqual(profile.degree, "Masters Program (MS)")
-        self.assertEqual(profile.diet, "NV")
+        self.assertEqual(profile.diet, "Non Veg")
         self.assertEqual(profile.country, "India")
         self.assertEqual(profile.visibility, "True")
+        self.assertEqual(profile.preference_gender, "Male")
+        self.assertEqual(profile.preference_country, "India")
+        self.assertEqual(profile.preference_degree, "Masters Program (MS)")
+        self.assertEqual(profile.preference_course, "Computer Science")
+        self.assertEqual(profile.preference_diet, "Non Veg")
         self.assertEqual(profile.is_profile_complete, "True")
