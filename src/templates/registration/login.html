@@ -20,6 +20,10 @@
                 {% csrf_token %}
                 {{ form|crispy }}
                 <button type="submit" class="btn w-100" style="background: #cc0000; color: white;">Log In</button>
+                <div style="margin-top: 16px;">
+                    <a href="{% url 'signup' %}">Sign Up Instead!</a>
+
+                </div>
             </form>
         </div>
     </div>
@@ -28,7 +32,8 @@
 <style>
     #login-card-container {
         height: 100vh;
-        background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("{% static 'img/sign-in-background.jpg' %}");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("{% static 'img/sign-in-background.jpg' %}");
         background-size: cover;
         background-position: center center;
     }
