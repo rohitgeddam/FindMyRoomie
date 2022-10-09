@@ -14,7 +14,7 @@
 
 # FindMyRoomie
 
-FindMyRoomie is a Web Application that provides a platform for NC State students to find roommates of their preference. The stakes are high when it comes to finding your best roommate because this relationship starts with a living relationship :sweat_smile:.  We understand how stressful this can be. FindMyRoomie is a one-stop solution to your roommate finding needs. Our software has functionalities that allow you to filter and choose your ideal roommate. But if that is too much work for you, we also provide roommate suggestions based on your preferences! Any NC State student could sign up with their NC State Email ID from any corner of the world on our website and begin searching for roommates. 
+'FindMyRoomie' is a Web Application that provides a platform for NC State students to find roommates of their preference. The stakes are high when it comes to finding your best roommate because this relationship starts with a living relationship :sweat_smile:.  We understand how stressful this can be. FindMyRoomie is a one-stop solution to your roommate finding needs. Our software has functionalities that allow you to filter and choose your ideal roommate. But if that is too much work for you, we also provide roommate suggestions based on your preferences! Any NC State student could sign up with their NC State Email ID from any corner of the world on our website and begin searching for roommates. 
 
 <p align = "center">
 <img width = "400", src = "https://user-images.githubusercontent.com/52373569/194727868-201a036a-c400-46c4-b359-98777a92ce86.gif">
@@ -129,15 +129,15 @@ We use the GitHub actions to automate tasks of linting, code coverage, build, te
 
 ### Unit tests:
 
-"unit_tests.yml" performs automated testing. Each time a commit occurs in the remote repository, tests are run automatically on the entire codebase. More details about the tests could be found in [Test README](https://github.com/rohitgeddam/FindMyRoomie/tree/main/src/tests#readme)
+"unit_tests.yml" performs automated testing. Each time a commit occurs in the remote repository, tests are run automatically on the entire codebase. More details about the tests could be found in [Test README](https://github.com/rohitgeddam/FindMyRoomie/tree/main/src/tests#readme).
 
 ### Code Coverage: 
 
-Code Coverage is an important metric that allows us to understand how much of the codebase is tested. "code_cov.yml" performs this task. For more information about Code Coverage, please provide visit this [link](https://www.atlassian.com/continuous-delivery/software-testing/code-coverage) 
+Code Coverage is an important metric that allows us to understand how much of the codebase is tested. "code_cov.yml" performs this task. For more information about Code Coverage, please provide visit this [link](https://www.atlassian.com/continuous-delivery/software-testing/code-coverage). 
 
 ### Flake8 - Code Linting:
 
-We are using Flake8 for linting and syntax checking. For more information about Flake8, please provide visit this [link](https://medium.com/python-pandemonium/what-is-flake8-and-why-we-should-use-it-b89bd78073f2)
+We are using Flake8 for linting and syntax checking. For more information about Flake8, please provide visit this [link](https://medium.com/python-pandemonium/what-is-flake8-and-why-we-should-use-it-b89bd78073f2).
 Use flake8 before you push code to GitHub.
 config file present in `setup.cfg`
 
@@ -147,7 +147,7 @@ flake8 <directory>
 
 ### Black - Code Formatter
 
-We are using the Black code formatter to format our code before pushing it to GitHub. For more information about Black, please provide visit this [link](https://black.readthedocs.io/en/stable/)
+We are using the Black code formatter to format our code before pushing it to GitHub. For more information about Black, please provide visit this [link](https://black.readthedocs.io/en/stable/).
 
 Run the line below everytime you push to GitHub.
 config file present in `pyproject.toml`
@@ -172,7 +172,7 @@ If you prefer using Black in VSCode, you can add the below settings in your vsco
 
 ### CodeQL
 
-"CodeQL.yml" performs automated security checks on the codebase and scans it for any vulnerabilities and bugs. For more information about CodeQL, please provide visit this [link](https://codeql.github.com/docs/codeql-overview/about-codeql/) 
+"CodeQL.yml" performs automated security checks on the codebase and scans it for any vulnerabilities and bugs. For more information about CodeQL, please provide visit this [link](https://codeql.github.com/docs/codeql-overview/about-codeql/). 
   
 ## Privacy Notice
 
