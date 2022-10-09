@@ -24,8 +24,7 @@ Test code to check if the HTTP request was succesful (based on the status code).
 Test code that validates the Email ID (checks if it is has a NCSU Email ID). 
 
 #### 5. Live Server Test Demo:
-Demonstration of how Live Server Test works for Profile Edit Page and Profile Page
-
+Test code to for live server test for Profile Edit Page and Profile Page. In order to run the test rename the 'liveserver.py' file to 'test_liveserver.py'.
 
 https://user-images.githubusercontent.com/46688470/194781203-4a78dfb7-ee8a-480c-a8e6-7773f6479128.mp4
 
