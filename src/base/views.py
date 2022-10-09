@@ -63,7 +63,7 @@ def profile_edit(request):
 @login_required()
 def findpeople(request):
     """Render findpeople page"""
-    qs = Profile.objects.filter(visibility=True)
+    qs = Profile.objects.filter(visibility=True).exclude(user=request.user)
     f = ProfileFilter(request.GET, queryset=qs)
     return render(request, "pages/findpeople.html", {"filter": f})
 
