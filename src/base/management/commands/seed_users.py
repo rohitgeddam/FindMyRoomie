@@ -2,7 +2,7 @@ import factory
 import random
 from django.core.management.base import BaseCommand, CommandError
 from django.contrib.auth import get_user_model
-
+from django.db.utils import OperationalError
 from django.db.models.signals import post_save
 
 from base.models import Profile
@@ -86,6 +86,14 @@ class Command(BaseCommand):
                 )[0][0]
                 p.is_profile_complete = True
                 p.save()
+            except OperationalError:
+                self.stdout.write(
+                    self.style.ERROR(
+                        "Please make migrations and Migrate. Something went wrong in the DB tables."
+                    )
+                )
+                count = 0
+                break
             except BaseException:
                 self.stdout.write(self.style.ERROR("Something went wrong!"))
                 count -= 1

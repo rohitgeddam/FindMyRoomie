@@ -1,4 +1,4 @@
-[![Test](https://github.com/rohitgeddam/FindMyRoomie/actions/workflows/Unit_Tests.yml/badge.svg)](https://github.com/rohitgeddam/FinMyRoomie/actions/workflows/Unit_Tests.yml)
+[![Test](https://github.com/rohitgeddam/FindMyRoomie/actions/workflows/Unit_Tests.yml/badge.svg)](https://github.com/rohitgeddam/FindMyRoomie/actions/workflows/Unit_Tests.yml)
 [![codecov](https://codecov.io/gh/rohitgeddam/FindMyRoomie/branch/main/graph/badge.svg?token=PCOHJETYCD)](https://codecov.io/gh/rohitgeddam/FindMyRoomie)
 [![Test](https://github.com/rohitgeddam/FindMyRoomie/actions/workflows/Linting.yml/badge.svg)](https://github.com/rohitgeddam/FinMyRoomie/actions/workflows/Linting.yml)
 ![CodeQL](https://github.com/rohitgeddam/FindMyRoomie/workflows/CodeQL/badge.svg)
@@ -138,3 +138,9 @@ If you prefer using Black in VSCode, you can add the below settings in your vsco
 
 
 ## Future features/work
+
+
+## Contact Us:
+* Email: ncsu.findmyroomie@gmail.com
+* Twitter: [Twitter Profile](https://twitter.com/findmyroomie_nc)
+* Chat/Discuss: [Github Discussions](https://github.com/rohitgeddam/FindMyRoomie/discussions)
