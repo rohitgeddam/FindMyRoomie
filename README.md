@@ -88,7 +88,19 @@ Allows you to introduce whom you are to your future roommate! You are given the 
 
     `pip install -r requirements.txt`
 
-#### 4. Run the application:  
+#### 4. Create .env file at ./src/config/
+```SECRET_KEY=
+DEBUG=
+EMAIL_BACKEND=
+EMAIL_HOST=
+EMAIL_USE_TLS=
+EMAIL_PORT=
+EMAIL_HOST_USER=
+EMAIL_HOST_PASSWORD=
+```
+Fill the above field and save.
+
+#### 5. Run the application:  
    
    ```
    cd src 
