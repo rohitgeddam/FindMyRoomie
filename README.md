@@ -14,13 +14,13 @@
 
 # FindMyRoomie
 
-FindMyRoomie is a Web Application that provides a platform for NC State students to find roommates of their preference. The stakes are high when it comes to finding your best roommate because this relationship starts with a living relationship :sweat_smile:  We understand how stressful this can be. FindMyRoomie is a one-stop solution to your roommate finding needs. Our software has functionalities that allow you to filter and choose your ideal roommate. But if that is too much work for you, we also provide roommate suggestions based on your preferences! Any NC State student could sign up with their NC State Email ID from any corner of the world on our website and begin searching for roommates. 
+FindMyRoomie is a Web Application that provides a platform for NC State students to find roommates of their preference. The stakes are high when it comes to finding your best roommate because this relationship starts with a living relationship :sweat_smile:.  We understand how stressful this can be. FindMyRoomie is a one-stop solution to your roommate finding needs. Our software has functionalities that allow you to filter and choose your ideal roommate. But if that is too much work for you, we also provide roommate suggestions based on your preferences! Any NC State student could sign up with their NC State Email ID from any corner of the world on our website and begin searching for roommates. 
 
 <p align = "center">
 <img width = "400", src = "https://user-images.githubusercontent.com/52373569/194727868-201a036a-c400-46c4-b359-98777a92ce86.gif">
 </p>
 
-The software is free for use to anyone, and we also welcome any contributions to improve our software (Please read our [CONTRIBUTING.md](https://github.com/rohitgeddam/FindMyRoomie/blob/main/CONTRIBUTING.md) file for more details). If you would like to cite our repository, please check our [CITATION.cff](https://github.com/rohitgeddam/FindMyRoomie/blob/main/CITATION.cff) file. 
+The software is free for use by anyone, and we also welcome any contributions to improve our software (Please read our [CONTRIBUTING.md](https://github.com/rohitgeddam/FindMyRoomie/blob/main/CONTRIBUTING.md) file for more details). If you would like to cite our repository, please check our [CITATION.cff](https://github.com/rohitgeddam/FindMyRoomie/blob/main/CITATION.cff) file. 
 
 #### (Write about problem statement and aim. Provide a clear, high-level overview of the software. Describe the type of user who should use your software. make note that the software is available for free).
 
@@ -61,7 +61,9 @@ Allows you to introduce whom you are to your future roommate! You are given the 
 
  6. My room:
  Lists your roommates (feature not available yet) and provides roommate suggestions based on your preferences. The similarity scores with other roommate seekers are calculated based on the Manhattan Distance, and the people with the top scores are shown as suggestions. 
-   
+ 
+#### The website flow is depicted in the below video:
+
 
 ## How to setup the project on your local machine?
 1. Download a free Python IDE online, such as PyCharm, Visual Studio Code, Spyder, etc.
@@ -122,14 +124,20 @@ python manage.py seed_users 10
 ```
 
 ## Automatic tools - GitHub Actions
+ 
+We use the GitHub actions to automate tasks of linting, code coverage, build, tests, and security checks. The codes needed to perform these actions are stored as `.yml` files in `.github/workflows` directory. The GitHub actions are triggered whenever there is something is pushed (or pulled) into the remote repository. The results of these automated tasks are shown as badges on the top of this README.md file. 
 
 ### Unit tests:
 
+"unit_tests.yml" performs automated testing. Each time a commit occurs in the remote repository, tests are run automatically on the entire codebase. More details about the tests could be found in [Test README](https://github.com/rohitgeddam/FindMyRoomie/tree/main/src/tests#readme)
+
 ### Code Coverage: 
+
+Code Coverage is an important metric that allows us to understand how much of the codebase is tested. "code_cov.yml" performs this task. For more information about Code Coverage, please provide visit this [link](https://www.atlassian.com/continuous-delivery/software-testing/code-coverage) 
 
 ### Flake8 - Code Linting:
 
-We are using Flake8 for linting and syntax checking.
+We are using Flake8 for linting and syntax checking. For more information about Flake8, please provide visit this [link](https://medium.com/python-pandemonium/what-is-flake8-and-why-we-should-use-it-b89bd78073f2)
 Use flake8 before you push code to GitHub.
 config file present in `setup.cfg`
 
@@ -139,7 +147,8 @@ flake8 <directory>
 
 ### Black - Code Formatter
 
-We are using the Black code formatter to format our code before pushing it to GitHub.
+We are using the Black code formatter to format our code before pushing it to GitHub. For more information about Black, please provide visit this [link](https://black.readthedocs.io/en/stable/)
+
 Run the line below everytime you push to GitHub.
 config file present in `pyproject.toml`
 ```
@@ -155,11 +164,16 @@ If you prefer using Black in VSCode, you can add the below settings in your vsco
     "python.linting.enabled": true
 }
 ```
+  
 ### Pre Commit Hooks for Black Code formatting and Flake8 Linting
 * run  `pre-commit install`
 * Now everytime you commit, Black and Flake8 will run automatically and will not allow you to push if the code standards are not met.
 <img width="694" alt="Screenshot 2022-10-07 at 11 35 40 AM" src="https://user-images.githubusercontent.com/48797475/194592802-e7d7c951-9694-4260-b537-fc017a5fd06c.png">
 
+### CodeQL
+
+"CodeQL.yml" performs automated security checks on the codebase and scans it for any vulnerabilities and bugs. For more information about CodeQL, please provide visit this [link](https://codeql.github.com/docs/codeql-overview/about-codeql/) 
+  
 ## Privacy Notice
 
 #### 1. What personal details of yours would you be sharing with us and why?
@@ -172,7 +186,7 @@ Yes, we will be storing them in our database. We will ONLY use this to match you
 
 #### 3. Will we share it with any third-party institutions?
 
-NO. Your data is safe with us, and we will not be sharing/lending/renting it with any outside institutions/personnel.
+NO. Your data is safe with us :slightly_smiling_face:. We will not share/lend/rent your data to any outside institutions/personnel.
 
 #### 4. How long will you store my data?
 
