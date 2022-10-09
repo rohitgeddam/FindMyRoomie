@@ -34,7 +34,8 @@
                 <div class="row g-0">
                     <div class="col-md-4"
                         style="display:flex; flex-direction: column; justify-content:center; align-items:center; text-align: center; padding: 18px;">
-                        <img src="{{profile.profile_photo.url}}" class="img-fluid rounded-start" alt="{{profile.name}}">
+                        <img src="{{profile.profile_photo.url}}" class="img-fluid rounded-start" width=200 height="200"
+                            alt="{{profile.name}}">
                         <h5 class="card-title">{{profile.name}}</h5>
                     </div>
                     <div class="col-md-8">
@@ -78,7 +79,7 @@
                     <div class="modal-content">
                         <div class="modal-header" style="display: flex; align-items: center;">
                             <img src="{{profile.profile_photo.url}}" class="img-fluid rounded-start"
-                                alt="{{profile.name}}">
+                                alt="{{profile.name}}" width="200" height="200">
                             <h5 class="modal-title">{{profile.name}}</h5>
                             <button type="button" class="btn-close" style="align-self: flex-start;"
                                 data-bs-dismiss="modal" aria-label="Close"></button>
