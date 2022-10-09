@@ -1,6 +1,6 @@
-[![Test](https://github.com/rohitgeddam/FindMyRoomie/actions/workflows/unit_tests.yml/badge.svg)](https://github.com/rohitgeddam/FinMyRoomie/actions/workflows/unit_tests.yml)
+[![Test](https://github.com/rohitgeddam/FindMyRoomie/actions/workflows/Unit_Tests.yml/badge.svg)](https://github.com/rohitgeddam/FinMyRoomie/actions/workflows/Unit_Tests.yml)
 [![codecov](https://codecov.io/gh/rohitgeddam/FindMyRoomie/branch/main/graph/badge.svg?token=PCOHJETYCD)](https://codecov.io/gh/rohitgeddam/FindMyRoomie)
-[![Test](https://github.com/rohitgeddam/FindMyRoomie/actions/workflows/linting.yml/badge.svg)](https://github.com/rohitgeddam/FinMyRoomie/actions/workflows/linting.yml)
+[![Test](https://github.com/rohitgeddam/FindMyRoomie/actions/workflows/Linting.yml/badge.svg)](https://github.com/rohitgeddam/FinMyRoomie/actions/workflows/Linting.yml)
 ![CodeQL](https://github.com/rohitgeddam/FindMyRoomie/workflows/CodeQL/badge.svg)
 [![code_size](https://img.shields.io/github/languages/code-size/rohitgeddam/CSC510_PROJECT1)](https://github.com/rohitgeddam/CSC510_PROJECT1) 
 [![repo_size](https://img.shields.io/github/repo-size/rohitgeddam/CSC510_PROJECT1)](https://github.com/rohitgeddam/CSC510_PROJECT1)
@@ -50,17 +50,19 @@ Pages:
 <p align = "center">
 <img width = "600" src ="https://user-images.githubusercontent.com/52373569/194731856-0130e163-cea8-4897-941c-530f5bf9dec3.png">
 
-  A page with a happy Mr. and Mrs. Wolf enjoying each other's company in the background, just like you and your roommates would be :heart_on_fire: 
+  A page with a happy Mr. and Mrs. Wolf enjoying each other's company in the background, just like you and your roommates would be :heart_on_fire:. 
 
 4. My Profile: 
 
 Allows you to introduce whom you are to your future roommate! You are given the opportunity to tell others a little bit about yourself and your preferences. The "Visibility" checkbox in your profile allows you to choose whether you want to be visible to others. If you are looking for roommates, you can toggle it on, and if you have found one (Congratulations :partying_face: :partying_face:), you can toggle it off. It's that easy!
 
  5. Find people:
- Lists the people looking for roommates just like you. Our "Wolf Filter" lets you filter candidates based on your preferences :wolf:	
+ 
+ Lists the people looking for roommates just like you. Our "Wolf Filter" lets you filter candidates based on your preferences :wolf:. Be choosy!!	
 
  6. My room:
- Lists your roommates (feature not available yet) and provides roommate suggestions based on your preferences. The similarity scores with other roommate seekers are calculated based on the Manhattan Distance, and the people with the top scores are shown as suggestions. 
+
+  Lists your roommates (feature not available yet) and provides roommate suggestions based on your preferences. The similarity scores with other roommate seekers are calculated based on the Manhattan Distance, and the people with the top scores are shown as suggestions. 
  
 #### The website flow is depicted in the below video:
 
@@ -125,19 +127,19 @@ python manage.py seed_users 10
 
 ## Automatic tools - GitHub Actions
  
-We use the GitHub actions to automate tasks of linting, code coverage, build, tests, and security checks. The codes needed to perform these actions are stored as `.yml` files in `.github/workflows` directory. The GitHub actions are triggered whenever there is something is pushed (or pulled) into the remote repository. The results of these automated tasks are shown as badges on the top of this README.md file. 
+We use GitHub actions to automate tasks of linting, code coverage, build, tests, and security checks. The codes that perform these actions are stored as `.yml` files in the `.github/workflows` directory. The GitHub actions are triggered whenever something is pushed (or pulled) into the remote repository. The results of these automated tasks are shown as badges at the top of this README.md file. 
 
 ### Unit tests:
 
-"unit_tests.yml" performs automated testing. Each time a commit occurs in the remote repository, tests are run automatically on the entire codebase. More details about the tests could be found in [Test README](https://github.com/rohitgeddam/FindMyRoomie/tree/main/src/tests#readme).
+`Unit_Tests.yml` performs automated testing. Each time a commit occurs in the remote repository, tests are run automatically on the entire codebase. More details about the tests could be found in [Test README](https://github.com/rohitgeddam/FindMyRoomie/tree/main/src/tests#readme).
 
 ### Code Coverage: 
 
-Code Coverage is an important metric that allows us to understand how much of the codebase is tested. "code_cov.yml" performs this task. For more information about Code Coverage, please provide visit this [link](https://www.atlassian.com/continuous-delivery/software-testing/code-coverage). 
+Code Coverage is an important metric that allows us to understand how much of the codebase is tested. `Code_Cov.yml` performs this task. For more information about Code Coverage, please provide visit this [link](https://www.atlassian.com/continuous-delivery/software-testing/code-coverage). 
 
 ### Flake8 - Code Linting:
 
-We are using Flake8 for linting and syntax checking. For more information about Flake8, please provide visit this [link](https://medium.com/python-pandemonium/what-is-flake8-and-why-we-should-use-it-b89bd78073f2).
+We are using Flake8 for linting and syntax checking, and it is performed by `Linting.yml. For more information about Flake8, please provide visit this [link](https://medium.com/python-pandemonium/what-is-flake8-and-why-we-should-use-it-b89bd78073f2).
 Use flake8 before you push code to GitHub.
 config file present in `setup.cfg`
 
@@ -172,7 +174,7 @@ If you prefer using Black in VSCode, you can add the below settings in your vsco
 
 ### CodeQL
 
-"CodeQL.yml" performs automated security checks on the codebase and scans it for any vulnerabilities and bugs. For more information about CodeQL, please provide visit this [link](https://codeql.github.com/docs/codeql-overview/about-codeql/). 
+`CodeQL.yml` performs automated security checks on the codebase and scans it for any vulnerabilities and bugs. For more information about CodeQL, please provide visit this [link](https://codeql.github.com/docs/codeql-overview/about-codeql/). 
   
 ## Privacy Notice
 
