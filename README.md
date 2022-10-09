@@ -142,4 +142,4 @@ If you prefer using Black in VSCode, you can add the below settings in your vsco
 
 ## Contact Us:
 * Email: ncsu.findmyroomie@gmail.com
-* Twitter: [![Twitter Profile](https://twitter.com/findmyroomie_nc)]
+* Twitter: [Twitter Profile](https://twitter.com/findmyroomie_nc)
