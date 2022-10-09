@@ -198,11 +198,11 @@ Our current release does not provide you with a mechanism to remove your data di
 -   `CSS3`
 -   `BootStrap v5.2`
 
-## Future features/work:
-1. Include the Apartment in the profile section. Along with the budget of each person.
-2. Include features of MyRoom.
-3. Add leasing/subleasing apartments.
-4. Chat room to chat with other users. 
+## Future work:
+1. Include the optional Apartment details in the profile section. The details could include (but are not restricted to) the address of the apartment, the apartment BHK and size, and rent. Users who have already secured a property and are looking for roommates to occupy them could use this functionality.
+2. Provide an update for the 'My Room' page, giving users the option to include and display their finalized roommates.
+3. Create a platform within the website that allows homeowners to lease or sublease their apartments.
+4. Implement a Chat room that allows users to chat with one another. 
 
 ## Contact us:
 Rohit Geddam: sgeddam2@ncsu.edu </br>
