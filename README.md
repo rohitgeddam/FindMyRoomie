@@ -26,6 +26,12 @@ The software is free for use by anyone, and we also welcome any contributions to
 
 ## Features of our software
 
+#### 1. Homepage:
+
+<p align = "center">
+<img width = "600" src = "https://user-images.githubusercontent.com/73664200/194783985-ab192bcc-9bd0-4ec3-8976-85a55ce8c1b1.png">
+</p>
+
 #### 1. SignUp: 
 
 <p align = "center">
@@ -37,27 +43,37 @@ The software is free for use by anyone, and we also welcome any contributions to
 #### 2. SignIn: 
 
 <p align = "center">
-<img width = "600" src = "https://user-images.githubusercontent.com/52373569/194731814-4aa13d05-3c17-4723-a444-e69d02d949a3.png">
+<img width = "600" src = "https://user-images.githubusercontent.com/73664200/194783912-b76925b4-9ade-43f4-ae43-7bb8f4ed439f.png">
 </p>
 
   Allows existing users to LogIn to our website using their credentials.
 
-#### 3. Homepage:
+#### 3. Welcome page:
 <p align = "center">
-<img width = "600" src ="https://user-images.githubusercontent.com/52373569/194731856-0130e163-cea8-4897-941c-530f5bf9dec3.png">
+<img width = "600" src ="https://user-images.githubusercontent.com/73664200/194784000-b3126f63-d5fb-469b-a011-c82ae0df1ce1.png">
 
   A page with happy Mr. and Mrs. Wolf enjoying each other's company in the background, just like you and your roommates would be :heart_on_fire:. 
 
 #### 4. My Profile: 
+
+<p align = "center">
+<img width = "600" src ="https://user-images.githubusercontent.com/73664200/194784016-8c100734-16ff-403a-b565-9537cf5d1feb.png">
+
 <p align = "justify">
 Allows you to introduce whom you are to your future roommate! You are given the opportunity to tell others a little bit about yourself and your preferences. The "Visibility" checkbox in your profile allows you to choose whether you want to be visible to others. If you are looking for roommates, you can toggle it on, and if you have found one (Congratulations :partying_face: :partying_face:), you can toggle it off. It's that easy!
 </p>
 
  #### 5. Find people:
  
+ <p align = "center">
+<img width = "600" src ="https://user-images.githubusercontent.com/73664200/194784052-7b3c491d-827a-4404-a3d1-35996416ba24.png">
+ 
 Lists the people looking for roommates just like you. Our "Wolf Filter" lets you filter candidates based on your preferences :wolf:. Be choosy!!	
 
  #### 6. My room:
+ 
+  <p align = "center">
+<img width = "600" src ="https://user-images.githubusercontent.com/73664200/194784074-5faf5f21-199c-4b06-966f-74a48fb7a30f.png">
 
 Lists your roommates (feature not available yet) and provides roommate suggestions based on your preferences. The similarity scores with other roommate seekers are calculated based on the Manhattan Distance, and the people with the top scores are shown as suggestions. 
  
