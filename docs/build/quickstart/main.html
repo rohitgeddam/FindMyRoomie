@@ -94,13 +94,24 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../requirements/main.html">Requirements</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Quickstart</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#setup-the-project-in-your-local-machine">Setup the project in your local machine:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#set-up-the-project-on-your-local-machine">Set up the project on your local machine</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#after-adding-another-field-to-model">After adding another field to Model</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#populate-fake-data-for-test">Populate fake data for Test</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#run-test">Run test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#populate-fake-data-for-testing">Populate fake data for testing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#creates-ten-fake-users">creates ten fake users</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#run-test">Run test</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../techused/main.html">Technology Used</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/main.html">Contributing to the Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../github/main.html">GitHub Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../trackissue/main.html">Issue Tracker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/main.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license/main.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../releases/main.html">Releases</a></li>
 </ul>
 
             
@@ -170,63 +181,62 @@
             
   <section id="quickstart">
 <h1>Quickstart<a class="headerlink" href="#quickstart" title="Permalink to this heading">¶</a></h1>
-<section id="setup-the-project-in-your-local-machine">
-<h2>Setup the project in your local machine:<a class="headerlink" href="#setup-the-project-in-your-local-machine" title="Permalink to this heading">¶</a></h2>
+<section id="set-up-the-project-on-your-local-machine">
+<h2>Set up the project on your local machine<a class="headerlink" href="#set-up-the-project-on-your-local-machine" title="Permalink to this heading">¶</a></h2>
 <ol class="arabic">
-<li><p>Download and Install a free Python IDE such as PyCharm, Visual Studio Code,
-Spyder, etc.</p></li>
-<li><p>In the IDE terminal copy and paste the command:</p>
-<p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/rohitgeddam/CSC510_PROJECT1.git</span></code></p>
+<li><p>Clone the repository:</p>
+<p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/rohitgeddam/FindMyRoomie.git</span></code></p>
 </li>
-<li><p>To setup the virtual environment</p>
+<li><p>Setup the virtual environment:</p>
 <p><code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">venv</span> <span class="pre">venv</span></code></p>
+</li>
+<li><p>Activate the virtual environment:</p>
 <ul>
-<li><p>On Mac/Linux</p>
+<li><p>On Mac/Linux:</p>
 <p><code class="docutils literal notranslate"><span class="pre">source</span> <span class="pre">venv/bin/activate</span></code></p>
 </li>
-<li><p>On Windows</p>
+<li><p>On Windows:</p>
 <p><code class="docutils literal notranslate"><span class="pre">venv\Scripts\activate</span></code></p>
 </li>
 </ul>
-<p>(If you get an error at this step, continue on.)</p>
-<p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-r</span> <span class="pre">requirements.txt</span></code></p>
-<p>If you get an error do <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">django</span></code>.</p>
-<p>If you get this message “ModuleNotFoundError: No module named
-‘crispy_forms’” enter the command <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">django-crispy-forms</span></code></p>
 </li>
-<li><p>To run virtual environment</p>
-<p>Type into the terminal:</p>
-<p><code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">src</span></code></p>
-<p><code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">manage.py</span> <span class="pre">runserver</span></code></p>
+<li><p>Install required modules and libraries:</p>
+<p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-r</span> <span class="pre">requirements.txt</span></code></p>
+</li>
+<li><p>Run the application:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">src</span>
+<span class="n">python</span> <span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">migrate</span>
+<span class="n">python</span> <span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">runserver</span>
+</pre></div>
+</div>
 </li>
 </ol>
-<p>Click the link next to “Starting development server at” to view the
-project</p>
 </section>
 <section id="after-adding-another-field-to-model">
 <h2>After adding another field to Model<a class="headerlink" href="#after-adding-another-field-to-model" title="Permalink to this heading">¶</a></h2>
 <p>Django’s way of propagating changes you make to your models (adding a
 field, deleting a model, etc.) into your database schema.</p>
-<p><code class="docutils literal notranslate"><span class="pre">py</span> <span class="pre">manage.py</span> <span class="pre">makemigrations</span></code></p>
-<p><code class="docutils literal notranslate"><span class="pre">py</span> <span class="pre">manage.py</span> <span class="pre">migrate</span></code></p>
-</section>
-<section id="populate-fake-data-for-test">
-<h2>Populate fake data for Test<a class="headerlink" href="#populate-fake-data-for-test" title="Permalink to this heading">¶</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">seed_users</span> <span class="o">&lt;</span><span class="n">number</span> <span class="n">of</span> <span class="n">fake</span> <span class="n">instances</span><span class="o">&gt;</span>
-
-<span class="c1"># creates 10 fake users</span>
-<span class="n">python</span> <span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">seed_users</span> <span class="mi">10</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">makemigrations</span>
+<span class="n">python</span> <span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">migrate</span>
 </pre></div>
 </div>
 </section>
+<section id="populate-fake-data-for-testing">
+<h2>Populate fake data for testing<a class="headerlink" href="#populate-fake-data-for-testing" title="Permalink to this heading">¶</a></h2>
+<p>``` python manage.py seed_users</p>
+<section id="creates-ten-fake-users">
+<h3>creates ten fake users<a class="headerlink" href="#creates-ten-fake-users" title="Permalink to this heading">¶</a></h3>
+<p>python manage.py seed_users 10</p>
 <section id="run-test">
-<h2>Run test<a class="headerlink" href="#run-test" title="Permalink to this heading">¶</a></h2>
+<h4>Run test<a class="headerlink" href="#run-test" title="Permalink to this heading">¶</a></h4>
 <p>In a terminal:</p>
 <p><code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">src</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">py</span> <span class="pre">manage.py</span> <span class="pre">runserver</span></code></p>
 <p>Open another terminal:</p>
 <p><code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">src</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">py</span> <span class="pre">manage.py</span> <span class="pre">test</span></code></p>
+</section>
+</section>
 </section>
 </section>
 

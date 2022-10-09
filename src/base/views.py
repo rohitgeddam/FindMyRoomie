@@ -6,6 +6,8 @@ from django.contrib.auth import logout
 from django.contrib.auth.decorators import login_required
 from .forms import ProfileForm, SignUpForm
 from .models import Profile
+from django.contrib.auth import get_user_model
+
 
 # from django.contrib.auth.forms import UserCreationForm
 
@@ -23,7 +25,8 @@ class SignUpView(generic.CreateView):
 
 def home(request):
     """Render Home Page"""
-    return render(request, "index.html")
+    user_count = get_user_model().objects.all().count()
+    return render(request, "index.html", {"user_count": user_count})
 
 
 @login_required()

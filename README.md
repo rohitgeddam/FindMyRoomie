@@ -119,7 +119,11 @@ We use GitHub actions to automate tasks of linting, code coverage, build, tests,
 
 ### Unit tests:
 
-`Unit_Tests.yml` performs automated testing. Each time a commit occurs in the remote repository, tests are run automatically on the entire codebase. More details about the tests could be found in [Test README](https://github.com/rohitgeddam/FindMyRoomie/tree/main/src/tests#readme).
+
+### How to build docs
+`sphinx-build -b html docs/  docs/build `
+
+## Automatic tools - GitHub Actions
 
 ### Code Coverage: 
 
@@ -212,6 +216,7 @@ Distributed under the MIT License. See `LICENSE` for more information
 
 #
 
+## Future features/work
 
 <p align = "center">
 <img width = "450" src = "https://user-images.githubusercontent.com/52373569/194727890-48c53f9d-f351-433e-82bf-df33d7945b25.gif">
