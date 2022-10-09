@@ -20,7 +20,11 @@ some of your worries by matching you with a roommate of your choice.
    requirements/main.rst
    quickstart/main.rst
    techused/main.rst
-   
+   contributing/main.rst
+   github/main.rst
+   trackissue/main.rst
+   license/main.rst
+   releases/main.rst
 
 .. automodule:: base.management.commands.seed_users
    :members:

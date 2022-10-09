@@ -1,5 +1,6 @@
+************
 Requirements
-============
+************
  
 The requirements necessary to use this Django Project Boilerplate are:
  
