@@ -26,7 +26,6 @@ profile_pics
 
 # Distribution / packaging
 .Python
-build/
 develop-eggs/
 dist/
 downloads/
