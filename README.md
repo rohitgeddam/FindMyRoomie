@@ -28,8 +28,6 @@ The software is free for use by anyone, and we also welcome any contributions to
 
 ## Features of the software
 
-Pages: 
-
 1. SignUp: 
 
 <p align = "center">
@@ -139,9 +137,9 @@ Code Coverage is an important metric that allows us to understand how much of th
 
 ### Flake8 - Code Linting:
 
-We are using Flake8 for linting and syntax checking, and it is performed by `Linting.yml. For more information about Flake8, please provide visit this [link](https://medium.com/python-pandemonium/what-is-flake8-and-why-we-should-use-it-b89bd78073f2).
-Use flake8 before you push code to GitHub.
-config file present in `setup.cfg`
+We are using Flake8 for linting and syntax checking, and it is performed by `Linting.yml`. For more information about Flake8, please provide visit this [link](https://medium.com/python-pandemonium/what-is-flake8-and-why-we-should-use-it-b89bd78073f2).
+Use flake8 before you push code to GitHub. </br>
+Config file present in `setup.cfg`.
 
 ```
 flake8 <directory>
@@ -151,8 +149,8 @@ flake8 <directory>
 
 We are using the Black code formatter to format our code before pushing it to GitHub. For more information about Black, please provide visit this [link](https://black.readthedocs.io/en/stable/).
 
-Run the line below everytime you push to GitHub.
-config file present in `pyproject.toml`
+Run the line below everytime you push to GitHub.</br>
+Config file present in `pyproject.toml`
 ```
 black --line-length 120 <filename>
 ```
