@@ -197,7 +197,7 @@ Our current release does not provide you with a mechanism to remove your data di
 4. Chat room to chat with other users. 
 
 ## Contact us:
-Rohit Geddam - rgeddam@ncsu.edu </br>
+Rohit Geddam: sgeddam2@ncsu.edu </br>
 Arun Kumar Ramesh - arames25@ncsu.edu </br> 
 Kiron Jayesh - kjayesh@ncsu.edu </br>
 Sai Krishna Teja Varma - smanthe@ncsu.edu </br>
