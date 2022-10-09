@@ -14,7 +14,7 @@
 
 # FindMyRoomie
 
-'FindMyRoomie' is a Web Application that provides a platform for NC State students to find roommates of their preference. The stakes are high when it comes to finding your best roommate because this relationship starts with a living relationship :sweat_smile:.  We understand how stressful this can be. FindMyRoomie is a one-stop solution to your roommate finding needs. Our software has functionalities that allow you to filter and choose your ideal roommate. But if that is too much work for you, we also provide roommate suggestions based on your preferences! Any NC State student could sign up with their NC State Email ID from any corner of the world on our website and begin searching for roommates. 
+Moving to a new city or a country for your study can be frustrating,'FindMyRoomie' is a Web Application that provides a platform for lonely wolves (NC State students) to find roommates of their preference. The stakes are high when it comes to finding your best roommate because this relationship starts with a living relationship :sweat_smile:.  We understand how stressful this can be. FindMyRoomie is a one-stop solution to your roommate finding needs. Our software has functionalities that allow you to filter and choose your ideal roommate. But if that is too much work for you, we also provide roommate suggestions based on your preferences! Any NC State student could sign up with their NC State Email addresss from any corner of the world on our website and begin searching for roommates. 
 
 <p align = "center">
 <img width = "400", src = "https://user-images.githubusercontent.com/52373569/194727868-201a036a-c400-46c4-b359-98777a92ce86.gif">
@@ -65,53 +65,44 @@ Allows you to introduce whom you are to your future roommate! You are given the 
 #### The website flow is depicted in the below video:
 
 
-## How to setup the project on your local machine?
-1. Download a free Python IDE online, such as PyCharm, Visual Studio Code, Spyder, etc.
+## Set up the project on your local machine
 
-2. In the IDE terminal, copy and paste the command: 
+1. Clone the repository:  
 
-   `git clone https://github.com/rohitgeddam/CSC510_PROJECT1.git`
+   `git clone https://github.com/rohitgeddam/FindMyRoomie.git`
 
-3. To setup the virtual environment
+2. Setup the virtual environment:  
+    
+    `python -m venv venv`
 
-   `python -m venv venv`
+3.  Activate the virtual environment:  
 
-    * On Mac/Linux
+    * On Mac/Linux:    
     
       `source venv/bin/activate`
-    * On Windows
+      
+    * On Windows:    
     
       `venv\Scripts\activate`
    
-   (If you get an error at this step, continue on.)
-   
-   `pip install -r requirements.txt`
+3.  Install required modules and libraries:  
 
-   If you get an error, do `pip install django`. 
-   
-   If you get this message "ModuleNotFoundError: No module named 'crispy_forms'" enter the command `pip install django-crispy-forms`
+    `pip install -r requirements.txt`
 
-4. To run the virtual environment
-
-   Type into the terminal:
+4. Run the application:  
    
    ```
    cd src 
+   python manage.py migrate
    python manage.py runserver
    ```
-   
-Click the link next to "Starting development server at " to view the project.
-
-## How to create a new webpage
-
-Read the instructions starting from "Here we create the varied pages and assign the respective HTML files" on this webpage: https://www.geeksforgeeks.org/django-creating-a-multi-page-website/
-
+  
 ## After adding another field to Model
 Django's way of propagating changes you make to your models (adding a field, deleting a model, etc.) into your database schema.
 
    ```
-   py manage.py makemigrations
-   py manage.py migrate
+   python manage.py makemigrations
+   python manage.py migrate
    ```
 
 ## Populate fake data for testing
@@ -133,11 +124,11 @@ We use GitHub actions to automate tasks of linting, code coverage, build, tests,
 
 ### Code Coverage: 
 
-Code Coverage is an important metric that allows us to understand how much of the codebase is tested. `Code_Cov.yml` performs this task. For more information about Code Coverage, please provide visit this [link](https://www.atlassian.com/continuous-delivery/software-testing/code-coverage). 
+Code Coverage is an important metric that allows us to understand how much of the codebase is tested. `Code_Cov.yml` performs this task. For more information about Code Coverage, please visit this [link](https://www.atlassian.com/continuous-delivery/software-testing/code-coverage). 
 
 ### Flake8 - Code Linting:
 
-We are using Flake8 for linting and syntax checking, and it is performed by `Linting.yml`. For more information about Flake8, please provide visit this [link](https://medium.com/python-pandemonium/what-is-flake8-and-why-we-should-use-it-b89bd78073f2).
+We are using Flake8 for linting and syntax checking, and it is performed by `Linting.yml`. For more information about Flake8, please visit this [link](https://medium.com/python-pandemonium/what-is-flake8-and-why-we-should-use-it-b89bd78073f2).
 Use flake8 before you push code to GitHub. </br>
 Config file present in `setup.cfg`.
 
@@ -147,7 +138,7 @@ flake8 <directory>
 
 ### Black - Code Formatter
 
-We are using the Black code formatter to format our code before pushing it to GitHub. For more information about Black, please provide visit this [link](https://black.readthedocs.io/en/stable/).
+We are using the Black code formatter to format our code before pushing it to GitHub. For more information about Black, please visit this [link](https://black.readthedocs.io/en/stable/).
 
 Run the line below everytime you push to GitHub.</br>
 Config file present in `pyproject.toml`
@@ -201,6 +192,7 @@ Our current release does not provide you with a mechanism to remove your data di
 -   `Django 4.1.2`
 -   `HTML5`
 -   `CSS3`
+-   `BootStrap v5.2`
 
 ## Future features/work:
 1. Include the Apartment in the profile section. Along with the budget of each person.
