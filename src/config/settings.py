@@ -154,3 +154,6 @@ MEDIA_ROOT = os.path.join(
     BASE_DIR, "media"
 )  # Directory where uploaded media is saved.
 MEDIA_URL = "/media/"  # Public URL at the browser
+
+
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
