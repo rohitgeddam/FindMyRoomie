@@ -17,7 +17,7 @@
 
 # FindMyRoomie
 <p align = "justify">
-'FindMyRoomie' is a Web Application that provides a platform for lonely wolves (NC State students) to find roommates of their preference. The stakes are high when it comes to finding your best roommate because this relationship starts with a living relationship :sweat_smile:. We understand how stressful this can be, especially if you are moving to a new city or country. FindMyRoomie is a one-stop solution to your roommate finding needs. Our software has functionalities that allow you to filter and choose your ideal roommate. But if that is too much work for you, we also provide roommate suggestions based on your preferences! Any NC State student could sign up with their NC State Email address from any corner of the world on our website and begin searching for roommates. 
+'FindMyRoomie' is a Web Application that provides a platform for lonely wolves (NC State students) to find roommates of their preference. The stakes are high when it comes to finding your best roommate because this relationship starts with a living relationship :sweat_smile:. We understand how stressful this can be, especially if you are moving to a new city or country. FindMyRoomie is a one-stop solution to your roommate finding needs. Our software has functionalities that allow you to filter and choose your ideal roommate. But if that is too much work for you, we also provide roommate suggestions based on your preferences! Any <b> NC State student </b> could sign up with their NC State Email address from any corner of the world on our website and begin searching for roommates. 
 </p>
 
 <p align = "center">
@@ -104,6 +104,12 @@ Lists your roommates (feature not available yet) and provides roommate suggestio
  
   <p align = "center">
 <img width = "800" src ="https://user-images.githubusercontent.com/73664200/194784074-5faf5f21-199c-4b06-966f-74a48fb7a30f.png">
+  
+   
+#### 7. About
+   
+<p align = "center">
+<img width = "800" src ="https://user-images.githubusercontent.com/73664200/194790928-2f494b10-761f-4ff1-826d-bffcbad2e707.png"> 
 
 
 #### The website flow is depicted in the below video:
@@ -284,15 +290,18 @@ Distributed under the MIT License. See `LICENSE` for more information
 
 <p align = "center">
 <img width = "450" src = "https://user-images.githubusercontent.com/52373569/194727890-48c53f9d-f351-433e-82bf-df33d7945b25.gif">
-</p>
-<sub><sup>GIF from [Tenor]((https://tenor.com/view/jim-parsons-sheldon-cooper-roommate-big-bang-theory-gif-102184463))</sup></sub>
-
+ </p>
+ <p align = "center">
+ 
+<sub>GIF from [Tenor](https://tenor.com/view/jim-parsons-sheldon-cooper-roommate-big-bang-theory-gif-102184463).<sub>
+ 
+ </p>
 ## Support:
 Questions about the software? Kindly contact us through one of the following routes. We are happy to answer all your questions regarding the software. 
 
 Feel free to reach out to us in case you encounter issues in the software, for example, issues in signing up, logging in, or any othe features. 
 
-<a href = "https://twitter.com/findmyroomie_nc](https://github.com/rohitgeddam/FindMyRoomie/discussions">  
+<a href = "https://github.com/rohitgeddam/FindMyRoomie/discussions">  
 <img width = "35px" src = "https://user-images.githubusercontent.com/73664200/194786118-21d6c5d7-9950-4a8f-94a1-896358d21437.png"/>
 </a>
 &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
