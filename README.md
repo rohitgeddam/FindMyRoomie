@@ -205,6 +205,7 @@ We use GitHub actions to automate tasks of linting, code coverage, build, tests,
 
 ### Unit tests:
 
+Unit test are performed everytime there is a push or pull into the repository. For more information about Unit test visit [Test README](https://github.com/rohitgeddam/FindMyRoomie/blob/main/src/tests/README.md)
 
 ### How to build docs
 `sphinx-build -b html docs/  docs/build `
