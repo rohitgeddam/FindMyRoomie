@@ -9,7 +9,7 @@
 Welcome to FindMyRoomie's documentation!
 ========================================
 
-'FindMyRoomie' is a Web Application that provides a platform for lonely wolves (NC State students) to find roommates of their preference. 
+FindMyRoomie is a Web Application that provides a platform for lonely wolves (**NC State students**) to find roommates of their preference. 
 The stakes are high when it comes to finding your best roommate because this relationship starts with a living relationship 😅.
 We understand how stressful this can be, especially if you are moving to a new city or country. 
 FindMyRoomie is a one-stop solution to your roommate finding needs. Our software has functionalities that allow you to filter and choose your ideal roommate. 
@@ -25,10 +25,12 @@ Any NC State student could sign up with their NC State Email address from any co
    techused/main.rst
    contributing/main.rst
    github/main.rst
+   features/main.rst
    trackissue/main.rst
    troubleshooting/main.rst
    license/main.rst
    releases/main.rst
+   support/main.rst
 
 Seed users
 ==========
@@ -86,10 +88,17 @@ Configuration
 .. automodule:: config.wsgi
    :members:
 
-
 Indices and tables
 ==================
 
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
+**Authors**:
+
+Rohit Geddam, Arun Kumar Ramesh, Kiron Jayesh, Shandler Mason, and Sai Krishna Teja Varma Manthena.
+
+**Version**: 
+
+v3.1 of 2022/10/08
