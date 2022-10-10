@@ -269,13 +269,25 @@ Our current release does not provide you with a mechanism to remove your data di
 -   `BootStrap v5.2`
 
 ## Roadmap
+
+### 3 months milestone:
+
 1. Include apartment details in the profile section. The details could include (but are not restricted to) the address of the apartment, the apartment BHK and size, and rent. Users who have already secured a property and are looking for roommates to occupy them could use this functionality.
 2. Provide an update for the 'My Room' page, giving users the option to include and display their finalized roommates.
 3. Create a platform within the website that allows homeowners to lease or sublease their apartments.
-4. Suggest properties based on user filters by scraping it from the web.
-5. Implement a chat room that allows users to chat with one another in-app. 
-6. Create a mobile application.
+4. Suggest properties based on user filters by scraping it from the web and update the matching algorithm.
+5. Implement a chat room that allows users to chat with one another in-webapp. 
+
+### 6 months milestone:
+
+6. Create a mobile application and publish it on App Store and Google Play Store
 7. Implement a subleasing option.
+8. Improve the matching algorithm.
+
+### 9 months milestone:
+
+8. Partner with local property agents like Wilson Properties, Trinity Properties, etc. to list their properties on our website. 
+
 
 ## Contact us:
 Rohit Geddam: sgeddam2@ncsu.edu </br>
@@ -295,7 +307,6 @@ Distributed under the MIT License. See `LICENSE` for more information
  
 <sub>GIF from [Tenor](https://tenor.com/view/jim-parsons-sheldon-cooper-roommate-big-bang-theory-gif-102184463).<sub>
  
- </p>
 ## Support:
 Questions about the software? Kindly contact us through one of the following routes. We are happy to answer all your questions regarding the software. 
 
