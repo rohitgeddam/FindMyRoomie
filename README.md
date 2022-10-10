@@ -11,58 +11,108 @@
 [![GitHub version](https://img.shields.io/github/v/release/rohitgeddam/FindMyRoomie)](https://github.com/rohitgeddam/FindMyRoomie/releases)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
+![fmr](https://user-images.githubusercontent.com/73664200/194788342-99dac017-b22c-40cc-911a-32bbf8826f5d.png)
+
+
 
 # FindMyRoomie
 <p align = "justify">
-'FindMyRoomie' is a Web Application that provides a platform for lonely wolves (NC State students) to find roommates of their preference. The stakes are high when it comes to finding your best roommate because this relationship starts with a living relationship :sweat_smile:. We understand how stressful this can be, especially if you are moving to a new city or country. FindMyRoomie is a one-stop solution to your roommate finding needs. Our software has functionalities that allow you to filter and choose your ideal roommate. But if that is too much work for you, we also provide roommate suggestions based on your preferences! Any NC State student could sign up with their NC State Email address from any corner of the world on our website and begin searching for roommates. 
+FindMyRoomie is a Web Application that provides a platform for lonely wolves (NC State students) to find roommates of their preference. The stakes are high when it comes to finding your best roommate because this relationship starts with a living relationship :sweat_smile:. We understand how stressful this can be, especially if you are moving to a new city or country. FindMyRoomie is a one-stop solution to your roommate finding needs. Our software has functionalities that allow you to filter and choose your ideal roommate. But if that is too much work for you, we also provide roommate suggestions based on your preferences! Any <b> NC State student </b> could sign up with their NC State Email address from any corner of the world on our website and begin searching for roommates. 
 </p>
 
 <p align = "center">
 <img width = "400", src = "https://user-images.githubusercontent.com/52373569/194727868-201a036a-c400-46c4-b359-98777a92ce86.gif">
 </p>
+<sup><sub>Git from [Tenor](https://tenor.com/view/roommate-rachel-monica-friends-gif-7920313)</sup></sub>
 
 The software is free for use by anyone, and we also welcome any contributions to improve our software. Please read our [CONTRIBUTING.md](https://github.com/rohitgeddam/FindMyRoomie/blob/main/CONTRIBUTING.md) file for more details). If you would like to cite our repository, please check our [CITATION.cff](https://github.com/rohitgeddam/FindMyRoomie/blob/main/CITATION.cff) file.
 
 
 ## Features of our software
 
-#### 1. SignUp: 
+#### 1. Homepage:
+
+The homepage contains the 'Sign in' and 'Sign up' buttons, along with the number of users that have registered.
 
 <p align = "center">
-<img width = "600" src = "https://user-images.githubusercontent.com/52373569/194731737-93009a6e-141a-4bc8-8ba4-cc898f504186.png">
+<img width = "800" src = "https://user-images.githubusercontent.com/73664200/194783985-ab192bcc-9bd0-4ec3-8976-85a55ce8c1b1.png">
 </p>
 
-  Allows new users to register to our roommate finding portal. New users could register using their NCSU Email ID.
+#### 2. SignUp: 
 
-#### 2. SignIn: 
+Allows new users to register to our roommate finding portal. The 'Sign up' page asks to enter an NCSU email id and a suitable password which should be strong enogugh.
 
 <p align = "center">
-<img width = "600" src = "https://user-images.githubusercontent.com/52373569/194731814-4aa13d05-3c17-4723-a444-e69d02d949a3.png">
+<img width = "800" src = "https://user-images.githubusercontent.com/52373569/194731737-93009a6e-141a-4bc8-8ba4-cc898f504186.png">
 </p>
 
-  Allows existing users to LogIn to our website using their credentials.
+#### 3. Email Confirmation: 
 
-#### 3. Homepage:
+After entering the credentials for signup, a confirmation email is sent to the registered mail id, asking to confirm the resgistration. Upon clicking the link provided in the mail, the account gets confirmed and the user is directly redirected to the welcome page.
+
 <p align = "center">
-<img width = "600" src ="https://user-images.githubusercontent.com/52373569/194731856-0130e163-cea8-4897-941c-530f5bf9dec3.png">
+<img width = "800" src = "https://user-images.githubusercontent.com/73664200/194785333-ea980a67-8f7d-43a7-937d-da289dd2ea13.png">
+</p>
 
-  A page with happy Mr. and Mrs. Wolf enjoying each other's company in the background, just like you and your roommates would be :heart_on_fire:. 
+#### 4. SignIn: 
+
+Allows existing users to login to our website using their credentials.
+
+<p align = "center">
+<img width = "800" src = "https://user-images.githubusercontent.com/73664200/194783912-b76925b4-9ade-43f4-ae43-7bb8f4ed439f.png">
+</p>
+
+#### 3. Resetting your password:
+
+In case the user forgets the password, they can enter their registered email id in the 'Forgot your passoword?' tab. An email with a link to set a new password will be sent to the email. Clicking the link will redirect the user to reset their password, and, tada! Password reset!!! 
+
+<p align = "center">
+<img width = "800" src ="https://user-images.githubusercontent.com/73664200/194785779-0eccfaba-c79d-4be0-9ee9-d4dee35b804e.png">
+</p>
+<br>
+<p align = "center">
+<img width = "800" src ="https://user-images.githubusercontent.com/73664200/194785816-4cfbe8df-103e-46a5-80f9-684a2e14647f.png">
+</p>
+
+#### 3. Welcome page:
+
+A page with happy Mr. and Mrs. Wolf enjoying each other's company in the background, just like you and your roommates would be :heart_on_fire:. 
+
+<p align = "center">
+<img width = "800" src ="https://user-images.githubusercontent.com/73664200/194784000-b3126f63-d5fb-469b-a011-c82ae0df1ce1.png">
+</p>
 
 #### 4. My Profile: 
+
 <p align = "justify">
 Allows you to introduce whom you are to your future roommate! You are given the opportunity to tell others a little bit about yourself and your preferences. The "Visibility" checkbox in your profile allows you to choose whether you want to be visible to others. If you are looking for roommates, you can toggle it on, and if you have found one (Congratulations :partying_face: :partying_face:), you can toggle it off. It's that easy!
 </p>
 
+<p align = "center">
+<img width = "800" src ="https://user-images.githubusercontent.com/73664200/194784016-8c100734-16ff-403a-b565-9537cf5d1feb.png">
+
  #### 5. Find people:
+  
+ Lists the people looking for roommates just like you. Our "Wolf Filter" lets you filter candidates based on your preferences :wolf:. Be choosy!!	
  
-Lists the people looking for roommates just like you. Our "Wolf Filter" lets you filter candidates based on your preferences :wolf:. Be choosy!!	
-
+ <p align = "center">
+<img width = "800" src ="https://user-images.githubusercontent.com/73664200/194784052-7b3c491d-827a-4404-a3d1-35996416ba24.png">
+ 
  #### 6. My room:
-
-Lists your roommates (feature not available yet) and provides roommate suggestions based on your preferences. The similarity scores with other roommate seekers are calculated based on the Manhattan Distance, and the people with the top scores are shown as suggestions. 
+   
+Lists your roommates (feature not available yet) and provides roommate suggestions based on your preferences. The similarity scores with other roommate seekers are calculated based on Manhattan Distance, and the people with the top scores are shown as suggestions. 
  
-#### The website flow is depicted in the below video:
+  <p align = "center">
+<img width = "800" src ="https://user-images.githubusercontent.com/73664200/194784074-5faf5f21-199c-4b06-966f-74a48fb7a30f.png">
+  
+   
+#### 7. About
+   
+<p align = "center">
+<img width = "800" src ="https://user-images.githubusercontent.com/73664200/194790928-2f494b10-761f-4ff1-826d-bffcbad2e707.png"> 
 
+
+#### The website flow is depicted in the below video:
 
 ## Steps to set up the project on your local machine
 
@@ -89,12 +139,18 @@ Lists your roommates (feature not available yet) and provides roommate suggestio
     `pip install -r requirements.txt`
 
 #### 4. Create .env file at ./src/config/
-```SECRET_KEY=
-DEBUG=
-EMAIL_BACKEND=
-EMAIL_HOST=
-EMAIL_USE_TLS=
-EMAIL_PORT=
+   <p align = "justify">
+   To setup Gmail to send emails to users, first create a new Gmail account. Under 'Manage your Google Account', enable 2-Step Verification and select suitable app and device under 'App passwords'. Copy the key that is generated and paste it under tha EMAIL_HOST_PASSWORD. Enter the email in EMAIL_HOST_USER.
+   </p>
+   Paste this in the .env file.
+   
+```
+SECRET_KEY=@dr11(7h4n=#@8juk63y(-#bqicdl$9f2okpr@#564=a+-f&*8
+DEBUG=True
+EMAIL_BACKEND="django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST=smtp.gmail.com
+EMAIL_USE_TLS=True
+EMAIL_PORT=587
 EMAIL_HOST_USER=
 EMAIL_HOST_PASSWORD=
 ```
@@ -155,6 +211,7 @@ flake8 <directory>
 
 We are using the Black code formatter to format our code before pushing it to GitHub. For more information about Black, please visit this [link](https://black.readthedocs.io/en/stable/).
 
+
 Run the line below everytime you push to GitHub.</br>
 Config file present in `pyproject.toml`
 ```
@@ -175,6 +232,7 @@ If you prefer using Black in VSCode, you can add the below settings in your vsco
 * run  `pre-commit install`
 * Now everytime you commit, Black and Flake8 will run automatically and will not allow you to push if the code standards are not met.
 <img width="694" alt="Screenshot 2022-10-07 at 11 35 40 AM" src="https://user-images.githubusercontent.com/48797475/194592802-e7d7c951-9694-4260-b537-fc017a5fd06c.png">
+<sup><sub>Image from [Ji Miranda](https://tenor.com/view/jim-parsons-sheldon-cooper-roommate-big-bang-theory-gif-102184463)</sup></sub>
 
 ### CodeQL
 
@@ -210,13 +268,26 @@ Our current release does not provide you with a mechanism to remove your data di
 -   `CSS3`
 -   `BootStrap v5.2`
 
-## Future work:
-1. Include the optional Apartment details in the profile section. The details could include (but are not restricted to) the address of the apartment, the apartment BHK and size, and rent. Users who have already secured a property and are looking for roommates to occupy them could use this functionality.
+## Roadmap
+
+### 3 months milestone:
+
+1. Include apartment details in the profile section. The details could include (but are not restricted to) the address of the apartment, the apartment BHK and size, and rent. Users who have already secured a property and are looking for roommates to occupy them could use this functionality.
 2. Provide an update for the 'My Room' page, giving users the option to include and display their finalized roommates.
 3. Create a platform within the website that allows homeowners to lease or sublease their apartments.
-4. Implement a Chat room that allows users to chat with one another. 
-5. Create a mobile application.
-6. Implement a subleasing option.
+4. Suggest properties based on user filters by scraping it from the web and update the matching algorithm.
+5. Implement a chat room that allows users to chat with one another in-webapp. 
+
+### 6 months milestone:
+
+6. Create a mobile application and publish it on App Store and Google Play Store
+7. Implement a subleasing option.
+8. Improve the matching algorithm.
+
+### 9 months milestone:
+
+8. Partner with local property agents like Wilson Properties, Trinity Properties, etc. to list their properties on our website. 
+
 
 ## Contact us:
 Rohit Geddam: sgeddam2@ncsu.edu </br>
@@ -231,11 +302,24 @@ Distributed under the MIT License. See `LICENSE` for more information
 
 <p align = "center">
 <img width = "450" src = "https://user-images.githubusercontent.com/52373569/194727890-48c53f9d-f351-433e-82bf-df33d7945b25.gif">
-</p>
-=======
+ </p>
+ <p align = "center">
+ 
+<sub>GIF from [Tenor](https://tenor.com/view/jim-parsons-sheldon-cooper-roommate-big-bang-theory-gif-102184463).<sub>
+ 
+## Support:
+Questions about the software? Kindly contact us through one of the following routes. We are happy to answer all your questions regarding the software. 
 
-## Contact Us:
-* Email: ncsu.findmyroomie@gmail.com
-* Twitter: [Twitter Profile](https://twitter.com/findmyroomie_nc)
-* Chat/Discuss: [Github Discussions](https://github.com/rohitgeddam/FindMyRoomie/discussions)
+Feel free to reach out to us in case you encounter issues in the software, for example, issues in signing up, logging in, or any othe features. 
 
+<a href = "https://github.com/rohitgeddam/FindMyRoomie/discussions">  
+<img width = "35px" src = "https://user-images.githubusercontent.com/73664200/194786118-21d6c5d7-9950-4a8f-94a1-896358d21437.png"/>
+</a>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href = "https://twitter.com/findmyroomie_nc">  
+<img width = "35px" src = "https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/twitter.svg"/>
+</a> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href = "mailto:ncsu.findmyroomie@gmail.com">
+<img width = "35px" src = "https://user-images.githubusercontent.com/73664200/194786335-12b1d3a6-b272-4896-9bd7-d615e28847f3.png"/>
+</a>
