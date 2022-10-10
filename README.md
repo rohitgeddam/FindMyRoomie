@@ -11,6 +11,9 @@
 [![GitHub version](https://img.shields.io/github/v/release/rohitgeddam/FindMyRoomie)](https://github.com/rohitgeddam/FindMyRoomie/releases)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
+![fmr](https://user-images.githubusercontent.com/73664200/194788342-99dac017-b22c-40cc-911a-32bbf8826f5d.png)
+
+
 
 # FindMyRoomie
 <p align = "justify">
@@ -28,76 +31,81 @@ The software is free for use by anyone, and we also welcome any contributions to
 
 #### 1. Homepage:
 
-<p align = "center">
-<img width = "600" src = "https://user-images.githubusercontent.com/73664200/194783985-ab192bcc-9bd0-4ec3-8976-85a55ce8c1b1.png">
-</p>
-
-#### 1. SignUp: 
+The homepage contains the 'Sign in' and 'Sign up' buttons, along with the number of users that have registered.
 
 <p align = "center">
-<img width = "600" src = "https://user-images.githubusercontent.com/52373569/194731737-93009a6e-141a-4bc8-8ba4-cc898f504186.png">
+<img width = "800" src = "https://user-images.githubusercontent.com/73664200/194783985-ab192bcc-9bd0-4ec3-8976-85a55ce8c1b1.png">
 </p>
 
-  Allows new users to register to our roommate finding portal. New users could register using their NCSU Email ID.
+#### 2. SignUp: 
 
-#### 2. SignIn: 
+Allows new users to register to our roommate finding portal. The 'Sign up' page asks to enter an NCSU email id and a suitable password which should be strong enogugh.
 
 <p align = "center">
-<img width = "600" src = "https://user-images.githubusercontent.com/73664200/194783912-b76925b4-9ade-43f4-ae43-7bb8f4ed439f.png">
+<img width = "800" src = "https://user-images.githubusercontent.com/52373569/194731737-93009a6e-141a-4bc8-8ba4-cc898f504186.png">
 </p>
 
-  Allows existing users to LogIn to our website using their credentials.
-  
+#### 3. Email Confirmation: 
+
+After entering the credentials for signup, a confirmation email is sent to the registered mail id, asking to confirm the resgistration. Upon clicking the link provided in the mail, the account gets confirmed and the user is directly redirected to the welcome page.
+
+<p align = "center">
+<img width = "800" src = "https://user-images.githubusercontent.com/73664200/194785333-ea980a67-8f7d-43a7-937d-da289dd2ea13.png">
+</p>
+
+#### 4. SignIn: 
+
+Allows existing users to login to our website using their credentials.
+
+<p align = "center">
+<img width = "800" src = "https://user-images.githubusercontent.com/73664200/194783912-b76925b4-9ade-43f4-ae43-7bb8f4ed439f.png">
+</p>
+
 #### 3. Resetting your password:
 
-<div class="row">
-    <img src="https://user-images.githubusercontent.com/73664200/194785779-0eccfaba-c79d-4be0-9ee9-d4dee35b804e.png" style="width:100%">
-</div>
+In case the user forgets the password, they can enter their registered email id in the 'Forgot your passoword?' tab. An email with a link to set a new password will be sent to the email. Clicking the link will redirect the user to reset their password, and, tada! Password reset!!! 
 
 <p align = "center">
-<img width = "600" src ="https://user-images.githubusercontent.com/73664200/194785816-4cfbe8df-103e-46a5-80f9-684a2e14647f.png">
+<img width = "800" src ="https://user-images.githubusercontent.com/73664200/194785779-0eccfaba-c79d-4be0-9ee9-d4dee35b804e.png">
 </p>
-
-#### 2. Email Confirmation: 
-
-<div class="row">
-    <img src="https://user-images.githubusercontent.com/73664200/194785333-ea980a67-8f7d-43a7-937d-da289dd2ea13.png" style="width:100%">
-</div>
-
-  Allows existing users to LogIn to our website using their credentials.
+<br>
+<p align = "center">
+<img width = "800" src ="https://user-images.githubusercontent.com/73664200/194785816-4cfbe8df-103e-46a5-80f9-684a2e14647f.png">
+</p>
 
 #### 3. Welcome page:
+
+A page with happy Mr. and Mrs. Wolf enjoying each other's company in the background, just like you and your roommates would be :heart_on_fire:. 
+
 <p align = "center">
-<img width = "600" src ="https://user-images.githubusercontent.com/73664200/194784000-b3126f63-d5fb-469b-a011-c82ae0df1ce1.png">
+<img width = "800" src ="https://user-images.githubusercontent.com/73664200/194784000-b3126f63-d5fb-469b-a011-c82ae0df1ce1.png">
 </p>
 
-  A page with happy Mr. and Mrs. Wolf enjoying each other's company in the background, just like you and your roommates would be :heart_on_fire:. 
-
 #### 4. My Profile: 
-
-<p align = "center">
-<img width = "600" src ="https://user-images.githubusercontent.com/73664200/194784016-8c100734-16ff-403a-b565-9537cf5d1feb.png">
 
 <p align = "justify">
 Allows you to introduce whom you are to your future roommate! You are given the opportunity to tell others a little bit about yourself and your preferences. The "Visibility" checkbox in your profile allows you to choose whether you want to be visible to others. If you are looking for roommates, you can toggle it on, and if you have found one (Congratulations :partying_face: :partying_face:), you can toggle it off. It's that easy!
 </p>
 
+<p align = "center">
+<img width = "800" src ="https://user-images.githubusercontent.com/73664200/194784016-8c100734-16ff-403a-b565-9537cf5d1feb.png">
+
  #### 5. Find people:
+  
+ Lists the people looking for roommates just like you. Our "Wolf Filter" lets you filter candidates based on your preferences :wolf:. Be choosy!!	
  
  <p align = "center">
-<img width = "600" src ="https://user-images.githubusercontent.com/73664200/194784052-7b3c491d-827a-4404-a3d1-35996416ba24.png">
+<img width = "800" src ="https://user-images.githubusercontent.com/73664200/194784052-7b3c491d-827a-4404-a3d1-35996416ba24.png">
  
-Lists the people looking for roommates just like you. Our "Wolf Filter" lets you filter candidates based on your preferences :wolf:. Be choosy!!	
-
  #### 6. My room:
+   
+Lists your roommates (feature not available yet) and provides roommate suggestions based on your preferences. The similarity scores with other roommate seekers are calculated based on Manhattan Distance, and the people with the top scores are shown as suggestions. 
  
   <p align = "center">
-<img width = "600" src ="https://user-images.githubusercontent.com/73664200/194784074-5faf5f21-199c-4b06-966f-74a48fb7a30f.png">
+<img width = "800" src ="https://user-images.githubusercontent.com/73664200/194784074-5faf5f21-199c-4b06-966f-74a48fb7a30f.png">
 
-Lists your roommates (feature not available yet) and provides roommate suggestions based on your preferences. The similarity scores with other roommate seekers are calculated based on the Manhattan Distance, and the people with the top scores are shown as suggestions. 
- 
+
 #### The website flow is depicted in the below video:
-
 
 ## Steps to set up the project on your local machine
 
