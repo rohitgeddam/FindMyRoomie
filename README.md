@@ -115,10 +115,20 @@ Elaborates about the project and provides details about the contributors along w
 
 ### The website flow is depicted in the below video:
 
-
+#### Sign up:
 https://user-images.githubusercontent.com/73664200/194796584-5f1fea3f-9e45-4e7b-b69a-0e3b0b100b91.mp4
+
+ 
+
+### Functionalities post sign up:
+ 
+
  
  
+#### Resetting password:
+ 
+
+https://user-images.githubusercontent.com/73664200/194796923-61d96045-04f9-4e2d-a524-546f8b7ee34e.mp4
 
 
  
