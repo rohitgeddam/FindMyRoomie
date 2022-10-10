@@ -210,8 +210,6 @@ Unit test are performed everytime there is a push or pull into the repository. F
 ### How to build docs
 `sphinx-build -b html docs/  docs/build `
 
-## Automatic tools - GitHub Actions
-
 ### Code Coverage: 
 
 Code Coverage is an important metric that allows us to understand how much of the codebase is tested. `Code_Cov.yml` performs this task. For more information about Code Coverage, please visit this [link](https://www.atlassian.com/continuous-delivery/software-testing/code-coverage). 
