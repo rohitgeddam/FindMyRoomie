@@ -14,8 +14,8 @@ post useful: |python_install|.
  
     <a href="https://www.python.org/about/gettingstarted/" target="_blank">Getting Started for Python 3</a>
  
-Third-part Requirements
-=======================
+Third-party Requirements
+========================
 
 * alabaster: 0.7.12
 * asgiref: 3.5.2
@@ -112,3 +112,6 @@ Third-part Requirements
 * wrapt: 1.14.1
 * wsproto: 1.2.0
 * zipp: 3.8.1
+
+All the above requirements are mandatory.
+Visit this `link <https://pypi.org/>`__ and browse to know more about the above third-party requirements.
