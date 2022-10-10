@@ -106,7 +106,9 @@ Lists your roommates (feature not available yet) and provides roommate suggestio
   
    
 #### 7. About
-   
+
+Elaborates about the project and provides details about the contributors along with a link to our documentation.
+ 
 <p align = "center">
 <img width = "800" src ="https://user-images.githubusercontent.com/73664200/194790928-2f494b10-761f-4ff1-826d-bffcbad2e707.png"> 
 
@@ -304,7 +306,7 @@ Distributed under the MIT License. See `LICENSE` for more information
 <img width = "450" src = "https://user-images.githubusercontent.com/52373569/194727890-48c53f9d-f351-433e-82bf-df33d7945b25.gif">
  </p>
  
-<sub>GIF from [Tenor](https://tenor.com/view/jim-parsons-sheldon-cooper-roommate-big-bang-theory-gif-102184463).<sub>
+<sub>GIF from [Tenor](https://tenor.com/view/jim-parsons-sheldon-cooper-roommate-big-bang-theory-gif-10218446).<sub>
 
 ## Support:
 Questions about the software? Kindly contact us through one of the following routes. We are happy to answer all your questions regarding the software. 
