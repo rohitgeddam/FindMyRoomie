@@ -132,12 +132,18 @@ Lists your roommates (feature not available yet) and provides roommate suggestio
     `pip install -r requirements.txt`
 
 #### 4. Create .env file at ./src/config/
-```SECRET_KEY=
-DEBUG=
-EMAIL_BACKEND=
-EMAIL_HOST=
-EMAIL_USE_TLS=
-EMAIL_PORT=
+   <p align = "justify">
+   To setup Gmail to send emails to users, first create a new Gmail account. Under 'Manage your Google Account', enable 2-Step Verification and select suitable app and device under 'App passwords'. Copy the key that is generated and paste it under tha EMAIL_HOST_PASSWORD. Enter the email in EMAIL_HOST_USER.
+   </p>
+   Paste this in the .env file.
+   
+```
+SECRET_KEY=@dr11(7h4n=#@8juk63y(-#bqicdl$9f2okpr@#564=a+-f&*8
+DEBUG=True
+EMAIL_BACKEND="django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST=smtp.gmail.com
+EMAIL_USE_TLS=True
+EMAIL_PORT=587
 EMAIL_HOST_USER=
 EMAIL_HOST_PASSWORD=
 ```
@@ -253,13 +259,14 @@ Our current release does not provide you with a mechanism to remove your data di
 -   `CSS3`
 -   `BootStrap v5.2`
 
-## Future work:
-1. Include the optional Apartment details in the profile section. The details could include (but are not restricted to) the address of the apartment, the apartment BHK and size, and rent. Users who have already secured a property and are looking for roommates to occupy them could use this functionality.
+## Roadmap
+1. Include apartment details in the profile section. The details could include (but are not restricted to) the address of the apartment, the apartment BHK and size, and rent. Users who have already secured a property and are looking for roommates to occupy them could use this functionality.
 2. Provide an update for the 'My Room' page, giving users the option to include and display their finalized roommates.
 3. Create a platform within the website that allows homeowners to lease or sublease their apartments.
-4. Implement a Chat room that allows users to chat with one another. 
-5. Create a mobile application.
-6. Implement a subleasing option.
+4. Suggest properties based on user filters by scraping it from the web.
+5. Implement a chat room that allows users to chat with one another in-app. 
+6. Create a mobile application.
+7. Implement a subleasing option.
 
 ## Contact us:
 Rohit Geddam: sgeddam2@ncsu.edu </br>
@@ -277,16 +284,18 @@ Distributed under the MIT License. See `LICENSE` for more information
 </p>
 
 ## Support:
-Questions about the software? Kindly contact us through one of the following routes. We are happy to answer all your questions regarding the software.
+Questions about the software? Kindly contact us through one of the following routes. We are happy to answer all your questions regarding the software. 
+
+Feel free to reach out to us in case you encounter issues in the software, for example, issues in signing up, logging in, or any othe features. 
 
 <a href = "https://twitter.com/findmyroomie_nc](https://github.com/rohitgeddam/FindMyRoomie/discussions">  
 <img width = "35px" src = "https://user-images.githubusercontent.com/73664200/194786118-21d6c5d7-9950-4a8f-94a1-896358d21437.png"/>
 </a>
-&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href = "https://twitter.com/findmyroomie_nc">  
 <img width = "35px" src = "https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/twitter.svg"/>
 </a> 
-&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href = "mailto:ncsu.findmyroomie@gmail.com">
 <img width = "35px" src = "https://user-images.githubusercontent.com/73664200/194786335-12b1d3a6-b272-4896-9bd7-d615e28847f3.png"/>
 </a>
