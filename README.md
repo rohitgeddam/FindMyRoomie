@@ -113,8 +113,15 @@ Elaborates about the project and provides details about the contributors along w
 <img width = "800" src ="https://user-images.githubusercontent.com/73664200/194790928-2f494b10-761f-4ff1-826d-bffcbad2e707.png"> 
 
 
-#### The website flow is depicted in the below video:
+### The website flow is depicted in the below video:
 
+
+https://user-images.githubusercontent.com/73664200/194796584-5f1fea3f-9e45-4e7b-b69a-0e3b0b100b91.mp4
+ 
+ 
+
+
+ 
 ## Steps to set up the project on your local machine
 
 #### 1. Clone the repository:  
