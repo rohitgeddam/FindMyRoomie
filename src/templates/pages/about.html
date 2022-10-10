@@ -1,0 +1,105 @@
+<!--
+ Created on Sun Oct 09 2022
+
+ The MIT License (MIT)
+ Copyright (c) 2022 Rohit Geddam, Arun Kumar, Teja Varma, Kiron Jayesh, Shandler Mason
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy of this software
+ and associated documentation files (the "Software"), to deal in the Software without restriction,
+ including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense,
+ and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so,
+ subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in all copies or substantial
+ portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+ TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+ THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+
+{% extends 'base.html' %}
+{% load static %}
+
+
+<img src="{% static " img/logo.png" %}" alt="My image" />
+
+{% block title %}
+
+🐺 Find My Roomie
+
+{% endblock %}
+
+{% block content %}
+
+<!-- <div data-autoplay="true" data-loop="true" data-wf-ignore="true" data-video-urls="videos/For_Wes-transcode.mp4,videos/For_Wes-transcode.webm" class="hero-video w-background-video w-background-video-atom"><video id="28ee08b8-0c5b-ee03-a57d-02f2b0d97bc3-video" autoplay="" loop="" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+    <source src="videos/For_Wes-transcode.mp4" data-wf-ignore="true">
+    <source src="videos/For_Wes-transcode.webm" data-wf-ignore="true">
+  </video> -->
+
+<!-- <div class="d-flex flex-column align-content-center" id="homepage__container">
+    <h1 class="text-center" style="color: white;">Find My Rommies</h1>
+    <h2 class="text-center" style="color: white; width: 200px;">Find my Roomies is a roommate finder web application to help new and current NC State find the ideal roommate</h2>
+  </div> -->
+
+<h4 style="text-align:center; color: #cc0000; background-color: white;"><b style="font-size: 3.5rem;">{{user_count}}</b>
+    About FindMyRoomie
+</h4>
+
+<div class="hero-overlay-block">
+    <div class="container hero-container w-container">
+        <!-- <h2 data-ix="fade-in-on-load" style="color:white; line-height: 1.2;">Find My Roomie</h2> -->
+        <h5 data-ix="fade-in-on-load-2" style="color: white;" align="justify">FindMyRoomie is a Web
+            Application
+            that provides a platform for lonely wolves (NC State students) to find roommates of their preference. The
+            stakes are high when it comes to finding your best roommate because this relationship starts with a living
+            relationship 😅. We understand how stressful this can be, especially if you are moving to a new city or
+            country. FindMyRoomie is a one-stop solution to your roommate finding needs. Our software has
+            functionalities that allow you to filter and choose your ideal roommate. But if that is too much work for
+            you, we also provide roommate suggestions based on your preferences! Any NC State student could sign up with
+            their NC State Email address from any corner of the world on our website and begin searching for roommates.
+        </h5>
+
+        <div style="color: white; font-size: 24px;"><b>Support Email:</b> ncsu.findmyroomie@gmail.com</div>
+        <div style="display: flex; flex-direction: column; color: white;">
+            <div style="font-size: 24px; text-decoration: underline;">Contributors</div>
+            <div>
+                <div>
+                    <p style="display:inline; margin-right: 8px;">Shandler Mason</p>
+                    <p style="display:inline;">smason@ncsu.edu</p>
+
+                </div>
+                <div>
+                    <p style="display:inline; margin-right: 8px;">Teja Varma</p>
+                    <p style="display:inline;">smanthe@ncsu.edu
+                    </p>
+                </div>
+                <div>
+                    <p style="display:inline; margin-right: 8px;">Kiron Jayesh</p>
+                    <p style="display:inline;">kjayesh@ncsu.edu</p>
+                </div>
+                <div>
+                    <p style="display:inline; margin-right: 8px;">Arun Kumar</p>
+                    <p style="display:inline;">arames25@ncsu.edu</p>
+                </div>
+                <div>
+                    <p style="display:inline; margin-right: 8px;">Saigirishwar Rohit Geddam</p>
+                    <p style="display:inline;">sgeddam2@ncsu.edu</p>
+                </div>
+            </div>
+        </div>
+
+        <a href="https://findmyroomie.readthedocs.io/en/latest/" style="margin-top: 24px;" class="btn btn-primary">Read
+            Documentation</a>
+        <div style="color: white; margin-top: 24px;">
+            @Copyright FindMyRoomate 2022
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+{% endblock %}
