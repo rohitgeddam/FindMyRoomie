@@ -47,10 +47,29 @@ The software is free for use by anyone, and we also welcome any contributions to
 </p>
 
   Allows existing users to LogIn to our website using their credentials.
+  
+#### 3. Resetting your password:
+
+<div class="row">
+    <img src="https://user-images.githubusercontent.com/73664200/194785779-0eccfaba-c79d-4be0-9ee9-d4dee35b804e.png" style="width:100%">
+</div>
+
+<p align = "center">
+<img width = "600" src ="https://user-images.githubusercontent.com/73664200/194785816-4cfbe8df-103e-46a5-80f9-684a2e14647f.png">
+</p>
+
+#### 2. Email Confirmation: 
+
+<div class="row">
+    <img src="https://user-images.githubusercontent.com/73664200/194785333-ea980a67-8f7d-43a7-937d-da289dd2ea13.png" style="width:100%">
+</div>
+
+  Allows existing users to LogIn to our website using their credentials.
 
 #### 3. Welcome page:
 <p align = "center">
 <img width = "600" src ="https://user-images.githubusercontent.com/73664200/194784000-b3126f63-d5fb-469b-a011-c82ae0df1ce1.png">
+</p>
 
   A page with happy Mr. and Mrs. Wolf enjoying each other's company in the background, just like you and your roommates would be :heart_on_fire:. 
 
