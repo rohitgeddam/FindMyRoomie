@@ -23,6 +23,7 @@
 <p align = "center">
 <img width = "400", src = "https://user-images.githubusercontent.com/52373569/194727868-201a036a-c400-46c4-b359-98777a92ce86.gif">
 </p>
+<sup><sub>Git from [Tenor](https://tenor.com/view/roommate-rachel-monica-friends-gif-7920313)</sup></sub>
 
 The software is free for use by anyone, and we also welcome any contributions to improve our software. Please read our [CONTRIBUTING.md](https://github.com/rohitgeddam/FindMyRoomie/blob/main/CONTRIBUTING.md) file for more details). If you would like to cite our repository, please check our [CITATION.cff](https://github.com/rohitgeddam/FindMyRoomie/blob/main/CITATION.cff) file.
 
@@ -204,6 +205,7 @@ flake8 <directory>
 
 We are using the Black code formatter to format our code before pushing it to GitHub. For more information about Black, please visit this [link](https://black.readthedocs.io/en/stable/).
 
+
 Run the line below everytime you push to GitHub.</br>
 Config file present in `pyproject.toml`
 ```
@@ -224,6 +226,7 @@ If you prefer using Black in VSCode, you can add the below settings in your vsco
 * run  `pre-commit install`
 * Now everytime you commit, Black and Flake8 will run automatically and will not allow you to push if the code standards are not met.
 <img width="694" alt="Screenshot 2022-10-07 at 11 35 40 AM" src="https://user-images.githubusercontent.com/48797475/194592802-e7d7c951-9694-4260-b537-fc017a5fd06c.png">
+<sup><sub>Image from [Ji Miranda](https://tenor.com/view/jim-parsons-sheldon-cooper-roommate-big-bang-theory-gif-102184463)</sup></sub>
 
 ### CodeQL
 
@@ -282,6 +285,7 @@ Distributed under the MIT License. See `LICENSE` for more information
 <p align = "center">
 <img width = "450" src = "https://user-images.githubusercontent.com/52373569/194727890-48c53f9d-f351-433e-82bf-df33d7945b25.gif">
 </p>
+<sub><sup>GIF from [Tenor]((https://tenor.com/view/jim-parsons-sheldon-cooper-roommate-big-bang-theory-gif-102184463))</sup></sub>
 
 ## Support:
 Questions about the software? Kindly contact us through one of the following routes. We are happy to answer all your questions regarding the software. 
