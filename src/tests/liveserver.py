@@ -1,3 +1,24 @@
+#
+# Created on Sun Oct 09 2022
+#
+# The MIT License (MIT)
+# Copyright (c) 2022 Rohit Geddam, Arun Kumar, Teja Varma, Kiron Jayesh, Shandler Mason
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy of this software
+# and associated documentation files (the "Software"), to deal in the Software without restriction,
+# including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense,
+# and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so,
+# subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in all copies or substantial
+# portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+# TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+# THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+# TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+#
+
 import time
 from django.test import LiveServerTestCase
 from selenium import webdriver
@@ -7,7 +28,6 @@ from selenium.webdriver.common.keys import Keys
 
 
 class ProfileFormTest(LiveServerTestCase):
-
     def test_form(self):
         selenium = webdriver.Chrome(ChromeDriverManager().install())
 
@@ -15,7 +35,7 @@ class ProfileFormTest(LiveServerTestCase):
 
         time.sleep(2)
 
-        selenium.get('http://127.0.0.1:8000/profile/edit/')
+        selenium.get("http://127.0.0.1:8000/profile/edit/")
 
         time.sleep(15)
 
@@ -32,7 +52,9 @@ class ProfileFormTest(LiveServerTestCase):
         person_p_gender = selenium.find_element(By.ID, "id_preference_gender")
         person_p_degree = selenium.find_element(By.ID, "id_preference_degree")
         person_p_diet = selenium.find_element(By.ID, "id_preference_diet")
-        person_p_country = selenium.find_element(By.ID, "id_preference_country")
+        person_p_country = selenium.find_element(
+            By.ID, "id_preference_country"
+        )
         person_p_course = selenium.find_element(By.ID, "id_preference_course")
 
         submit = selenium.find_element(By.ID, "submit_button")
