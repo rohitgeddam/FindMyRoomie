@@ -268,17 +268,17 @@ Distributed under the MIT License. See `LICENSE` for more information
 <img width = "450" src = "https://user-images.githubusercontent.com/52373569/194727890-48c53f9d-f351-433e-82bf-df33d7945b25.gif">
 </p>
 
-## Contact Us:
+## Support:
+Questions about the software? Kindly contact us through one of the following routes. We are happy to answer all your questions regarding the software.
 
 <a href = "https://twitter.com/findmyroomie_nc](https://github.com/rohitgeddam/FindMyRoomie/discussions">  
-<img width = "25px" src = "https://user-images.githubusercontent.com/73664200/194786118-21d6c5d7-9950-4a8f-94a1-896358d21437.png"/>
+<img width = "35px" src = "https://user-images.githubusercontent.com/73664200/194786118-21d6c5d7-9950-4a8f-94a1-896358d21437.png"/>
 </a>
-
-
+&nbsp;
 <a href = "https://twitter.com/findmyroomie_nc">  
-<img width = "25px" src = "https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/twitter.svg"/>
+<img width = "35px" src = "https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/twitter.svg"/>
 </a> 
-
+&nbsp;
 <a href = "mailto:ncsu.findmyroomie@gmail.com">
-<img width = "25px" src = "https://user-images.githubusercontent.com/73664200/194786335-12b1d3a6-b272-4896-9bd7-d615e28847f3.png"/>
+<img width = "35px" src = "https://user-images.githubusercontent.com/73664200/194786335-12b1d3a6-b272-4896-9bd7-d615e28847f3.png"/>
 </a>
